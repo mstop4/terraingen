@@ -1,7 +1,7 @@
 //Set up camera location
-var zz = -640;
-var xx = lengthdir_x(720,-current_time/10);//Rotation is negative now to match with the old gif and spin clockwise
-var yy = lengthdir_y(720,-current_time/10);
+var zz = -100;
+var xx = lengthdir_x(360,-current_time/100);//Rotation is negative now to match with the old gif and spin clockwise
+var yy = lengthdir_y(360,-current_time/100);
 
 //Build a matrix that looks from the camera location above, to the room center. The up vector points to -z
 mLookat = matrix_build_lookat(xx,yy,zz,0,0,0,0,0,-1);

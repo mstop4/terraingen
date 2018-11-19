@@ -1,4 +1,4 @@
-/// @func  grid_to_model(height_grid, colour_grid)
+/// @func  grid_to_solid_model(height_grid, colour_grid)
 /// @arg   height_grid    
 /// @arg   colour_grid    
 
@@ -20,13 +20,14 @@ for (var j=0; j<_h-1; j++) {
 			_vx[_count] = i;
 			_vy[_count] = j;
 			_vz[_count] = _height_grid[# i, j];
-			_c[_count] = _colour_grid[# i, j];
+			_c[_count] = make_colour_rgb(_height_grid[# i, j], _height_grid[# i, j], _height_grid[# i, j]);
 			_count++;
 			
 			_vx[_count] = i;
 			_vy[_count] = j+1;
 			_vz[_count] = _height_grid[# i, j+1];
 			_c[_count] = _colour_grid[# i, j+1];
+			_c[_count] = make_colour_rgb(_height_grid[# i, j+1], _height_grid[# i, j+1], _height_grid[# i, j+1]);
 			_count++;
 			
 			if (i == _w-1) {
@@ -34,6 +35,7 @@ for (var j=0; j<_h-1; j++) {
 				_vy[_count] = j+1;
 				_vz[_count] = _height_grid[# i, j+1];
 				_c[_count] = _colour_grid[# i, j+1];
+				_c[_count] = make_colour_rgb(_height_grid[# i, j+1], _height_grid[# i, j+1], _height_grid[# i, j+1]);
 				_count++;
 			}
 		}
@@ -47,12 +49,14 @@ for (var j=0; j<_h-1; j++) {
 			_vy[_count] = j;
 			_vz[_count] = _height_grid[# i, j];
 			_c[_count] = _colour_grid[# i, j];
+			_c[_count] = make_colour_rgb(_height_grid[# i, j], _height_grid[# i, j], _height_grid[# i, j]);
 			_count++;
 			
 			_vx[_count] = i;
 			_vy[_count] = j+1;
 			_vz[_count] = _height_grid[# i, j+1];
 			_c[_count] = _colour_grid[# i, j+1];
+			_c[_count] = make_colour_rgb(_height_grid[# i, j+1], _height_grid[# i, j+1], _height_grid[# i, j+1]);
 			_count++;
 			
 			if (i == 0) {
@@ -60,6 +64,7 @@ for (var j=0; j<_h-1; j++) {
 				_vy[_count] = j+1;
 				_vz[_count] = _height_grid[# i, j+1];
 				_c[_count] = _colour_grid[# i, j+1];
+				_c[_count] = make_colour_rgb(_height_grid[# i, j+1], _height_grid[# i, j+1], _height_grid[# i, j+1]);
 				_count++;
 			}
 		}

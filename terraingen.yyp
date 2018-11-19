@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "5ffa8b1c-0d68-44b6-af98-90c49a69544c",
+            "Value": {
+                "id": "ec74473e-3984-4a31-85b0-2826268e4cf1",
+                "resourcePath": "scripts\\grid_to_wireframe_model\\grid_to_wireframe_model.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "d9204e6e-25f9-4261-8be8-f8d67e109155",
@@ -250,7 +258,7 @@
             "Key": "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
             "Value": {
                 "id": "e2c4a10e-ccce-4297-b92a-be0109ca348f",
-                "resourcePath": "scripts\\grid_to_model\\grid_to_model.yy",
+                "resourcePath": "scripts\\grid_to_solid_model\\grid_to_solid_model.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -349,6 +357,7 @@
         "3b3f4df3-383b-4fc9-8b0b-5f7dc6c15af9",
         "2b931836-9c3c-4798-8d52-f1c02b305715",
         "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
+        "5ffa8b1c-0d68-44b6-af98-90c49a69544c",
         "bc62e24f-cfad-4300-95f7-380d027dea05",
         "e1a6b662-5fae-40b7-81e9-7d6d010dbe7f"
     ],

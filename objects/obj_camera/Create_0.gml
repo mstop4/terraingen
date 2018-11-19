@@ -1,6 +1,6 @@
 /// @description init camera
 
-z = 20;
+z = 5;
 pitch = 0;
 
 view_enabled = true;

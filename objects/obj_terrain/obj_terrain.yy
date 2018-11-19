@@ -72,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "4",
+            "value": "6",
             "varName": "map_size",
             "varType": 1
         },
@@ -184,7 +184,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "100",
+            "value": "10",
             "varName": "xscale",
             "varType": 0
         },
@@ -198,7 +198,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "100",
+            "value": "10",
             "varName": "yscale",
             "varType": 0
         },
@@ -212,7 +212,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "100",
+            "value": "-0.25",
             "varName": "zscale",
             "varType": 0
         }
