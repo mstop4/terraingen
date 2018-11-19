@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "16c93256-e011-4f4b-b2a9-409c7d008870",
+            "Value": {
+                "id": "4f9b9c6d-cdee-4e50-a4d6-7ca202e45f45",
+                "resourcePath": "objects\\obj_MDP\\obj_MDP.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2b2d1e04-cac7-479a-b418-9a340a1aa2b0",
             "Value": {
                 "id": "c2ec7117-c4c9-44f8-a741-2c4961ddfb5d",
@@ -127,6 +135,14 @@
             }
         },
         {
+            "Key": "78c333d7-8c10-4772-bb53-322181f7be68",
+            "Value": {
+                "id": "541055b6-ac1a-4b8e-a184-467022610c91",
+                "resourcePath": "scripts\\flat_init\\flat_init.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
             "Value": {
                 "id": "1f3f28f6-22ad-41f2-84f6-480952ded649",
@@ -167,6 +183,14 @@
             }
         },
         {
+            "Key": "bc62e24f-cfad-4300-95f7-380d027dea05",
+            "Value": {
+                "id": "d94e020f-5d0f-4e80-9be3-53e894d2ddc4",
+                "resourcePath": "scripts\\camera_update\\camera_update.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c687243d-d495-47d9-beb7-604f39a99545",
             "Value": {
                 "id": "606de3ab-60a6-4b3d-b730-d9f557923a76",
@@ -199,6 +223,22 @@
             }
         },
         {
+            "Key": "d179e753-ef02-48f2-9074-cd66fd3591c1",
+            "Value": {
+                "id": "dce90e1d-69ac-4c87-a7f3-4b927d12cadd",
+                "resourcePath": "objects\\obj_terrain_gen\\obj_terrain_gen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
+            "Value": {
+                "id": "e2c4a10e-ccce-4297-b92a-be0109ca348f",
+                "resourcePath": "scripts\\grid_to_model\\grid_to_model.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d53a9bbe-c0d7-44b1-b292-bba56499b8db",
             "Value": {
                 "id": "53a7dd06-f026-4550-bb4e-4272231c51d9",
@@ -223,6 +263,14 @@
             }
         },
         {
+            "Key": "e9494fa7-f628-4758-9cf0-d1e5cbfb14e0",
+            "Value": {
+                "id": "41c0fa71-e795-4fb2-9918-4d0ad8eaf4ae",
+                "resourcePath": "rooms\\room1\\room1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "ee2ec94b-1845-46a5-817b-33ac0556e3ed",
             "Value": {
                 "id": "1e1e01cb-6452-40bf-b19c-7ff8618014a0",
@@ -236,6 +284,14 @@
                 "id": "8070e3d5-1e2b-4b50-b973-2131b63f0695",
                 "resourcePath": "views\\ee51627d-6c62-4f18-bd3a-4782265677e1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ee7383e7-25a7-41b3-9bb1-23440d0d9d98",
+            "Value": {
+                "id": "64c3e396-b1b3-496e-9da2-2e5bcfb488b8",
+                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -256,9 +312,12 @@
         }
     ],
     "script_order": [
+        "78c333d7-8c10-4772-bb53-322181f7be68",
         "0832a80c-8d27-4592-808f-e76c007cfcdf",
         "3b3f4df3-383b-4fc9-8b0b-5f7dc6c15af9",
-        "2b931836-9c3c-4798-8d52-f1c02b305715"
+        "2b931836-9c3c-4798-8d52-f1c02b305715",
+        "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
+        "bc62e24f-cfad-4300-95f7-380d027dea05"
     ],
     "tutorial": ""
 }
