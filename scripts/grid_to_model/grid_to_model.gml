@@ -1,10 +1,12 @@
-/// @func  grid_to_model(grid, x, y, z, x_scale, y_scale, z_scale)
-/// @arg   grid    
+/// @func  grid_to_model(height_grid, colour_grid)
+/// @arg   height_grid    
+/// @arg   colour_grid    
 
-var _grid = argument[0];
+var _height_grid = argument[0];
+var _colour_grid = argument[1];
 
-var _w = ds_grid_width(_grid);
-var _h = ds_grid_height(_grid);
+var _w = ds_grid_width(_height_grid);
+var _h = ds_grid_height(_height_grid);
 
 var _dir = 1;
 var _vx, _vy, _vz, _c;
@@ -17,15 +19,23 @@ for (var j=0; j<_h-1; j++) {
 		for (var i=0; i<_w; i++) {
 			_vx[_count] = i;
 			_vy[_count] = j;
-			_vz[_count] = _grid[# i, j];
-			_c[_count] = c_white;
+			_vz[_count] = _height_grid[# i, j];
+			_c[_count] = _colour_grid[# i, j];
 			_count++;
 			
 			_vx[_count] = i;
 			_vy[_count] = j+1;
-			_vz[_count] = _grid[# i, j+1];
-			_c[_count] = c_white;
+			_vz[_count] = _height_grid[# i, j+1];
+			_c[_count] = _colour_grid[# i, j+1];
 			_count++;
+			
+			if (i == _w-1) {
+				_vx[_count] = i;
+				_vy[_count] = j+1;
+				_vz[_count] = _height_grid[# i, j+1];
+				_c[_count] = _colour_grid[# i, j+1];
+				_count++;
+			}
 		}
 		
 		_dir = -1;
@@ -35,15 +45,23 @@ for (var j=0; j<_h-1; j++) {
 		for (var i=_w-1; i>=0; i--) {
 			_vx[_count] = i;
 			_vy[_count] = j;
-			_vz[_count] = _grid[# i, j];
-			_c[_count] = c_white;
+			_vz[_count] = _height_grid[# i, j];
+			_c[_count] = _colour_grid[# i, j];
 			_count++;
 			
 			_vx[_count] = i;
 			_vy[_count] = j+1;
-			_vz[_count] = _grid[# i, j+1];
-			_c[_count] = c_white;
+			_vz[_count] = _height_grid[# i, j+1];
+			_c[_count] = _colour_grid[# i, j+1];
 			_count++;
+			
+			if (i == 0) {
+				_vx[_count] = i;
+				_vy[_count] = j+1;
+				_vz[_count] = _height_grid[# i, j+1];
+				_c[_count] = _colour_grid[# i, j+1];
+				_count++;
+			}
 		}
 		
 		_dir = 1;

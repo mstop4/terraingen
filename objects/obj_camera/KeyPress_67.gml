@@ -1,4 +1,4 @@
-cur_camera = !cur_camera;
+/*cur_camera = !cur_camera;
 
 if (cur_camera == 1)
 {
@@ -17,3 +17,4 @@ else
 	//var r = layer_get_id("Ceiling");
 	//layer_set_visible(r,true);
 }
+*/

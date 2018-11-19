@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "2c630513-832e-45e9-9148-540155a0a386",
+            "Value": {
+                "id": "833a35e5-57fb-4a37-bd61-19757c945fda",
+                "resourcePath": "objects\\obj_test\\obj_test.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3ade7c63-1001-452e-bb6f-8e5a2eb442d6",
             "Value": {
                 "id": "76befbc2-81d3-4a9a-8a91-f4764d3afe55",
@@ -151,6 +159,14 @@
             }
         },
         {
+            "Key": "8ad0d8a7-3c4b-4e50-82a8-b4a694cd8d11",
+            "Value": {
+                "id": "139bc8ce-7fc4-4aa7-8104-ba07a7a51589",
+                "resourcePath": "tilesets\\ts_tiles\\ts_tiles.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "912fae93-1bde-4c55-a102-0731046ff840",
             "Value": {
                 "id": "f5225bde-65ff-4f7b-9b04-eba7118b3ba8",
@@ -226,7 +242,7 @@
             "Key": "d179e753-ef02-48f2-9074-cd66fd3591c1",
             "Value": {
                 "id": "dce90e1d-69ac-4c87-a7f3-4b927d12cadd",
-                "resourcePath": "objects\\obj_terrain_gen\\obj_terrain_gen.yy",
+                "resourcePath": "objects\\obj_terrain\\obj_terrain.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -255,11 +271,27 @@
             }
         },
         {
+            "Key": "e1a6b662-5fae-40b7-81e9-7d6d010dbe7f",
+            "Value": {
+                "id": "8dbda582-4f27-414b-9731-5bd62fd3e0e3",
+                "resourcePath": "scripts\\camera_test\\camera_test.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "9f8a0a20-6a94-4ce8-9119-5377a3ba8d14",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e8432d14-b8b2-4ad2-8343-2e52df1c019a",
+            "Value": {
+                "id": "148bdd21-d83a-4510-83d2-d7ddc8790f00",
+                "resourcePath": "sprites\\spr_tile\\spr_tile.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -317,7 +349,8 @@
         "3b3f4df3-383b-4fc9-8b0b-5f7dc6c15af9",
         "2b931836-9c3c-4798-8d52-f1c02b305715",
         "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
-        "bc62e24f-cfad-4300-95f7-380d027dea05"
+        "bc62e24f-cfad-4300-95f7-380d027dea05",
+        "e1a6b662-5fae-40b7-81e9-7d6d010dbe7f"
     ],
     "tutorial": ""
 }
