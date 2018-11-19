@@ -161,6 +161,20 @@
             "value": "8",
             "varName": "variance",
             "varType": 1
+        },
+        {
+            "id": "48f7e82c-73a7-44b5-845e-28dc2f96d077",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "decay",
+            "varType": 0
         }
     ],
     "solid": false,
