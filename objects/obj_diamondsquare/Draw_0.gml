@@ -1,0 +1,1 @@
+draw_surface_ext(out_surf,0,0,surf_scale,surf_scale,0,c_white,1);
