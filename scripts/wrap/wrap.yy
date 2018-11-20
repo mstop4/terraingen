@@ -1,8 +1,8 @@
 {
-    "id": "e1a6b662-5fae-40b7-81e9-7d6d010dbe7f",
+    "id": "83f34afe-6dde-40fb-bc31-fe9c7786f980",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "camera_test",
+    "name": "wrap",
     "IsCompatibility": false,
     "IsDnD": false
 }

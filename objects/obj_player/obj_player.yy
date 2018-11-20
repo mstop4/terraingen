@@ -55,6 +55,20 @@
             "value": "0.1",
             "varName": "my_speed",
             "varType": 0
+        },
+        {
+            "id": "bea017f5-1ef0-429f-ad9b-9f2f2c0559dd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "height",
+            "varType": 0
         }
     ],
     "solid": false,
