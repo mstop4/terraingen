@@ -1,5 +1,5 @@
 //Set up camera location
-var zz = -100;
+var zz = 100;
 var xx = lengthdir_x(360,-current_time/100);//Rotation is negative now to match with the old gif and spin clockwise
 var yy = lengthdir_y(360,-current_time/100);
 

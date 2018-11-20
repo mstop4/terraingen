@@ -5,7 +5,7 @@ gpu_set_zwriteenable(true);
 gpu_set_texrepeat(true);
 gpu_set_alphatestenable(true);
 gpu_set_texfilter(true);
-gpu_set_cullmode(cull_clockwise);
+gpu_set_cullmode(cull_counterclockwise);
 //gpu_set_fog(true, c_black, 0, 128);
 
 layer_force_draw_depth(true, 0);

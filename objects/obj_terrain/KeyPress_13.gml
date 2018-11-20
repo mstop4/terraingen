@@ -7,3 +7,7 @@ while (terrain_done < 1) {
 
 vertex_delete_buffer(terrain_model);
 terrain_model = grid_to_solid_model(terrain_map, terrain_map);
+
+with (obj_camera) {
+	z = blin_z_pos(obj_terrain.terrain_map, 50, 50);
+}
