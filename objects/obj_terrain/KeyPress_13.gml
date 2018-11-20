@@ -1,3 +1,4 @@
+terrain_done = 0;
 diamondsquare_init(terrain_map, exec_stack, map_side_length, min_value, max_value);
 
 while (terrain_done < 1) {

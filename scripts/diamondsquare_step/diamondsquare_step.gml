@@ -41,7 +41,7 @@ var _br_val = _grid[# _right, _bottom];
 // Diamond step
 if (_grid[# _mid_x, _mid_y] == -1) {
 	_grid[# _mid_x, _mid_y] = clamp(mean(_tl_val, _tr_val, _bl_val, _br_val)
-							  + irandom_range(-_variance, _variance), _min, _max);
+							  + (irandom_range(-_variance, _variance) * 1/power(_decay, _cur_step)), _min, _max);
 }
 
 var _mid_val = _grid[# _mid_x, _mid_y];
