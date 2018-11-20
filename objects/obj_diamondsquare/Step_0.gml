@@ -3,7 +3,7 @@ if (running) {
 	last_time = get_timer();
 	
 	while (time_taken < 1000000/room_speed) {
-		if (diamondsquare_step(terrain_map, exec_stack, min_value, max_value, variance, decay) == 1) {
+		if (diamondsquare_step(terrain_map, exec_queue, min_value, max_value, variance, decay) == 1) {
 			running = false;
 			break;
 		}

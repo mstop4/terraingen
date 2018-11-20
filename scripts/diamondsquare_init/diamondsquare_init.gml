@@ -1,11 +1,11 @@
 /// @func  diamondsquare_init(grid, min, max)
 /// @arg   grid 
-/// @arg   exec_stack
+/// @arg   exec_queue
 /// @arg   min  
 /// @arg   max  
 
 var _grid = argument[0];
-var _exec_stack = argument[1];
+var _exec_queue = argument[1];
 var _min = argument[2];
 var _max = argument[3];
 
@@ -21,4 +21,4 @@ _grid[# _w-1, _h-1] = irandom_range(_min, _max);
 
 var _temp_list = ds_list_create();
 ds_list_add(_temp_list, 0, 0, _w-1, _h-1, 0);
-ds_stack_push(_exec_stack, _temp_list);
+ds_queue_enqueue(_exec_queue, _temp_list);
