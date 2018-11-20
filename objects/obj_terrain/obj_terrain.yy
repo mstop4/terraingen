@@ -128,7 +128,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "2",
             "varName": "decay",
             "varType": 0
         },
@@ -212,7 +212,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-0.25",
+            "value": "-0.1",
             "varName": "zscale",
             "varType": 0
         }
