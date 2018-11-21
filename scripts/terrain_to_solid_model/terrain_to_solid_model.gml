@@ -38,7 +38,7 @@ for (var j=0; j<_h-1; j++) {
 			_vz[_count] = _height_grid[# i, j+1];
 			_nx[_count] = _cur_n[0];
 			_ny[_count] = _cur_n[1];
-			_nz[_count] = -_cur_n[2];
+			_nz[_count] = _cur_n[2];
 			_c[_count] = _colour_grid[# i, j+1];
 			_count++;
 			
@@ -48,7 +48,7 @@ for (var j=0; j<_h-1; j++) {
 				_vz[_count] = _height_grid[# i, j+1];
 				_nx[_count] = _cur_n[0];
 				_ny[_count] = _cur_n[1];
-				_nz[_count] = -_cur_n[2];
+				_nz[_count] = _cur_n[2];
 				_c[_count] = _colour_grid[# i, j+1];
 				_tu[_count] = 0;
 				_tv[_count] = 1;
@@ -103,6 +103,7 @@ for (var j=0; j<_h-1; j++) {
 vertex_begin(_vert_buf,global.vert_w_light);
 
 for (var i=0; i<_count; i++) {
+	//print(_vx[i], " ", _vy[i], " ", _vz[i], " --- ", _nx[i], " ", _ny[i], " ", _nz[i]);
 	vertex_position_3d(_vert_buf,_vx[i],_vy[i],_vz[i]);
 	vertex_normal(_vert_buf,_nx[i],_ny[i],_nz[i]);
 	vertex_color(_vert_buf,_c[i],1);
