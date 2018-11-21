@@ -11,7 +11,7 @@ while (_result < 1) {
 }
 
 print("Generating normal map...");
-height_to_normal(terrain_map, normal_map);
+height_to_normal(terrain_map, normal_map, normal_strength);
 print("Generating colour map...");
 height_to_colour(terrain_map, colour_map);
 

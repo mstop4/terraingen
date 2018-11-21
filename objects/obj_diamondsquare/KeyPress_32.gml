@@ -8,7 +8,7 @@ if (!running) {
 		_result = diamondsquare_step(terrain_map, exec_stack, min_value, max_value, variance, decay);
 	}
 	
-	height_to_normal(terrain_map, normal_map);
+	height_to_normal(terrain_map, normal_map, normal_strength);
 	
 	height_grid_to_surface(terrain_map, terrain_surf);
 	normal_grid_to_surface(normal_map, normal_surf);

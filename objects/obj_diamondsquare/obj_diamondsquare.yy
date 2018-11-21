@@ -158,7 +158,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "127",
             "varName": "variance",
             "varType": 1
         },
@@ -174,6 +174,20 @@
             "resourceFilter": 1023,
             "value": "2",
             "varName": "decay",
+            "varType": 0
+        },
+        {
+            "id": "acab3b17-dca9-4139-87b0-c741851a1297",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.25",
+            "varName": "normal_strength",
             "varType": 0
         }
     ],

@@ -13,11 +13,17 @@ layer_force_draw_depth(true, 0);
 
 vertex_format_begin();
 vertex_format_add_position_3d();
-vertex_format_add_color();
 vertex_format_add_normal();
+vertex_format_add_color();
+vertex_format_add_texcoord();
 global.vert_w_light = vertex_format_end();
 
 vertex_format_begin();
 vertex_format_add_position_3d();
 vertex_format_add_color();
 global.vert_wo_light = vertex_format_end();
+
+draw_set_lighting(true);
+//draw_light_define_ambient(c_gray);
+draw_light_define_direction(1,-1,-1,1,c_white);
+draw_light_enable(1,true);

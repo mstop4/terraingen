@@ -1,4 +1,3 @@
-randomize();
 map_side_length = power(2, map_size) + 1;
 exec_stack = ds_stack_create();
 

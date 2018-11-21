@@ -1,8 +1,10 @@
 /// @arg height_grid
 /// @arg normal_grid
+/// @arg strength
 
 var _height_grid = argument[0];
 var _normal_grid = argument[1];
+var _strength = argument[2];
 
 var _w = ds_grid_width(_height_grid);
 var _h = ds_grid_height(_height_grid);
@@ -51,7 +53,14 @@ for (var i=0; i<_w; i++) {
 			var _v_vec = [0,_v_run,_down_rise - _up_rise];
 		
 			var _n_vec = cross_product_normalized(_h_vec[0], _h_vec[1], _h_vec[2], _v_vec[0], _v_vec[1], _v_vec[2]);
-			_normal_grid[# i, j] = _n_vec;
+			
+			_n_vec[0] = lerp(0,_n_vec[0],_strength);
+			_n_vec[1] = lerp(0,_n_vec[1],_strength);
+			_n_vec[2] = lerp(1,_n_vec[0],_strength);
+			
+			var _n_len = point_distance_3d(0,_n_vec[0],0,_n_vec[1],0,_n_vec[2]);
+			
+			_normal_grid[# i, j] = [_n_vec[0] / _n_len, _n_vec[1] / _n_len, _n_vec[2] / _n_len];
 		}
 	}
 }

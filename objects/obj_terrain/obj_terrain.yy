@@ -225,6 +225,20 @@
             "value": "1",
             "varName": "zscale",
             "varType": 0
+        },
+        {
+            "id": "9ff90da6-cc96-43af-935d-f951289b4858",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "normal_strength",
+            "varType": 0
         }
     ],
     "solid": false,

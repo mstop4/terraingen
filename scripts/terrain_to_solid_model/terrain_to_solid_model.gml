@@ -100,12 +100,13 @@ for (var j=0; j<_h-1; j++) {
 	}
 }
 
-vertex_begin(_vert_buf,global.vert_wo_light);
+vertex_begin(_vert_buf,global.vert_w_light);
 
 for (var i=0; i<_count; i++) {
 	vertex_position_3d(_vert_buf,_vx[i],_vy[i],_vz[i]);
+	vertex_normal(_vert_buf,_nx[i],_ny[i],_nz[i]);
 	vertex_color(_vert_buf,_c[i],1);
-	//vertex_normal(_vert_buf,_nx[i],_ny[i],_nz[i]);
+	vertex_texcoord(_vert_buf,0,0);
 }
 
 vertex_end(_vert_buf);
