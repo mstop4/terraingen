@@ -151,14 +151,6 @@
             }
         },
         {
-            "Key": "5ffa8b1c-0d68-44b6-af98-90c49a69544c",
-            "Value": {
-                "id": "ec74473e-3984-4a31-85b0-2826268e4cf1",
-                "resourcePath": "scripts\\terrain_to_wireframe_model\\terrain_to_wireframe_model.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "6abe711e-02b5-4283-8c6a-0d981a8d293a",
             "Value": {
                 "id": "32095385-3d4a-436a-983a-5dc456bc0fea",
@@ -204,6 +196,14 @@
                 "id": "1f3f28f6-22ad-41f2-84f6-480952ded649",
                 "resourcePath": "options\\ios\\options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "88c23dc1-b1dd-4ac8-a252-39507a5e3443",
+            "Value": {
+                "id": "0e48d61f-fc2d-4df0-8055-e6577fee3cef",
+                "resourcePath": "scripts\\scr_add_vertex\\scr_add_vertex.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "c8da1350-66cc-4e56-97b8-c6d9d500a67a",
+            "Value": {
+                "id": "4ee097ba-bd9f-43d0-9f9a-b086c8e405fb",
+                "resourcePath": "objects\\obj_3d_test\\obj_3d_test.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c9f456b1-cb89-4ab3-91e3-28593986ecc3",
             "Value": {
                 "id": "5fcdd1e5-1c1a-4fda-9ae4-143e9cb8fd45",
@@ -340,6 +348,14 @@
                 "id": "53a7dd06-f026-4550-bb4e-4272231c51d9",
                 "resourcePath": "views\\d53a9bbe-c0d7-44b1-b292-bba56499b8db.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d67c0da4-24a9-4d9b-b990-0d811bdf90f1",
+            "Value": {
+                "id": "cc5fb7ee-8073-496e-a89f-610ccaffa52d",
+                "resourcePath": "sprites\\spr_grass\\spr_grass.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -437,6 +453,22 @@
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
+        },
+        {
+            "Key": "f555f550-06c9-43aa-b837-6c7e520c959f",
+            "Value": {
+                "id": "858ba4ee-daec-4a1a-91c4-88e79d34dafd",
+                "resourcePath": "objects\\obj_3d_sphere\\obj_3d_sphere.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fba9533b-2cab-4586-b00b-791a329a7e66",
+            "Value": {
+                "id": "048f988d-e67a-48ff-bb6c-558fc87a8be2",
+                "resourcePath": "scripts\\height_to_colour\\height_to_colour.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
@@ -445,16 +477,17 @@
         "0832a80c-8d27-4592-808f-e76c007cfcdf",
         "3b3f4df3-383b-4fc9-8b0b-5f7dc6c15af9",
         "10b513fd-a6a5-4487-b2af-9a9f505f1013",
+        "fba9533b-2cab-4586-b00b-791a329a7e66",
         "2b931836-9c3c-4798-8d52-f1c02b305715",
         "b5d88402-e4f7-4461-a087-ceffe3a6acc9",
         "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
-        "5ffa8b1c-0d68-44b6-af98-90c49a69544c",
         "7ab533c3-64d8-487a-8519-8259a8278173",
         "dde622c4-d77c-4564-b6a9-ceaa1c86e647",
         "83f34afe-6dde-40fb-bc31-fe9c7786f980",
         "1419d418-6a37-4162-9348-862d604f12ea",
         "98816416-09cc-4ca0-84b2-be70d2d49b8a",
-        "cb760d19-7556-40f4-8278-6fbbbc5c85e2"
+        "cb760d19-7556-40f4-8278-6fbbbc5c85e2",
+        "88c23dc1-b1dd-4ac8-a252-39507a5e3443"
     ],
     "tutorial": ""
 }

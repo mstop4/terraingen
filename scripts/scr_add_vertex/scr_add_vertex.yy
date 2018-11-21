@@ -1,8 +1,8 @@
 {
-    "id": "5ffa8b1c-0d68-44b6-af98-90c49a69544c",
+    "id": "88c23dc1-b1dd-4ac8-a252-39507a5e3443",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "terrain_to_wireframe_model",
+    "name": "scr_add_vertex",
     "IsCompatibility": false,
     "IsDnD": false
 }

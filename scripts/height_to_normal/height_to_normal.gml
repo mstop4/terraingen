@@ -50,7 +50,7 @@ for (var i=0; i<_w; i++) {
 			var _h_vec = [_h_run,0,_right_rise - _left_rise];
 			var _v_vec = [0,_v_run,_down_rise - _up_rise];
 		
-			var _n_vec = cross_product_normalized(_v_vec[0], _v_vec[1], _v_vec[2], _h_vec[0], _h_vec[1], _h_vec[2]);
+			var _n_vec = cross_product_normalized(_h_vec[0], _h_vec[1], _h_vec[2], _v_vec[0], _v_vec[1], _v_vec[2]);
 			_normal_grid[# i, j] = _n_vec;
 		}
 	}
