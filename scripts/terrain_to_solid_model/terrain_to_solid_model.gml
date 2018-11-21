@@ -1,4 +1,4 @@
-/// @func  grid_to_solid_model(height_grid, colour_grid)
+/// @func  terrain_to_solid_model(height_grid, colour_grid)
 /// @arg   height_grid    
 /// @arg   colour_grid    
 

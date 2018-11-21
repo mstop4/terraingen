@@ -1,8 +1,8 @@
 {
-    "id": "5ffa8b1c-0d68-44b6-af98-90c49a69544c",
+    "id": "2b931836-9c3c-4798-8d52-f1c02b305715",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "grid_to_wireframe_model",
+    "name": "height_grid_to_surface",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -12,5 +12,5 @@ if (running) {
 		last_time = _now;
 	}
 	
-	grid_to_surface(terrain_map, out_surf);
+	height_grid_to_surface(terrain_map, terrain_surf);
 }

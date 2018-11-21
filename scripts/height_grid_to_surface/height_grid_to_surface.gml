@@ -1,4 +1,4 @@
-/// @func  grid_to_surface(grid, surf)
+/// @func  height_grid_to_surface(grid, surf)
 /// @arg   grid 
 /// @arg   surf 
 
