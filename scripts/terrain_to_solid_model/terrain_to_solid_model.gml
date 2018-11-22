@@ -8,16 +8,20 @@ var _normal_grid = argument[1];
 var _colour_grid = argument[2];
 
 var _w = ds_grid_width(_height_grid);
-var _h = ds_grid_height(_height_grid);
 
 var _dir = 1;
-var _v, _n, _c, _t;
-var _cur_n, _cur_v;
+var _estimated_count = _w *_w * 2 -_w - 1;
+var _v = array_create(_estimated_count);
+var _n = array_create(_estimated_count);
+var _c = array_create(_estimated_count);
+var _t = array_create(_estimated_count);
+
 var _count = 0;
+var _cur_n, _cur_v;
 
 var _vert_buf = vertex_create_buffer();
 
-for (var j=0; j<_h-1; j++) {
+for (var j=0; j<_w-1; j++) {
 	if (_dir == 1) {
 		for (var i=0; i<_w; i++) {
 			_cur_n = _normal_grid[# i, j];
@@ -87,5 +91,7 @@ for (var i=0; i<_count; i++) {
 
 vertex_end(_vert_buf);
 vertex_freeze(_vert_buf);
+
+print (vertex_get_buffer_size(_vert_buf), " - ", vertex_get_number(_vert_buf));
 
 return _vert_buf;

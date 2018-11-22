@@ -1,7 +1,6 @@
 terrain_done = 0;
 var _start = current_time;
 print("Starting terrain generation...");
-ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length,c_white);
 diamondsquare_init(terrain_map, exec_stack, map_side_length, min_value, max_value);
 
 print("Generating height map...");
@@ -14,7 +13,8 @@ while (_result < 1) {
 print("Generating normal map...");
 height_to_normal(terrain_map, normal_map, normal_strength);
 print("Generating colour map...");
-height_to_colour(terrain_map, colour_map);
+ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length,c_white);
+//height_to_colour(terrain_map, colour_map);
 
 print("Creating Model...");
 vertex_delete_buffer(terrain_model);
