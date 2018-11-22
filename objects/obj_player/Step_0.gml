@@ -1,4 +1,4 @@
-if (window_has_focus()) {
+if (window_has_focus() && !obj_MCP.paused) {
 	direction = wrap(direction - (window_get_width() / 2 - window_mouse_get_x()) * obj_MCP.mouse_sens_hor, 0, 360);
 	pitch = clamp(pitch - (window_get_height() / 2 - window_mouse_get_y()) * obj_MCP.mouse_sens_ver,-45,45);
 }

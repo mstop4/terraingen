@@ -1,4 +1,5 @@
 terrain_done = 0;
+var _start = current_time;
 print("Starting terrain generation...");
 ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length,c_white);
 diamondsquare_init(terrain_map, exec_stack, map_side_length, min_value, max_value);
@@ -23,5 +24,5 @@ with (obj_camera) {
 	z = blin_z_pos(obj_terrain.terrain_map, other.map_side_length div 2, other.map_side_length div 2);
 }
 
-print("done!");
+print("Done! ", (current_time - _start) / 1000, " s");
 terrain_done = 1;
