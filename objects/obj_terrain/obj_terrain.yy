@@ -134,7 +134,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "127",
+            "value": "255",
             "varName": "variance",
             "varType": 0
         },
@@ -246,7 +246,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "0.2",
             "varName": "normal_strength",
             "varType": 0
         }
