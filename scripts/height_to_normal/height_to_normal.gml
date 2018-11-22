@@ -53,8 +53,6 @@ for (var i=0; i<_w; i++) {
 			var _v_vec = [0,_v_run,_down_rise - _up_rise];
 		
 			var _n_vec = cross_product_normalized(_h_vec[0], _h_vec[1], _h_vec[2], _v_vec[0], _v_vec[1], _v_vec[2]);
-			//print(i, ", ", j, " --- ", _h_vec, " x ", _v_vec, " = ", _n_vec);
-			
 			
 			_n_vec[0] = lerp(0,_n_vec[0],_strength);
 			_n_vec[1] = lerp(0,_n_vec[1],_strength);
