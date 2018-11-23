@@ -4,7 +4,7 @@ gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
 gpu_set_texrepeat(true);
 gpu_set_alphatestenable(true);
-gpu_set_texfilter(true);
+gpu_set_texfilter(false);
 gpu_set_cullmode(cull_counterclockwise);
 //gpu_set_fog(true, c_black, 0, 128);
 

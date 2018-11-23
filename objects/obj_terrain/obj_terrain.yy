@@ -184,7 +184,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "10",
+            "value": "1",
             "varName": "xscale",
             "varType": 0
         },
@@ -198,7 +198,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "10",
+            "value": "1",
             "varName": "yscale",
             "varType": 0
         },
@@ -212,7 +212,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "0.1",
             "varName": "zscale",
             "varType": 0
         },
@@ -226,9 +226,37 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.2",
+            "value": "0.1",
             "varName": "normal_strength",
             "varType": 0
+        },
+        {
+            "id": "ee754578-ba44-417b-b6f8-e315d8af1517",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.5",
+            "varName": "uv_scale",
+            "varType": 0
+        },
+        {
+            "id": "7377879d-2652-4ae7-812f-b3cef48528a2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 2,
+            "value": "spr_grass",
+            "varName": "terrain_tex",
+            "varType": 5
         }
     ],
     "solid": false,

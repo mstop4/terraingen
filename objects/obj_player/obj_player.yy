@@ -52,7 +52,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.1",
+            "value": "0.05",
             "varName": "my_speed",
             "varType": 0
         },
@@ -66,7 +66,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "0.5",
             "varName": "height",
             "varType": 0
         }

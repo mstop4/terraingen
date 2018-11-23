@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "152f2487-9156-4e68-92a1-856a9392ebff",
+            "Value": {
+                "id": "8a41d3c4-bb43-4f7f-8cad-e93f92b40241",
+                "resourcePath": "views\\152f2487-9156-4e68-92a1-856a9392ebff.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "16c93256-e011-4f4b-b2a9-409c7d008870",
             "Value": {
                 "id": "4f9b9c6d-cdee-4e50-a4d6-7ca202e45f45",
@@ -135,6 +143,14 @@
             }
         },
         {
+            "Key": "5809dd90-09fe-4739-99a4-ddda9a2074e8",
+            "Value": {
+                "id": "3f2e438c-39d2-4c93-9db8-df526edf7cea",
+                "resourcePath": "scripts\\generate_uvs\\generate_uvs.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "585460c3-f617-4aca-b45f-893c3752fc47",
             "Value": {
                 "id": "e449f1ca-bb95-4975-8d79-6bec76848f20",
@@ -188,6 +204,14 @@
                 "id": "6d63399a-2929-4161-aef4-bc27d1ebfbdc",
                 "resourcePath": "scripts\\blin_z_pos\\blin_z_pos.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7d5ee961-4d73-4155-a4a2-7f95985a3d20",
+            "Value": {
+                "id": "e89c6ac3-109f-4ed3-9494-518b03eaddeb",
+                "resourcePath": "views\\7d5ee961-4d73-4155-a4a2-7f95985a3d20.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -483,6 +507,7 @@
         "2b931836-9c3c-4798-8d52-f1c02b305715",
         "b5d88402-e4f7-4461-a087-ceffe3a6acc9",
         "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
+        "5809dd90-09fe-4739-99a4-ddda9a2074e8",
         "83f34afe-6dde-40fb-bc31-fe9c7786f980",
         "1419d418-6a37-4162-9348-862d604f12ea",
         "98816416-09cc-4ca0-84b2-be70d2d49b8a",
