@@ -13,7 +13,7 @@ while (_result < 1) {
 print("Generating normal map...");
 height_to_normal(terrain_map, normal_map, normal_strength);
 print("Generating colour map...");
-ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length,c_lime);
+ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length,c_white);
 //height_to_colour(terrain_map, colour_map);
 print("Generating UV map...");
 generate_uvs(uv_map, uv_scale);
