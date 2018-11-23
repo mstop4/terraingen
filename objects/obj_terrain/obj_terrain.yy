@@ -105,6 +105,34 @@
             "varType": 1
         },
         {
+            "id": "840257b9-d41a-49d0-b0d1-32403268890a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "112",
+            "varName": "seed_min",
+            "varType": 0
+        },
+        {
+            "id": "341d7f9b-4541-44e4-b001-83e417218e75",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "142",
+            "varName": "seed_max",
+            "varType": 0
+        },
+        {
             "id": "f1428fb0-91f3-45f8-9888-5a5445f8442c",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -114,7 +142,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "127",
+            "value": "15",
             "varName": "variance",
             "varType": 0
         },
@@ -212,7 +240,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.1",
+            "value": "1",
             "varName": "zscale",
             "varType": 0
         },
@@ -226,7 +254,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.1",
+            "value": "1",
             "varName": "normal_strength",
             "varType": 0
         },
@@ -240,7 +268,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.5",
+            "value": "1",
             "varName": "uv_scale",
             "varType": 0
         },

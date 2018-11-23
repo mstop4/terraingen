@@ -1,7 +1,7 @@
 terrain_done = 0;
 var _start = current_time;
 print("Starting terrain generation...");
-diamondsquare_init(terrain_map, exec_stack, map_side_length, min_value, max_value);
+diamondsquare_init(terrain_map, exec_stack, seed_min, seed_max);
 
 print("Generating height map...");
 var _result = 0;

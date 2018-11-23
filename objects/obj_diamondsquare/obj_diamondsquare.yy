@@ -149,6 +149,34 @@
             "varType": 1
         },
         {
+            "id": "008417e1-139d-4760-b444-b2831963a8ad",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "112",
+            "varName": "seed_min",
+            "varType": 0
+        },
+        {
+            "id": "4ba0d9e0-feb7-4d2c-92ef-d8403a7244ac",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "142",
+            "varName": "seed_max",
+            "varType": 0
+        },
+        {
             "id": "add9bc76-c87c-4a52-a168-83e0811bb6dc",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -158,7 +186,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "127",
+            "value": "15",
             "varName": "variance",
             "varType": 1
         },
@@ -186,7 +214,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.25",
+            "value": "1",
             "varName": "normal_strength",
             "varType": 0
         }

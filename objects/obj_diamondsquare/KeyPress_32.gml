@@ -1,5 +1,5 @@
 if (!running) {
-	diamondsquare_init(terrain_map, exec_stack, map_side_length, min_value, max_value);
+	diamondsquare_init(terrain_map, exec_stack, seed_min, seed_max);
 	ds_grid_set_region(normal_map, 0, 0, map_side_length, map_side_length, -1);
 
 	var _result = 0;
