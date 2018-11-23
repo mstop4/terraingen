@@ -346,7 +346,7 @@
             "Key": "c8da1350-66cc-4e56-97b8-c6d9d500a67a",
             "Value": {
                 "id": "4ee097ba-bd9f-43d0-9f9a-b086c8e405fb",
-                "resourcePath": "objects\\obj_3d_test\\obj_3d_test.yy",
+                "resourcePath": "objects\\obj_plane\\obj_plane.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -2,7 +2,7 @@
     "id": "c8da1350-66cc-4e56-97b8-c6d9d500a67a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_3d_test",
+    "name": "obj_plane",
     "eventList": [
         {
             "id": "aafc6de7-3db7-446f-b9a9-f3905b7a89d8",
