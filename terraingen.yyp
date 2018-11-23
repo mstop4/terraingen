@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "c6a329dd-4e5b-4842-a19e-b59717ccce14",
+            "Value": {
+                "id": "a4fc4169-93ce-40a6-9afc-efda41da9bc0",
+                "resourcePath": "scripts\\use_camera\\use_camera.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c8870bef-c699-436d-890e-d70aceb1636f",
             "Value": {
                 "id": "73554b91-0540-4036-b837-06525c20945f",
@@ -520,7 +528,8 @@
         "1419d418-6a37-4162-9348-862d604f12ea",
         "98816416-09cc-4ca0-84b2-be70d2d49b8a",
         "7ab533c3-64d8-487a-8519-8259a8278173",
-        "3aeca724-3814-4ad4-88f8-fc8577e4b17a"
+        "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
+        "c6a329dd-4e5b-4842-a19e-b59717ccce14"
     ],
     "tutorial": ""
 }
