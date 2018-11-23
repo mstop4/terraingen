@@ -1,4 +1,4 @@
-altitude = 270;
+altitude = 225;
 
 draw_set_lighting(true);
 draw_light_define_ambient($202020);
