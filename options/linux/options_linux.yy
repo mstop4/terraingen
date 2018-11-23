@@ -5,7 +5,7 @@
     "name": "Linux",
     "option_linux_allow_fullscreen": false,
     "option_linux_display_cursor": true,
-    "option_linux_display_name": "Made in GameMaker Studio 2",
+    "option_linux_display_name": "Terrain Gen",
     "option_linux_display_splash": false,
     "option_linux_enable_steam": false,
     "option_linux_homepage": "http:\/\/www.yoyogames.com",
@@ -18,12 +18,12 @@
     "option_linux_short_desc": "",
     "option_linux_splash_screen": "${base_options_dir}\/linux\/splash\/splash.png",
     "option_linux_start_fullscreen": false,
-    "option_linux_sync": false,
+    "option_linux_sync": true,
     "option_linux_texture_page": "2048x2048",
     "option_linux_version": {
         "build": 0,
-        "major": 1,
-        "minor": 0,
+        "major": 0,
+        "minor": 3,
         "revision": 0
     }
 }
