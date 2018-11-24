@@ -1,7 +1,8 @@
 if (owner) {
-	x = owner.x * obj_terrain.xscale + obj_terrain.x;
-	y = owner.y * obj_terrain.yscale + obj_terrain.y;
-	z = blin_z_pos(obj_terrain.terrain_map, owner.x, owner.y) * obj_terrain.zscale + owner.height;
+	var _real_xyz = convert_to_terrain_space(owner.x, owner.y, owner.z, obj_terrain);
+	x = _real_xyz[0];
+	y = _real_xyz[1];
+	z = _real_xyz[2] + owner.height;
 	direction = owner.direction;
 	pitch = owner.pitch;
 }

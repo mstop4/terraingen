@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "b34490cd-6fdf-43e9-a2d7-4f8a8e7fcc67",
+            "Value": {
+                "id": "2d2611b0-c0ec-4ce6-b285-cc4be5e0bfe2",
+                "resourcePath": "scripts\\convert_to_terrain_space\\convert_to_terrain_space.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b5d88402-e4f7-4461-a087-ceffe3a6acc9",
             "Value": {
                 "id": "ade07e5d-00a3-403d-8f86-003892ebf261",
@@ -537,6 +545,7 @@
         "1419d418-6a37-4162-9348-862d604f12ea",
         "98816416-09cc-4ca0-84b2-be70d2d49b8a",
         "7ab533c3-64d8-487a-8519-8259a8278173",
+        "b34490cd-6fdf-43e9-a2d7-4f8a8e7fcc67",
         "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
         "c6a329dd-4e5b-4842-a19e-b59717ccce14"
     ],

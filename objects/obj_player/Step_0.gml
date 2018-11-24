@@ -1,6 +1,6 @@
 if (window_has_focus() && !obj_MCP.paused) {
 	direction = wrap(direction - (window_get_width() / 2 - window_mouse_get_x()) * obj_MCP.mouse_sens_hor, 0, 360);
-	pitch = clamp(pitch - (window_get_height() / 2 - window_mouse_get_y()) * obj_MCP.mouse_sens_ver,-45,45);
+	pitch = clamp(pitch - (window_get_height() / 2 - window_mouse_get_y()) * obj_MCP.mouse_sens_ver,-90,90);
 }
 
 var _v_input = obj_input.button_held[action.down] - obj_input.button_held[action.up];
@@ -13,4 +13,5 @@ if (_v_input != 0 || _h_input != 0) {
 
 	x = clamp(x + _spd_x, 0, obj_terrain.map_side_length-1);
 	y = clamp(y + _spd_y, 0, obj_terrain.map_side_length-1);
+	z = blin_z_pos(x, y, obj_terrain.terrain_map);
 }

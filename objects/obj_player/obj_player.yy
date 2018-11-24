@@ -69,6 +69,20 @@
             "value": "0.5",
             "varName": "height",
             "varType": 0
+        },
+        {
+            "id": "ca5807fc-d2ca-42b4-a117-596e4a0cb541",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "z",
+            "varType": 0
         }
     ],
     "solid": false,
