@@ -143,11 +143,27 @@
             }
         },
         {
+            "Key": "4d4d370b-c602-4d78-a210-a9c73905635c",
+            "Value": {
+                "id": "c24064ba-7c92-4163-b84f-56eb81049559",
+                "resourcePath": "scripts\\obj_to_model\\obj_to_model.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4fcb611a-0277-47e1-8616-609d34e9bfc9",
             "Value": {
                 "id": "ec7b70fd-18d8-4f8f-829d-19e10cac4d33",
                 "resourcePath": "objects\\obj_diamondsquare\\obj_diamondsquare.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "54466758-41cf-4d02-9c5e-1791a54eb403",
+            "Value": {
+                "id": "b73e6129-f1d5-4092-95b4-bd284c1e5b35",
+                "resourcePath": "scripts\\tokenize_string\\tokenize_string.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -300,6 +316,14 @@
                 "id": "e876836b-f61a-4829-b5d8-b0db005c2471",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "ae1bc781-6016-459d-9739-75d67d514117",
+            "Value": {
+                "id": "90ff6283-e57a-46b5-bd4b-7455a398043e",
+                "resourcePath": "datafiles_yy\\plane.obj.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -547,7 +571,9 @@
         "7ab533c3-64d8-487a-8519-8259a8278173",
         "b34490cd-6fdf-43e9-a2d7-4f8a8e7fcc67",
         "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
-        "c6a329dd-4e5b-4842-a19e-b59717ccce14"
+        "c6a329dd-4e5b-4842-a19e-b59717ccce14",
+        "4d4d370b-c602-4d78-a210-a9c73905635c",
+        "54466758-41cf-4d02-9c5e-1791a54eb403"
     ],
     "tutorial": ""
 }

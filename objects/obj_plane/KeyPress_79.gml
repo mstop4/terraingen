@@ -1,0 +1,1 @@
+obj_to_model("plane.obj");
