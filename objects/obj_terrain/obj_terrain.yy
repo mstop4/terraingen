@@ -114,8 +114,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "112",
-            "varName": "seed_min",
+            "value": "127",
+            "varName": "seed_start",
             "varType": 0
         },
         {
@@ -128,8 +128,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "142",
-            "varName": "seed_max",
+            "value": "5",
+            "varName": "seed_range",
             "varType": 0
         },
         {
@@ -142,7 +142,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "15",
+            "value": "2",
             "varName": "variance",
             "varType": 0
         },

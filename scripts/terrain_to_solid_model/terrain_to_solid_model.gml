@@ -25,24 +25,24 @@ for (var j=0; j<_w-1; j++) {
 			_cur_n = _normal_grid[# i, j];
 			_cur_uv = _uv_grid[# i, j];
 			
-			vertex_position_3d(_vert_buf, i, j, _height_grid[# i, j]);
-			vertex_normal(_vert_buf, _cur_n[0], _cur_n[1], _cur_n[2]);
-			vertex_color(_vert_buf, _colour_grid[# i, j], 1);
-			vertex_texcoord(_vert_buf,_cur_uv[0],_cur_uv[1]);
+			add_vertex(_vert_buf, i, j, _height_grid[# i, j], 
+								 _cur_n[0], _cur_n[1], _cur_n[2],
+								 _colour_grid[# i, j], 1,
+								 _cur_uv[0],_cur_uv[1]);
 			
 			_cur_n = _normal_grid[# i, j+1];
 			_cur_uv = _uv_grid[# i, j+1];
 			
-			vertex_position_3d(_vert_buf, i, j+1, _height_grid[# i, j+1]);
-			vertex_normal(_vert_buf, _cur_n[0], _cur_n[1], _cur_n[2]);
-			vertex_color(_vert_buf, _colour_grid[# i, j+1], 1);
-			vertex_texcoord(_vert_buf,_cur_uv[0],_cur_uv[1]);
+			add_vertex(_vert_buf, i, j+1, _height_grid[# i, j+1], 
+								 _cur_n[0], _cur_n[1], _cur_n[2],
+								 _colour_grid[# i, j+1], 1,
+								 _cur_uv[0],_cur_uv[1]);
 			
 			if (i == _w-1) {
-				vertex_position_3d(_vert_buf, i, j+1, _height_grid[# i, j+1]);
-				vertex_normal(_vert_buf, _cur_n[0], _cur_n[1], _cur_n[2]);
-				vertex_color(_vert_buf, _colour_grid[# i, j+1], 1);
-				vertex_texcoord(_vert_buf,0,0);
+				add_vertex(_vert_buf, i, j+1, _height_grid[# i, j+1], 
+									 _cur_n[0], _cur_n[1], _cur_n[2],
+									 _colour_grid[# i, j+1], 1,
+									 _cur_uv[0],_cur_uv[1]);
 			}
 		}
 		
@@ -51,28 +51,27 @@ for (var j=0; j<_w-1; j++) {
 	
 	else {
 		for (var i=_w-1; i>=0; i--) {
-			
 			_cur_n = _normal_grid[# i, j];
 			_cur_uv = _uv_grid[# i, j];
 			
-			vertex_position_3d(_vert_buf, i, j, _height_grid[# i, j]);
-			vertex_normal(_vert_buf, _cur_n[0], _cur_n[1], _cur_n[2]);
-			vertex_color(_vert_buf, _colour_grid[# i, j], 1);
-			vertex_texcoord(_vert_buf,_cur_uv[0],_cur_uv[1]);
+			add_vertex(_vert_buf, i, j, _height_grid[# i, j], 
+								 _cur_n[0], _cur_n[1], _cur_n[2],
+								 _colour_grid[# i, j], 1,
+								 _cur_uv[0],_cur_uv[1]);
 			
 			_cur_n = _normal_grid[# i, j+1];
 			_cur_uv = _uv_grid[# i, j+1];
 			
-			vertex_position_3d(_vert_buf, i, j+1, _height_grid[# i, j+1]);
-			vertex_normal(_vert_buf, _cur_n[0], _cur_n[1], _cur_n[2]);
-			vertex_color(_vert_buf, _colour_grid[# i, j+1], 1);
-			vertex_texcoord(_vert_buf,_cur_uv[0],_cur_uv[1]);
+			add_vertex(_vert_buf, i, j+1, _height_grid[# i, j+1], 
+								 _cur_n[0], _cur_n[1], _cur_n[2],
+								 _colour_grid[# i, j+1], 1,
+								 _cur_uv[0],_cur_uv[1]);
 			
 			if (i == 0) {
-				vertex_position_3d(_vert_buf, i, j+1, _height_grid[# i, j+1]);
-				vertex_normal(_vert_buf, _cur_n[0], _cur_n[1], _cur_n[2]);
-				vertex_color(_vert_buf, _colour_grid[# i, j+1], 1);
-				vertex_texcoord(_vert_buf,0,0);
+				add_vertex(_vert_buf, i, j+1, _height_grid[# i, j+1], 
+									 _cur_n[0], _cur_n[1], _cur_n[2],
+									 _colour_grid[# i, j+1], 1,
+									 _cur_uv[0],_cur_uv[1]);
 			}
 		}
 		

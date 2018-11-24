@@ -1,7 +1,7 @@
 terrain_done = 0;
 var _start = current_time;
 print("Starting terrain generation...");
-diamondsquare_init(terrain_map, exec_stack, seed_min, seed_max);
+diamondsquare_init(terrain_map, exec_stack, seed_start, seed_range, min_value, max_value);
 
 print("Generating height map...");
 var _result = 0;
@@ -26,5 +26,5 @@ with (obj_camera) {
 	z = blin_z_pos(obj_terrain.terrain_map, other.map_side_length div 2, other.map_side_length div 2);
 }
 
-print("Done! ", (current_time - _start) / 1000, " s");
+print("Done! ", current_time - _start, " ms");
 terrain_done = 1;

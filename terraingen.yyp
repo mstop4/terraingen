@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "749c4049-88aa-427e-bc3b-a608c6444814",
+            "Value": {
+                "id": "e90af1c3-00be-4179-8851-1a45f583299b",
+                "resourcePath": "scripts\\add_vertex\\add_vertex.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "d9204e6e-25f9-4261-8be8-f8d67e109155",
@@ -524,6 +532,7 @@
         "b5d88402-e4f7-4461-a087-ceffe3a6acc9",
         "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
         "5809dd90-09fe-4739-99a4-ddda9a2074e8",
+        "749c4049-88aa-427e-bc3b-a608c6444814",
         "83f34afe-6dde-40fb-bc31-fe9c7786f980",
         "1419d418-6a37-4162-9348-862d604f12ea",
         "98816416-09cc-4ca0-84b2-be70d2d49b8a",
