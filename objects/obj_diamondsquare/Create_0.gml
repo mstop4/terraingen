@@ -7,4 +7,4 @@ normal_surf = surface_create(map_side_length, map_side_length);
 
 running = false;
 time_taken = 0;
-lasT_time = 0;
+last_time = 0;
