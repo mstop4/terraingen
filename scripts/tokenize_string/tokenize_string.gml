@@ -9,10 +9,10 @@ var _tokens = [];
 var _count = 0;
 
 while (string_length(_string) > 0) {
-	var _first_space = string_pos(" ",_string);
+	var _first_occ = string_pos(_delimiter,_string);
 	
 	// No Spaces left
-	if (_first_space == 0) {
+	if (_first_occ == 0) {
 		_tokens[_count] = _string;
 		_string = "";
 	}
@@ -20,12 +20,12 @@ while (string_length(_string) > 0) {
 	// Still spaces left
 	else {
 		// No leading spaces
-		if (_first_space > 1) {
-			_tokens[_count] = string_copy(_string,1,_first_space-1);
+		if (_first_occ > 1) {
+			_tokens[_count] = string_copy(_string,1,_first_occ-1);
 			_count++;
 		}
 		
-		_string = string_copy(_string,_first_space+1, string_length(_string)-_first_space);
+		_string = string_delete(_string,1,_first_occ);
 	}
 }
 

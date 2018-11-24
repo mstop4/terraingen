@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1e43b91a-68d3-469c-b4e4-ac01cfe7ea1d",
+            "Value": {
+                "id": "433af54f-5218-4a0a-8583-046a87332f0a",
+                "resourcePath": "datafiles_yy\\CHAHIN_NOTEBOOK.obj.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "2ae31e26-081a-476f-b996-f50b652bf7b5",
             "Value": {
                 "id": "a41eb02a-e3d9-4ce1-bbb0-ba4ef2770166",
