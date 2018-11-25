@@ -63,6 +63,20 @@
     "physicsStartAwake": true,
     "properties": [
         {
+            "id": "1093ef14-76b1-4799-b727-ba0127726427",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "map_size",
+            "varType": 1
+        },
+        {
             "id": "edacf6fd-abcb-4a8b-bb67-4792d0f3fb79",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -73,7 +87,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "4",
-            "varName": "map_size",
+            "varName": "chunk_size",
             "varType": 1
         },
         {

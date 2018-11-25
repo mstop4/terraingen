@@ -551,6 +551,14 @@
             }
         },
         {
+            "Key": "f4cb6129-daf1-4370-b9fd-ec8228dcc509",
+            "Value": {
+                "id": "087f9505-3658-481c-be12-f1315dc27611",
+                "resourcePath": "scripts\\diamondsqaure_init_chunk\\diamondsqaure_init_chunk.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fba9533b-2cab-4586-b00b-791a329a7e66",
             "Value": {
                 "id": "048f988d-e67a-48ff-bb6c-558fc87a8be2",
@@ -564,6 +572,7 @@
         "cb760d19-7556-40f4-8278-6fbbbc5c85e2",
         "bc62e24f-cfad-4300-95f7-380d027dea05",
         "78c333d7-8c10-4772-bb53-322181f7be68",
+        "f4cb6129-daf1-4370-b9fd-ec8228dcc509",
         "0832a80c-8d27-4592-808f-e76c007cfcdf",
         "3b3f4df3-383b-4fc9-8b0b-5f7dc6c15af9",
         "10b513fd-a6a5-4487-b2af-9a9f505f1013",

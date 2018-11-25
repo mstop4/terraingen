@@ -1,7 +1,12 @@
 terrain_done = 0;
 var _start = current_time;
 print("Starting terrain generation...");
-diamondsquare_init(terrain_map, exec_stack, seed_start, seed_range, min_value, max_value);
+
+for (var i=0; i<map_size; i++) {
+	for (var j=0; j<map_size; j++) {
+
+
+
 
 print("Generating height map...");
 var _result = 0;
@@ -13,7 +18,7 @@ while (_result < 1) {
 print("Generating normal map...");
 height_to_normal(terrain_map, normal_map, normal_strength);
 print("Generating colour map...");
-ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length,c_lime);
+ds_grid_set_region(colour_map,0,0,chunk_side_length,chunk_side_length,c_lime);
 //height_to_colour(terrain_map, colour_map);
 print("Generating UV map...");
 generate_uvs(uv_map, uv_scale);
@@ -22,7 +27,7 @@ print("Creating Model...");
 vertex_delete_buffer(terrain_model);
 terrain_model = terrain_to_solid_model(terrain_map, normal_map, colour_map, uv_map);
 
-var _center = other.map_side_length div 2;
+var _center = other.chunk_side_length div 2;
 
 with (obj_player) {
 	x = _center;

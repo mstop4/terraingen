@@ -82,6 +82,6 @@ for (var j=0; j<_w-1; j++) {
 vertex_end(_vert_buf);
 vertex_freeze(_vert_buf);
 
-print (vertex_get_buffer_size(_vert_buf), " - ", vertex_get_number(_vert_buf));
+print(vertex_get_buffer_size(_vert_buf), " - ", vertex_get_number(_vert_buf));
 
 return _vert_buf;
