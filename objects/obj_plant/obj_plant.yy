@@ -83,6 +83,20 @@
     "physicsStartAwake": true,
     "properties": [
         {
+            "id": "9bcaca71-a4bd-4b76-8e52-5cd665529dc5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "6",
+            "varName": "rings",
+            "varType": 0
+        },
+        {
             "id": "e9e7cfd4-116a-4854-a182-544c42321814",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -108,6 +122,34 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "growth",
+            "varType": 0
+        },
+        {
+            "id": "b9b851e1-e1f8-48ee-9b5c-9e4ff80db813",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.05",
+            "varName": "radius",
+            "varType": 0
+        },
+        {
+            "id": "dd000d64-aef7-402e-bcfd-e1a183e685ea",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.2",
+            "varName": "length",
             "varType": 0
         }
     ],

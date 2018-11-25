@@ -6,20 +6,20 @@ var _rings = argument[1];
 var _sections = argument[2];
 var _colour = argument[3];
 
-r_step = pi / _rings;
-s_step = 2 * pi / _sections;
+var _r_step = pi / _rings;
+var _s_step = 2 * pi / _sections;
 var _cur_v, _next_v;
 
 vertex_begin(_model,global.vert_w_light);
 
-for (var i=0; i<_rings-1; i++) {
-	var _cur_r = sin(i * r_step) * _radius;
-	var _next_r = sin((i+1) * r_step) * _radius;
-	_cur_v[2] = cos(i * r_step) * _radius;
-	_next_v[2] = cos((i+1) * r_step) * _radius;
+for (var i=0; i<_rings; i++) {
+	var _cur_r = sin(i * _r_step) * _radius;
+	var _next_r = sin((i+1) * _r_step) * _radius;
+	_cur_v[2] = cos(i * _r_step) * _radius;
+	_next_v[2] = cos((i+1) * _r_step) * _radius;
 	
-	for (var j=0; j<=_sections; j++) {
-		var _j_step = j * s_step;
+	for (var j=_sections; j>=0; j--) {
+		var _j_step = j * _s_step;
 		
 		_cur_v[0] = cos(_j_step) * _cur_r;
 		_cur_v[1] = sin(_j_step) * _cur_r;

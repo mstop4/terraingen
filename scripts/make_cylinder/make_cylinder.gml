@@ -14,17 +14,17 @@ vertex_begin(_model, global.vert_w_light);
 
 // Bottom cap
 
-for (var i=_sections; i>=0; i--) {
+for (var i=0; i<=_sections; i++) {
 
 	_v = [cos(_section_size * i), 
 			  sin(_section_size * i)];
 			  
-	_vn = normalize_3d(_v[0], _v[1], -1);
+	_vn = normalize_3d(_v[0], _v[1], 0);
 			  
-	_v2 = [cos(_section_size * (i-1)), 
-			  sin(_section_size * (i-1))];
+	_v2 = [cos(_section_size * (i+1)), 
+			  sin(_section_size * (i+1))];
 			  
-	_vn2 = normalize_3d(_v2[0], _v2[1], -1);
+	_vn2 = normalize_3d(_v2[0], _v2[1], 0);
 
 	add_vertex(_model, _v[0] * _radius, _v[1] * _radius, 0,
 					   _vn[0], _vn[1], _vn[2],
@@ -45,13 +45,13 @@ add_vertex(_model, _v2[0] * _radius, _v2[1] * _radius, 0,
 
 // sides
 
-for (var i=_sections; i>=0; i--) {
+for (var i=0; i<=_sections; i++) {
 
 	_v = [cos(_section_size * i), 
 			  sin(_section_size * i)];
 			  
-	_vn = normalize_3d(_v[0], _v[1], -1);
-	_vn2 = normalize_3d(_v[0], _v[1], 1);
+	_vn = normalize_3d(_v[0], _v[1], 0);
+	_vn2 = normalize_3d(_v[0], _v[1], 0);
 
 	add_vertex(_model, _v[0] * _radius, _v[1] * _radius, 0,
 					   _vn[0], _vn[1], _vn[2],
@@ -64,17 +64,17 @@ for (var i=_sections; i>=0; i--) {
 
 // Top cap
 
-for (var i=_sections; i>=0; i--) {
+for (var i=0; i<=_sections; i++) {
 
 	_v = [cos(_section_size * i), 
 			  sin(_section_size * i)];
 			  
-	_vn = normalize_3d(_v[0], _v[1], 1);
+	_vn = normalize_3d(_v[0], _v[1], 0);
 			  
-	_v2 = [cos(_section_size * (i-1)), 
-			  sin(_section_size * (i-1))];
+	_v2 = [cos(_section_size * (i+1)), 
+			  sin(_section_size * (i+1))];
 			  
-	_vn2 = normalize_3d(_v2[0], _v2[1], 1);
+	_vn2 = normalize_3d(_v2[0], _v2[1], 0);
 
 	add_vertex(_model, _v[0] * _radius, _v[1] * _radius, _length,
 					   _vn[0], _vn[1], _vn[2],
