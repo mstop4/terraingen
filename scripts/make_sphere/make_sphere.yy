@@ -1,8 +1,8 @@
 {
-    "id": "aaeb18a9-80b5-461e-871e-c16e5d839407",
+    "id": "0077e1ca-fb31-4dd7-989e-f971660a5de2",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "generate_cylinder",
+    "name": "make_sphere",
     "IsCompatibility": false,
     "IsDnD": false
 }

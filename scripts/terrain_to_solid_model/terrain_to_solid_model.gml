@@ -11,7 +11,7 @@ var _uv_grid = argument[3];
 
 var _w = ds_grid_width(_height_grid);
 
-var _dir = 1;
+var _dir = -1;
 
 var _count = 0;
 var _cur_n, _cur_v, _cur_uv;

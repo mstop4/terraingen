@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0077e1ca-fb31-4dd7-989e-f971660a5de2",
+            "Value": {
+                "id": "bf2a7fcc-3007-44b0-8343-83d9d9e8b9ea",
+                "resourcePath": "scripts\\make_sphere\\make_sphere.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0832a80c-8d27-4592-808f-e76c007cfcdf",
             "Value": {
                 "id": "a67bfad4-1d1b-49c2-8bb5-99e4f0d63a98",
@@ -231,14 +239,6 @@
             }
         },
         {
-            "Key": "6ebc96c5-59cd-41ff-9f8e-61ff15b636c3",
-            "Value": {
-                "id": "54835874-7508-4544-9c68-ac8541720f46",
-                "resourcePath": "scripts\\generate_stem\\generate_stem.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "709856c1-b798-446e-86fd-8f1f38614338",
             "Value": {
                 "id": "f396bdef-a889-46b8-a997-07d115a60fd7",
@@ -386,7 +386,7 @@
             "Key": "aaeb18a9-80b5-461e-871e-c16e5d839407",
             "Value": {
                 "id": "1f746e46-5a50-4327-b450-95be1db743d3",
-                "resourcePath": "scripts\\generate_cylinder\\generate_cylinder.yy",
+                "resourcePath": "scripts\\make_cylinder\\make_cylinder.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -656,7 +656,7 @@
         "749c4049-88aa-427e-bc3b-a608c6444814",
         "4d4d370b-c602-4d78-a210-a9c73905635c",
         "a253cf06-fb20-4f51-8ec7-5171d7004474",
-        "6ebc96c5-59cd-41ff-9f8e-61ff15b636c3",
+        "0077e1ca-fb31-4dd7-989e-f971660a5de2",
         "aaeb18a9-80b5-461e-871e-c16e5d839407"
     ],
     "tutorial": ""

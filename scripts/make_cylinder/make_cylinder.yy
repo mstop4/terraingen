@@ -1,8 +1,8 @@
 {
-    "id": "6ebc96c5-59cd-41ff-9f8e-61ff15b636c3",
+    "id": "aaeb18a9-80b5-461e-871e-c16e5d839407",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "generate_stem",
+    "name": "make_cylinder",
     "IsCompatibility": false,
     "IsDnD": false
 }
