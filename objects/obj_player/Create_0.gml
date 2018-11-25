@@ -4,3 +4,5 @@ my_cam.owner = id;
 use_camera(my_cam);
 
 pitch = 0;
+
+event_user(0);

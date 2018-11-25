@@ -22,22 +22,12 @@ print("Creating Model...");
 vertex_delete_buffer(terrain_model);
 terrain_model = terrain_to_solid_model(terrain_map, normal_map, colour_map, uv_map);
 
-var _center = other.map_side_length div 2;
+var _center = other.map_side_length / 2;
 
-with (obj_player) {
+with (cls_gravObj) {
 	x = _center;
 	y = _center;
-	z = blin_z_pos(_center, _center, obj_terrain.terrain_map);
-}
-
-with (obj_plane) {
-	x = _center;
-	y = _center;
-	z = blin_z_pos(_center, _center, obj_terrain.terrain_map);
-	var _xyz = convert_to_terrain_space(_center, _center, z, obj_terrain);
-	real_x = _xyz[0];
-	real_y = _xyz[1];
-	z = _xyz[2] + 1;
+	event_user(0);
 }
 
 print("Done! ", current_time - _start, " ms");

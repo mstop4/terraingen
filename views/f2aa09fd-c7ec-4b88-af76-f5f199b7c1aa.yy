@@ -9,8 +9,7 @@
         "2b931836-9c3c-4798-8d52-f1c02b305715",
         "b5d88402-e4f7-4461-a087-ceffe3a6acc9",
         "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
-        "5809dd90-09fe-4739-99a4-ddda9a2074e8",
-        "749c4049-88aa-427e-bc3b-a608c6444814"
+        "5809dd90-09fe-4739-99a4-ddda9a2074e8"
     ],
     "filterType": "GMScript",
     "folderName": "Map Conversion",

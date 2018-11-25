@@ -12,3 +12,8 @@ enum action {
 	
 	max_actions
 }
+
+enum vec_op {
+	add,
+	subtract
+}

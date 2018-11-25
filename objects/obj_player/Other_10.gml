@@ -1,0 +1,1 @@
+z = blin_z_pos(x, y, obj_terrain.terrain_map);
