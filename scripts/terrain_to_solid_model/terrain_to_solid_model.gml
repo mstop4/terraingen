@@ -15,37 +15,33 @@ var _dir = 1;
 
 var _count = 0;
 var _cur_n, _cur_v, _cur_uv;
-var _alpha;
 
 var _vert_buf = vertex_create_buffer();
 vertex_begin(_vert_buf,global.vert_w_light);
 
 for (var j=0; j<_w-1; j++) {
-	
 	if (_dir == 1) {
 		for (var i=0; i<_w; i++) {
 			_cur_n = _normal_grid[# i, j];
 			_cur_uv = _uv_grid[# i, j];
-			_alpha = i == 0 || i == _w-1 || j == 0 ? 0 : 1;
 			
 			add_vertex(_vert_buf, i, j, _height_grid[# i, j], 
 								 _cur_n[0], _cur_n[1], _cur_n[2],
-								 _colour_grid[# i, j], _alpha,
+								 _colour_grid[# i, j], 1,
 								 _cur_uv[0],_cur_uv[1]);
 			
 			_cur_n = _normal_grid[# i, j+1];
 			_cur_uv = _uv_grid[# i, j+1];
-			_alpha = i == 0 || i == _w-1 || j+1 == _w-1 ? 0 : 1;
 			
 			add_vertex(_vert_buf, i, j+1, _height_grid[# i, j+1], 
 								 _cur_n[0], _cur_n[1], _cur_n[2],
-								 _colour_grid[# i, j+1], _alpha,
+								 _colour_grid[# i, j+1], 1,
 								 _cur_uv[0],_cur_uv[1]);
 			
 			if (i == _w-1) {
 				add_vertex(_vert_buf, i, j+1, _height_grid[# i, j+1], 
 									 _cur_n[0], _cur_n[1], _cur_n[2],
-									 _colour_grid[# i, j+1], 0,
+									 _colour_grid[# i, j+1], 1,
 									 _cur_uv[0],_cur_uv[1]);
 			}
 		}
@@ -57,26 +53,24 @@ for (var j=0; j<_w-1; j++) {
 		for (var i=_w-1; i>=0; i--) {
 			_cur_n = _normal_grid[# i, j];
 			_cur_uv = _uv_grid[# i, j];
-			_alpha = i == 0 || i == _w-1 || j == 0 ? 0 : 1;
 			
 			add_vertex(_vert_buf, i, j, _height_grid[# i, j], 
 								 _cur_n[0], _cur_n[1], _cur_n[2],
-								 _colour_grid[# i, j], _alpha,
+								 _colour_grid[# i, j], 1,
 								 _cur_uv[0],_cur_uv[1]);
 			
 			_cur_n = _normal_grid[# i, j+1];
 			_cur_uv = _uv_grid[# i, j+1];
-			_alpha = i == 0 || i == _w-1 || j+1 == _w-1 ? 0 : 1;
 			
 			add_vertex(_vert_buf, i, j+1, _height_grid[# i, j+1], 
 								 _cur_n[0], _cur_n[1], _cur_n[2],
-								 _colour_grid[# i, j+1], _alpha,
+								 _colour_grid[# i, j+1], 1,
 								 _cur_uv[0],_cur_uv[1]);
 			
 			if (i == 0) {
 				add_vertex(_vert_buf, i, j+1, _height_grid[# i, j+1], 
 									 _cur_n[0], _cur_n[1], _cur_n[2],
-									 _colour_grid[# i, j+1], 0,
+									 _colour_grid[# i, j+1], 1,
 									 _cur_uv[0],_cur_uv[1]);
 			}
 		}
