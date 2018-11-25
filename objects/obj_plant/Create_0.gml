@@ -12,4 +12,7 @@ for (var i=0; i<sections; i++) {
 	cap_poly[# 2, _ii] = 0;
 }
 
+cap_normal = [0, 0, 1];
+end_normal = [0, 0, 1];
+
 event_user(0);

@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "709856c1-b798-446e-86fd-8f1f38614338",
+            "Value": {
+                "id": "f396bdef-a889-46b8-a997-07d115a60fd7",
+                "resourcePath": "scripts\\normalize_3d\\normalize_3d.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7170434f-178e-49fe-8986-5728ed7991e5",
             "Value": {
                 "id": "314e0f79-52ff-4019-8a7d-b9e91dd8b9bd",
@@ -378,7 +386,7 @@
             "Key": "aaeb18a9-80b5-461e-871e-c16e5d839407",
             "Value": {
                 "id": "1f746e46-5a50-4327-b450-95be1db743d3",
-                "resourcePath": "scripts\\generate_stem_simple\\generate_stem_simple.yy",
+                "resourcePath": "scripts\\generate_cylinder\\generate_cylinder.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -638,6 +646,7 @@
         "98816416-09cc-4ca0-84b2-be70d2d49b8a",
         "7ab533c3-64d8-487a-8519-8259a8278173",
         "b34490cd-6fdf-43e9-a2d7-4f8a8e7fcc67",
+        "709856c1-b798-446e-86fd-8f1f38614338",
         "bc62e24f-cfad-4300-95f7-380d027dea05",
         "c6a329dd-4e5b-4842-a19e-b59717ccce14",
         "dde622c4-d77c-4564-b6a9-ceaa1c86e647",
