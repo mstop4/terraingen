@@ -25,8 +25,6 @@ terrain_model = terrain_to_solid_model(terrain_map, normal_map, colour_map, uv_m
 var _center = other.map_side_length / 2;
 
 with (cls_gravObj) {
-	x = _center;
-	y = _center;
 	event_user(0);
 }
 
