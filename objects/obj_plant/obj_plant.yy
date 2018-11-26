@@ -134,7 +134,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.05",
+            "value": "0.02",
             "varName": "radius",
             "varType": 0
         },
@@ -150,6 +150,20 @@
             "resourceFilter": 1023,
             "value": "0.2",
             "varName": "length",
+            "varType": 0
+        },
+        {
+            "id": "b76e2f37-ad77-40e3-96ec-8ceee3eb1999",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "stem_sections",
             "varType": 0
         }
     ],
