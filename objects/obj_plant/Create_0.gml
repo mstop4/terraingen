@@ -18,7 +18,6 @@ for (var i=0; i<=stem_sections; i++) {
 	}
 }
 
-
 is_growing = false;
 
 event_user(0);
