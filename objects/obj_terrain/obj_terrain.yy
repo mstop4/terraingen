@@ -72,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "8",
             "varName": "map_size",
             "varType": 1
         },
@@ -142,7 +142,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "32",
             "varName": "variance",
             "varType": 0
         },

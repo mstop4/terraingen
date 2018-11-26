@@ -1,6 +1,7 @@
 /// @func vector_math(v1, v2, op)
 /// @arg v1
 /// @arg v2
+/// @arg op
 
 var _v1 = argument[0];
 var _v2 = argument[1];
@@ -15,7 +16,7 @@ switch (_op) {
 		var _vf = array_create(_vlen);
 
 		for (var i=0; i<_vlen; i++) {
-			_vf [i] = _v1[i] + _v2[i];
+			_vf[i] = _v1[i] + _v2[i];
 		}
 
 		return _vf;
@@ -28,7 +29,7 @@ switch (_op) {
 		var _vf = array_create(_vlen);
 
 		for (var i=0; i<_vlen; i++) {
-			_vf [i] = _v1[i] - _v2[i];
+			_vf[i] = _v1[i] - _v2[i];
 		}
 
 		return _vf;

@@ -1,8 +1,8 @@
 {
-    "id": "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
+    "id": "160a2d49-c6c0-4046-b75f-e5583e9ff6ab",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "terrain_to_solid_model",
+    "name": "terrain_to_flat_model",
     "IsCompatibility": false,
     "IsDnD": false
 }

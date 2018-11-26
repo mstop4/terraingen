@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "092e6872-1ad2-47a5-b76e-b299f37730d0",
+            "Value": {
+                "id": "dcbaad0f-3ff1-488b-8968-1204ad61430d",
+                "resourcePath": "objects\\obj_terrain_flat\\obj_terrain_flat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "10b513fd-a6a5-4487-b2af-9a9f505f1013",
             "Value": {
                 "id": "f26b6e20-d0e1-4428-b2df-3fee50cf2f86",
@@ -79,6 +87,14 @@
             }
         },
         {
+            "Key": "160a2d49-c6c0-4046-b75f-e5583e9ff6ab",
+            "Value": {
+                "id": "966a1a03-6a5d-4539-9176-685db7e0c842",
+                "resourcePath": "scripts\\terrain_to_flat_model\\terrain_to_flat_model.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "16c93256-e011-4f4b-b2a9-409c7d008870",
             "Value": {
                 "id": "4f9b9c6d-cdee-4e50-a4d6-7ca202e45f45",
@@ -92,6 +108,14 @@
                 "id": "433af54f-5218-4a0a-8583-046a87332f0a",
                 "resourcePath": "datafiles_yy\\CHAHIN_NOTEBOOK.obj.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "2a18cc82-69da-43ec-b72a-90e79a078a4e",
+            "Value": {
+                "id": "5de517d6-654c-43a1-9191-56aa95628d9d",
+                "resourcePath": "views\\2a18cc82-69da-43ec-b72a-90e79a078a4e.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -506,7 +530,7 @@
             "Key": "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
             "Value": {
                 "id": "e2c4a10e-ccce-4297-b92a-be0109ca348f",
-                "resourcePath": "scripts\\terrain_to_solid_model\\terrain_to_solid_model.yy",
+                "resourcePath": "scripts\\terrain_to_smooth_model\\terrain_to_smooth_model.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -639,8 +663,9 @@
         "fba9533b-2cab-4586-b00b-791a329a7e66",
         "2b931836-9c3c-4798-8d52-f1c02b305715",
         "b5d88402-e4f7-4461-a087-ceffe3a6acc9",
-        "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
         "5809dd90-09fe-4739-99a4-ddda9a2074e8",
+        "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
+        "160a2d49-c6c0-4046-b75f-e5583e9ff6ab",
         "83f34afe-6dde-40fb-bc31-fe9c7786f980",
         "1419d418-6a37-4162-9348-862d604f12ea",
         "98816416-09cc-4ca0-84b2-be70d2d49b8a",
@@ -653,9 +678,9 @@
         "cb760d19-7556-40f4-8278-6fbbbc5c85e2",
         "54466758-41cf-4d02-9c5e-1791a54eb403",
         "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
+        "a253cf06-fb20-4f51-8ec7-5171d7004474",
         "749c4049-88aa-427e-bc3b-a608c6444814",
         "4d4d370b-c602-4d78-a210-a9c73905635c",
-        "a253cf06-fb20-4f51-8ec7-5171d7004474",
         "0077e1ca-fb31-4dd7-989e-f971660a5de2",
         "aaeb18a9-80b5-461e-871e-c16e5d839407"
     ],
