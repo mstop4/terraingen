@@ -92,7 +92,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "16",
+            "value": "8",
             "varName": "rings",
             "varType": 0
         },
@@ -106,7 +106,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "16",
+            "value": "8",
             "varName": "sections",
             "varType": 1
         },
