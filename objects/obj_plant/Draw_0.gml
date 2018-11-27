@@ -20,14 +20,14 @@ for (var i=0; i<growth; i++) {
 	_mat = matrix_multiply(_mat, _t_mat);
 						
 	matrix_set(matrix_world,_mat);
-	vertex_submit(stem_model,pr_trianglestrip,-1);
+	vertex_submit(stem_model,pr_trianglelist,-1);
 
 	if (growth > i+1) {
 		_mat = matrix_build(real_x + sec_trans[i+1,0], real_y + sec_trans[i+1,1], real_z + sec_trans[i+1,2],
 						    0, 0, 0,
 							1,1,1);
 		matrix_set(matrix_world,_mat);
-		vertex_submit(joint_model,pr_trianglestrip,-1);
+		vertex_submit(joint_model,pr_trianglelist,-1);
 	}
 }
 

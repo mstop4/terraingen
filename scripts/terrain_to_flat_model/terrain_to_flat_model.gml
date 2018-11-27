@@ -29,7 +29,7 @@ for (var j=0; j<_w-1; j++) {
 		_vec_cn1 = vector_math([i+1, j, _neigh_v1], [i, j, _cur_v], vec_op.subtract);
 		_vec_cn2 = vector_math([i, j+1, _neigh_v2], [i, j, _cur_v], vec_op.subtract);
 			
-		_cur_n = cross_product_normalized(_vec_cn1[0], _vec_cn1[1], _vec_cn1[2], _vec_cn2[0], _vec_cn2[1], _vec_cn2[2]);
+		_cur_n = cross_product_normalized(_vec_cn1, _vec_cn2);
 		_cur_uv = _uv_grid[# i, j];
 			
 		add_vertex(_vert_buf, i, j, _cur_v, 
@@ -59,7 +59,7 @@ for (var j=0; j<_w-1; j++) {
 		_vec_cn1 = vector_math([i+1, j, _neigh_v1], [i+1, j+1, _cur_v], vec_op.subtract);
 		_vec_cn2 = vector_math([i, j+1, _neigh_v2], [i+1, j+1, _cur_v], vec_op.subtract);
 			
-		_cur_n = cross_product_normalized(_vec_cn2[0], _vec_cn2[1], _vec_cn2[2], _vec_cn1[0], _vec_cn1[1], _vec_cn1[2]);
+		_cur_n = cross_product_normalized(_vec_cn2, _vec_cn1);
 		_cur_uv = _uv_grid[# i+1, j+1];
 			
 		add_vertex(_vert_buf, i+1, j+1, _cur_v, 

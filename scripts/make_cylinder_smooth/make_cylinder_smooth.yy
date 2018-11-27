@@ -1,8 +1,8 @@
 {
-    "id": "3d9a94f3-c197-4a5f-8934-16d2cd5f5544",
+    "id": "aaeb18a9-80b5-461e-871e-c16e5d839407",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "make_cylinder",
+    "name": "make_cylinder_smooth",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -34,7 +34,7 @@
             "Key": "0077e1ca-fb31-4dd7-989e-f971660a5de2",
             "Value": {
                 "id": "bf2a7fcc-3007-44b0-8343-83d9d9e8b9ea",
-                "resourcePath": "scripts\\make_sphere\\make_sphere.yy",
+                "resourcePath": "scripts\\make_sphere_smooth\\make_sphere_smooth.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -171,6 +171,14 @@
             "Value": {
                 "id": "e1ee0160-85e7-493e-b6bd-4bd434393570",
                 "resourcePath": "scripts\\diamondsquare_step\\diamondsquare_step.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3d9a94f3-c197-4a5f-8934-16d2cd5f5544",
+            "Value": {
+                "id": "c413e82c-8811-4a87-be8d-169589933fb6",
+                "resourcePath": "scripts\\make_cylinder\\make_cylinder.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -410,8 +418,16 @@
             "Key": "aaeb18a9-80b5-461e-871e-c16e5d839407",
             "Value": {
                 "id": "1f746e46-5a50-4327-b450-95be1db743d3",
-                "resourcePath": "scripts\\make_cylinder\\make_cylinder.yy",
+                "resourcePath": "scripts\\make_cylinder_smooth\\make_cylinder_smooth.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ac929365-e3eb-4015-9695-5855f246cefd",
+            "Value": {
+                "id": "12a9a5be-6310-460d-9439-0daca26934b1",
+                "resourcePath": "objects\\obj_test\\obj_test.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -647,6 +663,14 @@
             }
         },
         {
+            "Key": "f813d7ce-68f5-45c8-92ce-c98a8a94b672",
+            "Value": {
+                "id": "693edbe6-a752-4be7-a119-da861ed3e9c0",
+                "resourcePath": "scripts\\make_sphere\\make_sphere.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fba9533b-2cab-4586-b00b-791a329a7e66",
             "Value": {
                 "id": "048f988d-e67a-48ff-bb6c-558fc87a8be2",
@@ -681,6 +705,8 @@
         "a253cf06-fb20-4f51-8ec7-5171d7004474",
         "749c4049-88aa-427e-bc3b-a608c6444814",
         "4d4d370b-c602-4d78-a210-a9c73905635c",
+        "f813d7ce-68f5-45c8-92ce-c98a8a94b672",
+        "3d9a94f3-c197-4a5f-8934-16d2cd5f5544",
         "0077e1ca-fb31-4dd7-989e-f971660a5de2",
         "aaeb18a9-80b5-461e-871e-c16e5d839407"
     ],
