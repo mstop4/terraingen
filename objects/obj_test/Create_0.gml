@@ -1,5 +1,6 @@
-model = make_sphere(radius, rings, sections, c_white);
+model = make_cube(0.25,c_white);
 z = 0;
+rot = 0;
 
 real_x = 0;
 real_y = 0;

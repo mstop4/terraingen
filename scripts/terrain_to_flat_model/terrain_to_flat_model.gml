@@ -7,6 +7,7 @@
 var _height_grid = argument[0];
 var _colour_grid = argument[1];
 var _uv_grid = argument[2];
+var _strength = 0.5;
 
 var _w = ds_grid_width(_height_grid);
 
@@ -26,8 +27,8 @@ for (var j=0; j<_w-1; j++) {
 		_neigh_v1 = _height_grid[# i+1, j];
 		_neigh_v2 = _height_grid[# i, j+1];
 			
-		_vec_cn1 = vector_math([i+1, j, _neigh_v1], [i, j, _cur_v], vec_op.subtract);
-		_vec_cn2 = vector_math([i, j+1, _neigh_v2], [i, j, _cur_v], vec_op.subtract);
+		_vec_cn1 = vector_math([i+1, j, _neigh_v1 * _strength], [i, j, _cur_v * _strength], vec_op.subtract);
+		_vec_cn2 = vector_math([i, j+1, _neigh_v2 * _strength], [i, j, _cur_v * _strength], vec_op.subtract);
 			
 		_cur_n = cross_product_normalized(_vec_cn1, _vec_cn2);
 		_cur_uv = _uv_grid[# i, j];
@@ -56,8 +57,8 @@ for (var j=0; j<_w-1; j++) {
 		_neigh_v1 = _height_grid[# i+1, j];
 		_neigh_v2 = _height_grid[# i, j+1];
 			
-		_vec_cn1 = vector_math([i+1, j, _neigh_v1], [i+1, j+1, _cur_v], vec_op.subtract);
-		_vec_cn2 = vector_math([i, j+1, _neigh_v2], [i+1, j+1, _cur_v], vec_op.subtract);
+		_vec_cn1 = vector_math([i+1, j, _neigh_v1 * _strength], [i+1, j+1, _cur_v * _strength], vec_op.subtract);
+		_vec_cn2 = vector_math([i, j+1, _neigh_v2 * _strength], [i+1, j+1, _cur_v * _strength], vec_op.subtract);
 			
 		_cur_n = cross_product_normalized(_vec_cn2, _vec_cn1);
 		_cur_uv = _uv_grid[# i+1, j+1];
