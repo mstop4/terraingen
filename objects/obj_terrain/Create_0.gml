@@ -14,3 +14,5 @@ render_mode = pr_trianglestrip;
 
 x = (-map_side_length / 2) * xscale;
 y = x;
+
+event_user(0);

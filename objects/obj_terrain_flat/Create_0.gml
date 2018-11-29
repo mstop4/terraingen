@@ -13,3 +13,6 @@ render_mode = pr_trianglestrip;
 
 x = (-map_side_length / 2) * xscale;
 y = x;
+
+shd_cel_get_uniforms();
+event_user(0);

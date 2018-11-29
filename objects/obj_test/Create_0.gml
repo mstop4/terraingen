@@ -6,4 +6,5 @@ real_x = 0;
 real_y = 0;
 real_z = 0;
 
+shd_cel_get_uniforms();
 event_user(0);

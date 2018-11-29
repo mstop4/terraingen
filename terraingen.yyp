@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "58bfccbe-eba8-45f4-bea6-7443287a3ffa",
+            "Value": {
+                "id": "5acba9b8-60fe-449b-93ee-55e3c7703631",
+                "resourcePath": "views\\58bfccbe-eba8-45f4-bea6-7443287a3ffa.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5d9abca5-85bd-407c-b0ad-9242655a8863",
             "Value": {
                 "id": "556e4c39-86dc-4e28-ac44-90fd7e43f415",
@@ -276,6 +284,14 @@
                 "id": "32095385-3d4a-436a-983a-5dc456bc0fea",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6c416278-31b2-4565-b1d8-d55bfb7f7d3a",
+            "Value": {
+                "id": "bba5f8f6-7022-4f90-8d35-a9f4169fb841",
+                "resourcePath": "scripts\\shd_cel_set_uniforms\\shd_cel_set_uniforms.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -316,6 +332,14 @@
                 "id": "541055b6-ac1a-4b8e-a184-467022610c91",
                 "resourcePath": "scripts\\flat_init\\flat_init.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7930b61d-6b63-48a6-bef1-80497ee6ffbd",
+            "Value": {
+                "id": "b03aa94d-0ed6-4649-8871-d27905c8fa7b",
+                "resourcePath": "shaders\\shd_cel\\shd_cel.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -364,6 +388,14 @@
                 "id": "139bc8ce-7fc4-4aa7-8104-ba07a7a51589",
                 "resourcePath": "tilesets\\ts_tiles\\ts_tiles.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "8bda62be-59b6-42b1-9ddb-c4e49839e615",
+            "Value": {
+                "id": "f0b5e8dd-111a-47b3-93cc-9e43687a635c",
+                "resourcePath": "shaders\\shd_basic\\shd_basic.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -492,6 +524,14 @@
                 "id": "b30fd7ca-1bf2-454c-ba04-593163814774",
                 "resourcePath": "objects\\obj_input\\obj_input.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "be8302fc-b6cf-4a06-8bd9-4a525c67a23c",
+            "Value": {
+                "id": "0a1b2d0e-c69a-4eff-9bcb-ac1f6c9097bc",
+                "resourcePath": "scripts\\shd_cel_get_uniforms\\shd_cel_get_uniforms.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -725,7 +765,9 @@
         "3d9a94f3-c197-4a5f-8934-16d2cd5f5544",
         "55d4103d-0ed4-4232-87fa-24f5e8d6d5dd",
         "0077e1ca-fb31-4dd7-989e-f971660a5de2",
-        "aaeb18a9-80b5-461e-871e-c16e5d839407"
+        "aaeb18a9-80b5-461e-871e-c16e5d839407",
+        "be8302fc-b6cf-4a06-8bd9-4a525c67a23c",
+        "6c416278-31b2-4565-b1d8-d55bfb7f7d3a"
     ],
     "tutorial": ""
 }

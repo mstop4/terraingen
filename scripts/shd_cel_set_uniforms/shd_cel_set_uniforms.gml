@@ -1,0 +1,1 @@
+shader_set_uniform_f_array(u_ambient_colour,obj_light.ambient_color);

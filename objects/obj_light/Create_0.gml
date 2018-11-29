@@ -1,4 +1,5 @@
 altitude = 225;
+ambient_color = [0.125, 0.125, 0.125, 1];
 
 draw_set_lighting(true);
 draw_light_define_ambient($202020);
