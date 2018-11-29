@@ -1,4 +1,8 @@
 /// @func make_sphere(radius, rings, sections, colour)
+/// @arg radius
+/// @arg rings
+/// @arg sections
+/// @arg colour
 
 var _model = vertex_create_buffer();
 var _radius = argument[0];
@@ -8,29 +12,45 @@ var _colour = argument[3];
 
 var _r_step = pi / _rings;
 var _s_step = 2 * pi / _sections;
-var _cur_v, _next_v;
+var _tl_v, _tr_v, _bl_v, _br_v;
 
 vertex_begin(_model,global.vert_w_light);
 
 for (var i=0; i<_rings; i++) {
-	var _cur_r = sin(i * _r_step) * _radius;
-	var _next_r = sin((i+1) * _r_step) * _radius;
-	_cur_v[2] = cos(i * _r_step) * _radius;
-	_next_v[2] = cos((i+1) * _r_step) * _radius;
+	var _t_rad = sin(i * _r_step) * _radius;
+	var _b_rad = sin((i+1) * _r_step) * _radius;
+	_tl_v[2] = cos(i * _r_step) * _radius;
+	_tr_v[2] = cos(i * _r_step) * _radius;
+	_bl_v[2] = cos((i+1) * _r_step) * _radius;
+	_br_v[2] = cos((i+1) * _r_step) * _radius;
 	
-	for (var j=_sections; j>=0; j--) {
-		var _j_step = j * _s_step;
+	for (var j=0; j<_sections; j++) {
+		var _j_step_l = j * _s_step;
+		var _j_step_r = (j+1) * _s_step;
 		
-		_cur_v[0] = cos(_j_step) * _cur_r;
-		_cur_v[1] = sin(_j_step) * _cur_r;
-		_next_v[0] = cos(_j_step) * _next_r;
-		_next_v[1] = sin(_j_step) * _next_r;
+		_tl_v[0] = cos(_j_step_l) * _t_rad;
+		_tl_v[1] = sin(_j_step_l) * _t_rad;
+		_tr_v[0] = cos(_j_step_r) * _t_rad;
+		_tr_v[1] = sin(_j_step_r) * _t_rad;
+		_bl_v[0] = cos(_j_step_l) * _b_rad;
+		_bl_v[1] = sin(_j_step_l) * _b_rad;
+		_br_v[0] = cos(_j_step_r) * _b_rad;
+		_br_v[1] = sin(_j_step_r) * _b_rad;
 		
-		var _cur_n = normalize_3d(_cur_v[0], _cur_v[1], _cur_v[2]);
-		var _next_n = normalize_3d(_next_v[0], _next_v[1], _next_v[2]);
+		var _vec_tl_br = vector_math(_br_v, _tl_v, vec_op.subtract);
+		var _vec_tr_bl = vector_math(_bl_v, _tr_v, vec_op.subtract);
 		
-		add_vertex(_model, _cur_v[0], _cur_v[1], _cur_v[2], _cur_n[0], _cur_n[1], _cur_n[2], _colour, 1, 0, 0);
-		add_vertex(_model, _next_v[0], _next_v[1], _next_v[2], _next_n[0], _next_n[1], _next_n[2], _colour, 1, 0, 0);
+		var _n = cross_product_normalized(_vec_tr_bl, _vec_tl_br);
+		
+		add_vertex(_model, _tl_v[0], _tl_v[1], _tl_v[2], _n[0], _n[1], _n[2], _colour, 1, 0, 0);
+		add_vertex(_model, _tr_v[0], _tr_v[1], _tr_v[2], _n[0], _n[1], _n[2], _colour, 1, 0, 0);
+		add_vertex(_model, _bl_v[0], _bl_v[1], _bl_v[2], _n[0], _n[1], _n[2], _colour, 1, 0, 0);
+		
+		add_vertex(_model, _bl_v[0], _bl_v[1], _bl_v[2], _n[0], _n[1], _n[2], _colour, 1, 0, 0);
+		add_vertex(_model, _tr_v[0], _tr_v[1], _tr_v[2], _n[0], _n[1], _n[2], _colour, 1, 0, 0);
+		add_vertex(_model, _br_v[0], _br_v[1], _br_v[2], _n[0], _n[1], _n[2], _colour, 1, 0, 0);
+
+		
 	}
 }
 

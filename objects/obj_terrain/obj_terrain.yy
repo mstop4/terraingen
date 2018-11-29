@@ -30,8 +30,8 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 13,
-            "eventtype": 9,
+            "enumb": 10,
+            "eventtype": 7,
             "m_owner": "d179e753-ef02-48f2-9074-cd66fd3591c1"
         },
         {
@@ -42,6 +42,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
+            "m_owner": "d179e753-ef02-48f2-9074-cd66fd3591c1"
+        },
+        {
+            "id": "665ce411-1350-4b9c-92a3-084a8e8bd36a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 13,
+            "eventtype": 9,
             "m_owner": "d179e753-ef02-48f2-9074-cd66fd3591c1"
         }
     ],
@@ -72,7 +82,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "8",
             "varName": "map_size",
             "varType": 1
         },
@@ -142,7 +152,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "32",
             "varName": "variance",
             "varType": 0
         },

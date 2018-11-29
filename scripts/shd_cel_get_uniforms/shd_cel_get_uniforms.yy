@@ -1,8 +1,8 @@
 {
-    "id": "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
+    "id": "be8302fc-b6cf-4a06-8bd9-4a525c67a23c",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "terrain_to_solid_model",
+    "name": "shd_cel_get_uniforms",
     "IsCompatibility": false,
     "IsDnD": false
 }

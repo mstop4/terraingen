@@ -1,4 +1,4 @@
-/// @func  terrain_to_solid_model(height_grid, normal_grid, colour_grid, uv_grid)
+/// @func  terrain_to_smooth_model(height_grid, normal_grid, colour_grid, uv_grid)
 /// @arg   height_grid   
 /// @arg   normal_grid
 /// @arg   colour_grid    
@@ -14,7 +14,7 @@ var _w = ds_grid_width(_height_grid);
 var _dir = 1;
 
 var _count = 0;
-var _cur_n, _cur_v, _cur_uv;
+var _cur_n, _cur_uv;
 
 var _vert_buf = vertex_create_buffer();
 vertex_begin(_vert_buf,global.vert_w_light);
