@@ -1,1 +1,3 @@
-shader_set_uniform_f_array(u_ambient_colour,obj_light.ambient_color);
+shader_set_uniform_f_array(u_ambient_colour,obj_light.ambient_colour);
+shader_set_uniform_f_array(u_diffuse_colour,obj_light.diffuse_colour);
+shader_set_uniform_f_array(u_diffuse_direction,obj_light.diffuse_direction);

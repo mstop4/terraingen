@@ -11,8 +11,9 @@ void main()
 {
     vec4 object_space_pos = vec4( in_Position.x, in_Position.y, in_Position.z, 1.0);
     gl_Position = gm_Matrices[MATRIX_WORLD_VIEW_PROJECTION] * object_space_pos;
-    
-	v_vNormal = in_Normal;
+	
+	vec4 n = gm_Matrices[MATRIX_WORLD] * vec4(in_Normal, 0.0);
+	v_vNormal = n.xyz;
     v_vColour = in_Colour;
     v_vTexcoord = in_TextureCoord;
 }
