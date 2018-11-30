@@ -17,6 +17,14 @@ branch_offset[1,0] = 0;
 branch_offset[1,1] = 0;
 branch_offset[1,2] = 0;
 
+branch_scale[2,0] = 0.5;
+branch_scale[2,1] = 0.5;
+branch_scale[2,2] = 0.5;
+branch_colour = c_lime;
+branch_offset[2,0] = 0;
+branch_offset[2,1] = 0;
+branch_offset[2,2] = crown_width/2;
+
 z = 0;
 real_x = 0;
 real_y = 0;

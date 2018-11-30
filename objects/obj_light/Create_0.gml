@@ -1,5 +1,3 @@
-phi = 30;
-theta = 240;
 ambient_colour = [0, 0, 0, 1];
 
 diffuse_colour = ds_list_create();

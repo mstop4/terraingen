@@ -105,6 +105,34 @@
             "value": "1.0",
             "varName": "normal_weight",
             "varType": 0
+        },
+        {
+            "id": "a3a9dc61-5f3c-4ba3-b485-0a8b4c79164f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "60",
+            "varName": "theta",
+            "varType": 0
+        },
+        {
+            "id": "88f90a5c-38bb-46c7-bfb8-670580bc35b7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "30",
+            "varName": "phi",
+            "varType": 0
         }
     ],
     "solid": false,

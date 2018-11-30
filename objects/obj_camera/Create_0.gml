@@ -8,5 +8,6 @@ pitch = 0;
 owner = noone;
 
 camera = camera_create();
-cam_project_matrix = matrix_build_projection_perspective_fov(60,view_get_wport(obj_MDP.view_index)/view_get_hport(obj_MDP.view_index),0.1,3200);
+cam_project_matrix = matrix_build_projection_perspective_fov(60,view_get_wport(obj_MDP.view_index)/view_get_hport(obj_MDP.view_index),0.1,render_distance_max);
+//gpu_set_fog(true,c_red,render_distance_min,render_distance_max);
 camera_set_proj_mat(camera,cam_project_matrix);
