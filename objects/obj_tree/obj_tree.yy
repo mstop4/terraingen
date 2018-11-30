@@ -43,6 +43,26 @@
             "enumb": 0,
             "eventtype": 12,
             "m_owner": "81c35d89-86d6-44c4-8a85-6b91966647bf"
+        },
+        {
+            "id": "c5c62c06-9c14-4d4f-9fa4-adc8d0b6c15d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 71,
+            "eventtype": 9,
+            "m_owner": "81c35d89-86d6-44c4-8a85-6b91966647bf"
+        },
+        {
+            "id": "2dee5562-18c5-49bf-948a-81cbb6f86152",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "81c35d89-86d6-44c4-8a85-6b91966647bf"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -105,20 +125,6 @@
             "varType": 1
         },
         {
-            "id": "2309ffe4-39f3-49d7-8e00-0587d51ba73e",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "$FF00FFFF",
-            "varName": "trunk_colour",
-            "varType": 7
-        },
-        {
             "id": "0a03ffca-3766-47d9-8cb3-660ac31eceff",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -133,20 +139,6 @@
             "varType": 0
         },
         {
-            "id": "14e967e4-abed-47d1-849e-a031439bfe9e",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "$FF00FF00",
-            "varName": "crown_colour",
-            "varType": 7
-        },
-        {
             "id": "036506ea-0e1a-4d24-ad8b-0c224c901163",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -159,6 +151,20 @@
             "value": "3",
             "varName": "num_branches",
             "varType": 1
+        },
+        {
+            "id": "7c5ca87f-706d-4df7-ae3f-1922485cf3a9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "growth",
+            "varType": 0
         }
     ],
     "solid": false,

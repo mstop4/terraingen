@@ -12,6 +12,8 @@ for (var i=0; i<_num_cells; i++) {
 ds_list_shuffle(tree_map);
 
 for (var i=0; i<num_trees;) {
+	if (ds_list_empty(tree_map)) break;
+	
 	var _cur_cell = irandom(_num_cells-1);
 	if (ds_list_find_index(tree_map, _cur_cell) > -1) {
 		var _tree = instance_create_layer(_cur_cell mod map_side_length, _cur_cell div map_side_length,layer,obj_tree);

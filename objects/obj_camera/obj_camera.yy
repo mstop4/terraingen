@@ -89,6 +89,20 @@
             "value": "320",
             "varName": "render_distance_max",
             "varType": 0
+        },
+        {
+            "id": "b12c7e67-646b-484c-92cf-1e15ac05665e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "60",
+            "varName": "fov",
+            "varType": 0
         }
     ],
     "solid": false,

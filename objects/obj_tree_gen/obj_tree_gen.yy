@@ -42,7 +42,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "50",
+            "value": "100",
             "varName": "num_trees",
             "varType": 1
         },
@@ -56,7 +56,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "2",
+            "value": "3",
             "varName": "tree_buffer",
             "varType": 1
         }

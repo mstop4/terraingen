@@ -13,7 +13,7 @@ void main()
     gl_Position = gm_Matrices[MATRIX_WORLD_VIEW_PROJECTION] * object_space_pos;
 	
 	vec4 n = gm_Matrices[MATRIX_WORLD] * vec4(in_Normal, 0.0);
-	v_vNormal = n.xyz;
+	v_vNormal = normalize(n.xyz);
     v_vColour = in_Colour;
     v_vTexcoord = in_TextureCoord;
 }
