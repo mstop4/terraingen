@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "2b247b51-b5d0-4ce5-99d2-8a2c95055049",
+            "Value": {
+                "id": "5fef1750-b0e7-4fa4-97c2-4b7419ccf667",
+                "resourcePath": "scripts\\spherical_to_cartesian_coords\\spherical_to_cartesian_coords.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2b2d1e04-cac7-479a-b418-9a340a1aa2b0",
             "Value": {
                 "id": "c2ec7117-c4c9-44f8-a741-2c4961ddfb5d",
@@ -752,6 +760,7 @@
         "7ab533c3-64d8-487a-8519-8259a8278173",
         "b34490cd-6fdf-43e9-a2d7-4f8a8e7fcc67",
         "709856c1-b798-446e-86fd-8f1f38614338",
+        "2b247b51-b5d0-4ce5-99d2-8a2c95055049",
         "bc62e24f-cfad-4300-95f7-380d027dea05",
         "c6a329dd-4e5b-4842-a19e-b59717ccce14",
         "dde622c4-d77c-4564-b6a9-ceaa1c86e647",
