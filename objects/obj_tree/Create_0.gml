@@ -1,35 +1,18 @@
-trunk = make_cylinder(trunk_radius, trunk_length, trunk_step, trunk_colour);
-crown = make_cube(crown_width/2, crown_colour);
+trunk = make_cylinder(trunk_radius, trunk_length, trunk_step, c_yellow);
+crown = vertex_create_buffer();
 
-branch_scale[0,0] = 1.5;
-branch_scale[0,1] = 0.5;
-branch_scale[0,2] = 0.5;
-branch_colour = c_lime;
-branch_offset[0,0] = 0;
-branch_offset[0,1] = 0;
-branch_offset[0,2] = 0;
+vertex_begin(crown, global.vert_w_light);
+add_cube(crown, crown_width/2, c_lime, [0, 0, 0], [1, 1, 1]);
+add_cube(crown, crown_width/4, c_lime, [0, 0, 0], [3, 1, 1]);
+add_cube(crown, crown_width/4, c_lime, [0, 0, 0], [1, 3, 1]);
+add_cube(crown, crown_width/4, c_lime, [0, 0, crown_width/2], [1, 1, 1]);
 
-branch_scale[1,0] = 0.5;
-branch_scale[1,1] = 1.5;
-branch_scale[1,2] = 0.5;
-branch_colour = c_lime;
-branch_offset[1,0] = 0;
-branch_offset[1,1] = 0;
-branch_offset[1,2] = 0;
-
-branch_scale[2,0] = 0.5;
-branch_scale[2,1] = 0.5;
-branch_scale[2,2] = 0.5;
-branch_colour = c_lime;
-branch_offset[2,0] = 0;
-branch_offset[2,1] = 0;
-branch_offset[2,2] = crown_width/2;
+vertex_end(crown);
+vertex_freeze(crown);
 
 z = 0;
 real_x = 0;
 real_y = 0;
 real_z = 0;
-
-shd_cel_get_uniforms();
 
 event_user(0);

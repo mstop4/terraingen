@@ -292,7 +292,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_grass",
+            "value": "noone",
             "varName": "terrain_tex",
             "varType": 5
         }

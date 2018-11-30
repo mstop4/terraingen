@@ -23,3 +23,5 @@ view_set_visible(view_index,true);
 surface_resize(application_surface,window_width,window_height);
 view_set_wport(view_index,window_width);
 view_set_hport(view_index,window_height);
+
+shd_cel_get_uniforms();
