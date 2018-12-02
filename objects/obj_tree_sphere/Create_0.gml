@@ -6,10 +6,7 @@ crown = vertex_create_buffer();
 is_growing = false;
 
 vertex_begin(crown, global.vert_w_light);
-add_cube(crown, crown_width/2, crown_colour, [0, 0, 0], [1, 1, 1]);
-add_cube(crown, crown_width/4, crown_colour, [0, 0, 0], [3, 1, 1]);
-add_cube(crown, crown_width/4, crown_colour, [0, 0, 0], [1, 3, 1]);
-add_cube(crown, crown_width/4, crown_colour, [0, 0, crown_width/2], [1, 1, 1]);
+add_sphere(crown, crown_half_width, 8, 8, crown_colour);
 
 vertex_end(crown);
 vertex_freeze(crown);

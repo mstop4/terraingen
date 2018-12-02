@@ -4,5 +4,5 @@ if (is_growing) {
 		is_growing = false;
 	}
 		
-	growth += 0.002;
+	growth += 0.001;
 }
