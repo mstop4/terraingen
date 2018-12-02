@@ -11,7 +11,7 @@ if (_v_input != 0 || _h_input != 0) {
 	var _spd_x = lengthdir_x(my_speed,_move_dir);
 	var _spd_y = lengthdir_y(my_speed,_move_dir);
 
-	x = clamp(x + _spd_x, 0, obj_terrain.map_side_length-1);
-	y = clamp(y + _spd_y, 0, obj_terrain.map_side_length-1);
-	z = blin_z_pos(x, y, obj_terrain.terrain_map);
+	x = clamp(x + _spd_x, global.xy_scale, (obj_terrain.map_side_length-1) * global.xy_scale);
+	y = clamp(y + _spd_y, global.xy_scale, (obj_terrain.map_side_length-1) * global.xy_scale);
+	z = blin_z_pos(x, y, global.xy_scale, obj_terrain.terrain_map);
 }

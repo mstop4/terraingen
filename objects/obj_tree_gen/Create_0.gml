@@ -16,8 +16,8 @@ for (var i=0; i<num_trees;) {
 	
 	var _cur_cell = irandom(_num_cells-1);
 	if (ds_list_find_index(tree_map, _cur_cell) > -1) {
-		var _tree = instance_create_layer(_cur_cell mod map_side_length, _cur_cell div map_side_length,layer,obj_tree_cube);
-		mark_tree_map(tree_map, map_side_length, _cur_cell, tree_buffer);
+		var _tree = instance_create_layer((_cur_cell mod map_side_length) * global.xy_scale, (_cur_cell div map_side_length) * global.xy_scale,layer,obj_tree_cube);
+		mark_tree_map(tree_map, _cur_cell, map_side_length, tree_buffer);
 		i++;
 	}
 }

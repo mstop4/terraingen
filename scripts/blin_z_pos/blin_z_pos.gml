@@ -1,10 +1,12 @@
 /// @arg x
 /// @arg y
+/// @arg xy_scale
 /// @arg grid
 
-var _x = argument[0];
-var _y = argument[1];
-var _grid = argument[2];
+var _xy_scale = argument[2];
+var _x = argument[0] / _xy_scale;
+var _y = argument[1] / _xy_scale;
+var _grid = argument[3];
 
 var _floor_x = floor(_x);
 var _ceil_x = ceil(_x);
