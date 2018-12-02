@@ -1,7 +1,7 @@
-if (is_growing) {
+if (state == tree_state.growing) {
 	if (growth >= stem_sections) {
 		growth = stem_sections;
-		is_growing = false;
+		state = tree_state.stable;
 	}
 		
 	growth += 0.02;

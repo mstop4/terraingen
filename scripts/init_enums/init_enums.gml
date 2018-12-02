@@ -29,3 +29,9 @@ enum vec_op {
 	add,
 	subtract
 }
+
+enum tree_state {
+	stable,
+	growing,
+	felled
+}

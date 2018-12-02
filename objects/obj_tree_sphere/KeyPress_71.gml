@@ -1,2 +1,2 @@
-is_growing = true;
+state = tree_state.growing;
 growth = 0;

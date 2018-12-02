@@ -3,7 +3,7 @@ trunk_colour = c_yellow;
 
 trunk = make_cylinder(trunk_radius, trunk_length, trunk_step, trunk_colour);
 crown = vertex_create_buffer();
-is_growing = false;
+state = tree_state.stable;
 
 vertex_begin(crown, global.vert_w_light);
 add_sphere(crown, crown_half_width, 8, 8, crown_colour);

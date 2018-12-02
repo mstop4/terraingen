@@ -18,6 +18,6 @@ for (var i=0; i<=stem_sections; i++) {
 	}
 }
 
-is_growing = false;
+state = tree_state.stable;
 
 event_user(0);
