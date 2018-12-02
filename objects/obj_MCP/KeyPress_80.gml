@@ -1,1 +1,0 @@
-set_paused(!paused);
