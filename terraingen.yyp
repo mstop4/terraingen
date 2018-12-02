@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "8ffb44bf-0975-4455-a483-a887b296b5c8",
+            "Value": {
+                "id": "f22c8fd6-4d39-435a-9264-b5704c69a2fc",
+                "resourcePath": "sounds\\snd_step\\snd_step.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "912fae93-1bde-4c55-a102-0731046ff840",
             "Value": {
                 "id": "f5225bde-65ff-4f7b-9b04-eba7118b3ba8",

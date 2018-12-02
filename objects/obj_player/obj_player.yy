@@ -33,6 +33,26 @@
             "enumb": 10,
             "eventtype": 7,
             "m_owner": "6abe711e-02b5-4283-8c6a-0d981a8d293a"
+        },
+        {
+            "id": "d6887517-1d00-4a56-8503-2c0578275a62",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "6abe711e-02b5-4283-8c6a-0d981a8d293a"
+        },
+        {
+            "id": "5b9e30c1-8c1b-4f08-aba2-af506c39a278",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "6abe711e-02b5-4283-8c6a-0d981a8d293a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -76,12 +96,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.5",
+            "value": "0.4",
             "varName": "height",
             "varType": 0
         },
         {
-            "id": "ca5807fc-d2ca-42b4-a117-596e4a0cb541",
+            "id": "db43b268-d6b8-4d17-9179-61c7697375d4",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -90,12 +110,26 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "z",
+            "value": "0.1",
+            "varName": "view_bob_amount",
+            "varType": 0
+        },
+        {
+            "id": "5b7bc5ac-fefc-45b5-aaa4-0aa76bd9d765",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "6",
+            "varName": "view_bob_delta",
             "varType": 0
         }
     ],
     "solid": false,
     "spriteId": "237c5290-f5bd-4e67-984f-8dd34f5929f0",
-    "visible": false
+    "visible": true
 }

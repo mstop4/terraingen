@@ -19,5 +19,33 @@ if (window_has_focus() && !obj_MCP.paused) {
 		}
 	
 		z = blin_z_pos(x, y, global.xy_scale, obj_terrain.terrain_map);
+		
+		view_bob_t = view_bob_t + view_bob_delta;
+		if (view_bob_t > 360) {
+			view_bob_t -= 360;
+		}
+		
+		if (!is_stepping && (view_bob_t+90) mod 180 == 0) {
+			is_stepping = true;
+			audio_play_sound(snd_step,0,false);
+		} else if (is_stepping && view_bob_t mod 180 != 0) {
+			is_stepping = false;
+		}
+		
+		view_bob_z = abs(dcos(view_bob_t)) * view_bob_amount;
+	}
+	
+	else {
+		if (abs(view_bob_t mod pi) <= view_bob_delta*4) {
+			view_bob_t = 0;
+			view_bob_z = 0.1;
+		} 
+		else {
+			view_bob_t = view_bob_t + view_bob_delta*4;
+			if (view_bob_t > 360) {
+				view_bob_t -= 360;
+			}
+			view_bob_z = abs(dcos(view_bob_t)) * view_bob_amount;
+		}
 	}
 }
