@@ -11,11 +11,11 @@ if (window_has_focus() && !obj_MCP.paused) {
 		var _spd_y = lengthdir_y(my_speed,_move_dir);
 
 		if (!place_meeting(x + _spd_x, y, obj_tree_cube)) {
-			x = clamp(x + _spd_x, global.xy_scale, (obj_terrain.map_side_length-1) * global.xy_scale);
+			x = clamp(x + _spd_x, 0, (obj_terrain.map_side_length-1) * global.xy_scale);
 		}
 	
 		if (!place_meeting(x, y + _spd_y, obj_tree_cube)) {	
-			y = clamp(y + _spd_y, global.xy_scale, (obj_terrain.map_side_length-1) * global.xy_scale);
+			y = clamp(y + _spd_y, 0, (obj_terrain.map_side_length-1) * global.xy_scale);
 		}
 	
 		z = blin_z_pos(x, y, global.xy_scale, obj_terrain.terrain_map);

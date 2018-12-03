@@ -18,6 +18,8 @@ generate_uvs(uv_map, uv_scale);
 print("Creating Model...");
 vertex_delete_buffer(terrain_model);
 terrain_model = terrain_to_flat_model(terrain_map, colour_map, uv_map);
+vertex_delete_buffer(border_model);
+border_model = make_world_border(terrain_map, 126);
 
 var _center = other.map_side_length / 2;
 

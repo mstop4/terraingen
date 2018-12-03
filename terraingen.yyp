@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "545ff4fe-ef3e-4cc9-aa51-f82dee01b81e",
+            "Value": {
+                "id": "00086505-5cbf-46e6-8b77-cc7848591e86",
+                "resourcePath": "scripts\\make_world_border\\make_world_border.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "54f69f8e-8d90-441b-85c4-69f2c5c99656",
             "Value": {
                 "id": "39944ae0-b847-48d5-8cc4-1aa785194fc6",
@@ -827,6 +835,7 @@
         "5809dd90-09fe-4739-99a4-ddda9a2074e8",
         "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
         "160a2d49-c6c0-4046-b75f-e5583e9ff6ab",
+        "545ff4fe-ef3e-4cc9-aa51-f82dee01b81e",
         "83f34afe-6dde-40fb-bc31-fe9c7786f980",
         "1419d418-6a37-4162-9348-862d604f12ea",
         "98816416-09cc-4ca0-84b2-be70d2d49b8a",

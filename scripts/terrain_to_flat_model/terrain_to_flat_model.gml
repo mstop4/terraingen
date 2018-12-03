@@ -20,8 +20,8 @@ var _vec_cn1, _vec_cn2;
 var _vert_buf = vertex_create_buffer();
 vertex_begin(_vert_buf,global.vert_w_light);
 
-for (var j=0; j<_w-1; j++) {
-	for (var i=0; i<_w-1; i++) {
+for (var j=-0; j<_w-1; j++) {
+	for (var i=-0; i<_w-1; i++) {
 			
 		_cur_v = _height_grid[# i, j];
 		_neigh_v1 = _height_grid[# i+1, j];
