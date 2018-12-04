@@ -12,19 +12,24 @@ for (var i=0; i<_num_cells; i++) {
 
 ds_list_shuffle(tree_list);
 
+ds_grid_set_region(tree_map,0,0,map_side_length,map_side_length,0);
+
 for (var i=0; i<num_trees;) {
 	if (ds_list_empty(tree_list)) {
 		print("Not enough room for more trees.");
 		break;
 	}	
-	var _cur_cell = irandom(_num_cells-1);
-	var _index = ds_list_find_index(tree_list, _cur_cell);
-	if (_index > -1) {
-		ds_list_delete(tree_list, _index);
-		var _tree = instance_create_layer((_cur_cell mod map_side_length) * global.xy_scale, (_cur_cell div map_side_length) * global.xy_scale,layer,obj_tree_cube);
-		mark_tree_map(tree_list, _cur_cell, map_side_length, tree_buffer);
+	
+	var _cur_cell = tree_list[| 0];
+	var _x = _cur_cell mod map_side_length;
+	var _y = _cur_cell div map_side_length;
+	if (ds_grid_get_disk_sum(tree_map, _x, _y, tree_buffer) == 0) {
+		tree_map[# _x, _y] = 1;
+		var _tree = instance_create_layer(_x * global.xy_scale, _y * global.xy_scale,layer,obj_tree_cube);
 		i++;
 	}
+	
+	ds_list_delete(tree_list, 0);
 }
 
 with (obj_tree_cube) {
