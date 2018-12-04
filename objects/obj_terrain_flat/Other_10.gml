@@ -12,14 +12,13 @@ while (_result < 1) {
 
 print("Generating colour map...");
 ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length, $FFF0E0); //$20D090
+create_alpha_map(alpha_map, 3);
 print("Generating UV map...");
 generate_uvs(uv_map, uv_scale);
 
 print("Creating Model...");
 vertex_delete_buffer(terrain_model);
-terrain_model = terrain_to_flat_model(terrain_map, colour_map, uv_map);
-vertex_delete_buffer(border_model);
-border_model = make_world_border(terrain_map, -6, 3);
+terrain_model = terrain_to_flat_model(terrain_map, colour_map, alpha_map, uv_map, normal_strength);
 
 var _center = other.map_side_length / 2;
 

@@ -87,6 +87,20 @@
             "varType": 1
         },
         {
+            "id": "a436897a-85b7-4870-a4d9-d749c2de6e1d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3",
+            "varName": "map_border",
+            "varType": 1
+        },
+        {
             "id": "da02d123-5785-4ca1-b28b-b0668fa0bb14",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

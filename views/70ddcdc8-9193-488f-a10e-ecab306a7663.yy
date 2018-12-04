@@ -8,9 +8,7 @@
         "f813d7ce-68f5-45c8-92ce-c98a8a94b672",
         "3d9a94f3-c197-4a5f-8934-16d2cd5f5544",
         "55d4103d-0ed4-4232-87fa-24f5e8d6d5dd",
-        "b13de55f-a752-4e9a-8f2d-117f74ba800e",
-        "0077e1ca-fb31-4dd7-989e-f971660a5de2",
-        "aaeb18a9-80b5-461e-871e-c16e5d839407"
+        "b13de55f-a752-4e9a-8f2d-117f74ba800e"
     ],
     "filterType": "GMScript",
     "folderName": "Standalone",
