@@ -127,6 +127,20 @@
             "value": "6",
             "varName": "view_bob_delta",
             "varType": 0
+        },
+        {
+            "id": "a85b8e01-d31d-447b-8a1b-fad99c64d7cc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "90",
+            "varName": "max_pitch",
+            "varType": 0
         }
     ],
     "solid": false,

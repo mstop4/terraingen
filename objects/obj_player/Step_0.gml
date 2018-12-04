@@ -1,6 +1,6 @@
 if (window_has_focus() && !obj_MCP.paused) {
 	direction = wrap(direction - (window_get_width() / 2 - window_mouse_get_x()) * obj_MCP.mouse_sens_hor, 0, 360);
-	pitch = clamp(pitch - (window_get_height() / 2 - window_mouse_get_y()) * obj_MCP.mouse_sens_ver,-90,90);
+	pitch = clamp(pitch - (window_get_height() / 2 - window_mouse_get_y()) * obj_MCP.mouse_sens_ver,-max_pitch,max_pitch);
 
 	var _v_input = obj_input.button_held[action.down] - obj_input.button_held[action.up];
 	var _h_input = obj_input.button_held[action.right] - obj_input.button_held[action.left];

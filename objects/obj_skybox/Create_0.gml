@@ -1,4 +1,5 @@
 side_models = make_skybox();
+scale = 160;
 
 tex_id[0] = sprite_get_texture(top_tex, 0);
 tex_id[1] = sprite_get_texture(bottom_tex, 0);
