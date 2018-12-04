@@ -9,10 +9,10 @@ for (var i=0; i<6; i++) {
 // Top
 vertex_begin(_model[0], global.vert_wo_light);
 
-add_vertex_no_light(_model[0], -0.5, 0.5, 0.5, c_white, 1, 0, 1);
-add_vertex_no_light(_model[0], -0.5, -0.5, 0.5, c_white, 1, 0, 0);
-add_vertex_no_light(_model[0], 0.5, 0.5, 0.5, c_white, 1, 1, 1);
-add_vertex_no_light(_model[0], 0.5, -0.5, 0.5, c_white, 1, 1, 0);
+add_vertex_no_light(_model[0], -0.5, 0.5, 0.5, c_white, 1, 0, 0);
+add_vertex_no_light(_model[0], -0.5, -0.5, 0.5, c_white, 1, 1, 0);
+add_vertex_no_light(_model[0], 0.5, 0.5, 0.5, c_white, 1, 0, 1);
+add_vertex_no_light(_model[0], 0.5, -0.5, 0.5, c_white, 1, 1, 1);
 
 vertex_end(_model[0]);
 vertex_freeze(_model[0]);
@@ -20,10 +20,10 @@ vertex_freeze(_model[0]);
 // Bottom
 vertex_begin(_model[1], global.vert_wo_light);
 
-add_vertex_no_light(_model[1], -0.5, 0.5, -0.5, c_white, 1, 0, 0);
-add_vertex_no_light(_model[1], 0.5, 0.5, -0.5, c_white, 1, 1, 0);
-add_vertex_no_light(_model[1], -0.5, -0.5, -0.5, c_white, 1, 0, 1);
-add_vertex_no_light(_model[1], 0.5, -0.5, -0.5, c_white, 1, 1, 1);
+add_vertex_no_light(_model[1], -0.5, 0.5, -0.5, c_white, 1, 0, 1);
+add_vertex_no_light(_model[1], 0.5, 0.5, -0.5, c_white, 1, 0, 0);
+add_vertex_no_light(_model[1], -0.5, -0.5, -0.5, c_white, 1, 1, 1);
+add_vertex_no_light(_model[1], 0.5, -0.5, -0.5, c_white, 1, 1, 0);
 
 vertex_end(_model[1]);
 vertex_freeze(_model[1]);
@@ -50,24 +50,24 @@ add_vertex_no_light(_model[3], 0.5, -0.5, 0.5, c_white, 1, 1, 0);
 vertex_end(_model[3]);
 vertex_freeze(_model[3]);
 
-// Front
+// Back
 vertex_begin(_model[4], global.vert_wo_light);
 
-add_vertex_no_light(_model[4], 0.5, 0.5, 0.5, c_white, 1, 1, 0);
-add_vertex_no_light(_model[4], 0.5, 0.5, -0.5, c_white, 1, 1, 1);
-add_vertex_no_light(_model[4], -0.5, 0.5, 0.5, c_white, 1, 0, 0);
-add_vertex_no_light(_model[4], -0.5, 0.5, -0.5, c_white, 1, 0, 1);
+add_vertex_no_light(_model[4], -0.5, -0.5, -0.5, c_white, 1, 1, 1);
+add_vertex_no_light(_model[4], 0.5, -0.5, -0.5, c_white, 1, 0, 1);
+add_vertex_no_light(_model[4], -0.5, -0.5, 0.5, c_white, 1, 1, 0);
+add_vertex_no_light(_model[4], 0.5, -0.5, 0.5, c_white, 1, 0, 0);
 
 vertex_end(_model[4]);
 vertex_freeze(_model[4]);
 
-// Back
+// Front
 vertex_begin(_model[5], global.vert_wo_light);
 
-add_vertex_no_light(_model[5], -0.5, -0.5, -0.5, c_white, 1, 1, 1);
-add_vertex_no_light(_model[5], 0.5, -0.5, -0.5, c_white, 1, 0, 1);
-add_vertex_no_light(_model[5], -0.5, -0.5, 0.5, c_white, 1, 1, 0);
-add_vertex_no_light(_model[5], 0.5, -0.5, 0.5, c_white, 1, 0, 0);
+add_vertex_no_light(_model[5], 0.5, 0.5, 0.5, c_white, 1, 1, 0);
+add_vertex_no_light(_model[5], 0.5, 0.5, -0.5, c_white, 1, 1, 1);
+add_vertex_no_light(_model[5], -0.5, 0.5, 0.5, c_white, 1, 0, 0);
+add_vertex_no_light(_model[5], -0.5, 0.5, -0.5, c_white, 1, 0, 1);
 
 vertex_end(_model[5]);
 vertex_freeze(_model[5]);
