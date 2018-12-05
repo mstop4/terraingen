@@ -1,6 +1,6 @@
 var _from_player = point_direction(obj_player.my_cam.x, obj_player.my_cam.y, real_x, real_y);
 
-if (abs(angle_difference(obj_player.direction, _from_player)) <= obj_player.my_cam.fov+30) {
+if (abs(angle_difference(obj_player.direction, _from_player)) <= obj_MDP.fov+30) {
 	
 	var _stage_trans = 0.95;
 	

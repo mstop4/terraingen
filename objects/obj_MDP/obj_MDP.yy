@@ -133,6 +133,48 @@
             "value": "0",
             "varName": "view_index",
             "varType": 1
+        },
+        {
+            "id": "a6cdb08b-15c5-4405-9925-74bdd1ee7e83",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "19",
+            "varName": "render_distance_min",
+            "varType": 0
+        },
+        {
+            "id": "ca45219a-ac5a-4450-8c5d-84228fe3803e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "render_distance_max",
+            "varType": 0
+        },
+        {
+            "id": "3cb1e2eb-a351-4286-8411-e2ef427f43fc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "60",
+            "varName": "fov",
+            "varType": 0
         }
     ],
     "solid": false,

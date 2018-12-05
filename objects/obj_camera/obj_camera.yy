@@ -62,48 +62,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "d823198b-4cb7-40cb-9c8c-ec493669129c",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "310",
-            "varName": "render_distance_min",
-            "varType": 0
-        },
-        {
-            "id": "32be9ca0-2c7f-4bd3-b708-78e4eff2e0e0",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "320",
-            "varName": "render_distance_max",
-            "varType": 0
-        },
-        {
-            "id": "b12c7e67-646b-484c-92cf-1e15ac05665e",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "60",
-            "varName": "fov",
-            "varType": 0
-        }
+        
     ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",

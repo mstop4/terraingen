@@ -11,7 +11,7 @@ while (_result < 1) {
 }
 
 print("Generating colour map...");
-ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length, $FFF0E0); //$20D090
+ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length, $7cd387);
 create_alpha_map(alpha_map, map_border);
 print("Generating UV map...");
 generate_uvs(uv_map, uv_scale);

@@ -1,5 +1,5 @@
-crown_colour = $f7efc5;
-trunk_colour = $a7e3fd;
+crown_colour = $81c226;
+trunk_colour = $0e69f9;
 
 trunk = make_cylinder(trunk_radius, trunk_length, trunk_step, trunk_colour);
 crown = vertex_create_buffer();
@@ -7,10 +7,6 @@ state = false;
 
 vertex_begin(crown, global.vert_w_light);
 add_cube(crown, crown_half_width, crown_colour, [0, 0, 0], [1, 1, 1]);
-
-/*add_cube(crown, crown_half_width/2, crown_colour, [0, 0, 0], [3, 1, 1]);
-add_cube(crown, crown_half_width/2, crown_colour, [0, 0, 0], [1, 3, 1]);
-add_cube(crown, crown_half_width/2, crown_colour, [0, 0, crown_width/2], [1, 1, 1]);*/
 
 var _half_width, _off_x, _off_y, _off_z;
 

@@ -129,6 +129,20 @@
             "varType": 0
         },
         {
+            "id": "b634fde4-3fa2-46fc-a2f0-ca0d9ac9cf1a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "6",
+            "varName": "draw_threshold_dist",
+            "varType": 0
+        },
+        {
             "id": "036506ea-0e1a-4d24-ad8b-0c224c901163",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -154,6 +168,20 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "growth",
+            "varType": 0
+        },
+        {
+            "id": "1a130e94-a69e-4295-97cf-44fd2acc844d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.95",
+            "varName": "stage_trans",
             "varType": 0
         }
     ],
