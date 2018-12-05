@@ -95,7 +95,7 @@
             "mvc": "1.0",
             "objectId": "d179e753-ef02-48f2-9074-cd66fd3591c1",
             "propertyId": "341d7f9b-4541-44e4-b001-83e417218e75",
-            "value": "8"
+            "value": "16"
         },
         {
             "id": "3eacc80f-ccda-41db-a286-caba8066ca53",
@@ -111,7 +111,7 @@
             "mvc": "1.0",
             "objectId": "d179e753-ef02-48f2-9074-cd66fd3591c1",
             "propertyId": "f1428fb0-91f3-45f8-9888-5a5445f8442c",
-            "value": "4"
+            "value": "8"
         },
         {
             "id": "99ec0908-bd2f-4701-ba91-c48ee5c6f098",

@@ -1,5 +1,5 @@
-crown_colour = c_lime;
-trunk_colour = c_yellow;
+crown_colour = $f7efc5;
+trunk_colour = $a7e3fd;
 
 trunk = make_cylinder(trunk_radius, trunk_length, trunk_step, trunk_colour);
 crown = vertex_create_buffer();

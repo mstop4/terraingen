@@ -16,6 +16,7 @@ enum action {
 	
 	regen_terrain,
 	regrow_trees,
+	plant_tree,
 	
 	light_incr_theta,
 	light_decr_theta,

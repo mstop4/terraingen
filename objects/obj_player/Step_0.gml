@@ -48,4 +48,21 @@ if (window_has_focus() && !obj_MCP.paused) {
 			view_bob_z = abs(dcos(view_bob_t)) * view_bob_amount;
 		}
 	}
+	
+	if (obj_input.button_pressed[action.plant_tree]) {
+		print("plant");
+		var _fx = floor(x / global.xy_scale + lengthdir_x(1, direction));
+		var _fy = floor(y / global.xy_scale + lengthdir_y(1, direction));
+		
+		var _area = ds_grid_get_disk_sum(obj_tree_gen.tree_map, _fx, _fy, obj_tree_gen.tree_buffer);
+	
+		if (_area == 0) {
+			obj_tree_gen.tree_map[# _fx, _fy] = 1;
+			var _tree = instance_create_layer(_fx * global.xy_scale, _fy * global.xy_scale,layer,obj_tree_cube);
+			with (_tree) {
+				state = tree_state.growing;
+				growth = 0;
+			}
+		}
+	}
 }

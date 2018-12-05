@@ -5,7 +5,7 @@ diffuse_direction = ds_list_create();;
 
 var _d = spherical_to_cartesian_coords(1, theta, phi);
 
-ds_list_add(diffuse_colour, [0.65, 0.65, 0.65, 1]);
+ds_list_add(diffuse_colour, [0.75, 0.75, 0.75, 1]);
 ds_list_add(diffuse_direction, _d );
 
 ds_list_add(diffuse_colour, [-0.1, -0.1, -0.1, 1]);

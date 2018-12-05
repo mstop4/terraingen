@@ -12,6 +12,7 @@ kbm_key[action.quit] = vk_escape;
 
 kbm_key[action.regen_terrain] = vk_enter;
 kbm_key[action.regrow_trees] = ord("G");
+kbm_key[action.plant_tree] = vk_space;
 
 kbm_key[action.light_incr_theta] = vk_right;
 kbm_key[action.light_decr_theta] = vk_left;
@@ -29,6 +30,7 @@ kbm_device[action.quit] = device.keyboard;
 
 kbm_device[action.regen_terrain] = device.keyboard;
 kbm_device[action.regrow_trees] = device.keyboard;
+kbm_device[action.plant_tree] = device.keyboard;
 
 kbm_device[action.light_incr_theta] = device.keyboard;
 kbm_device[action.light_decr_theta] = device.keyboard;
