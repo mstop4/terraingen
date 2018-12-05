@@ -11,11 +11,11 @@ if (window_has_focus() && !obj_MCP.paused) {
 		var _spd_y = lengthdir_y(my_speed,_move_dir);
 
 		if (!place_meeting(x + _spd_x, y, obj_tree_cube)) {
-			x = clamp(x + _spd_x, obj_terrain.map_border, (obj_terrain.map_side_length-1-obj_terrain.map_border) * global.xy_scale);
+			x = clamp(x + _spd_x, obj_terrain.map_border * global.xy_scale, (obj_terrain.map_side_length-1-obj_terrain.map_border) * global.xy_scale);
 		}
 	
 		if (!place_meeting(x, y + _spd_y, obj_tree_cube)) {	
-			y = clamp(y + _spd_y, obj_terrain.map_border, (obj_terrain.map_side_length-1-obj_terrain.map_border) * global.xy_scale);
+			y = clamp(y + _spd_y, obj_terrain.map_border * global.xy_scale, (obj_terrain.map_side_length-1-obj_terrain.map_border) * global.xy_scale);
 		}
 	
 		z = blin_z_pos(x, y, global.xy_scale, obj_terrain.terrain_map);
@@ -52,6 +52,11 @@ if (window_has_focus() && !obj_MCP.paused) {
 	if (obj_input.button_pressed[action.plant_tree]) {
 		var _fx = floor(x / global.xy_scale + lengthdir_x(1, direction));
 		var _fy = floor(y / global.xy_scale + lengthdir_y(1, direction));
+		
+		// Prevent planting trees on map border
+		if (_fx < obj_terrain.map_border || _fx > obj_terrain.map_side_length-1-obj_terrain.map_border ||
+			_fy < obj_terrain.map_border || _fy > obj_terrain.map_side_length-1-obj_terrain.map_border)
+				exit;
 		
 		var _area = ds_grid_get_disk_sum(obj_tree_gen.tree_map, _fx, _fy, obj_tree_gen.tree_buffer);
 	
