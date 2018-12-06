@@ -135,7 +135,7 @@
             "varType": 1
         },
         {
-            "id": "a6cdb08b-15c5-4405-9925-74bdd1ee7e83",
+            "id": "f6bec68c-1a74-474e-af1d-03c338184b1d",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -144,8 +144,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "19",
-            "varName": "render_distance_min",
+            "value": "0.1",
+            "varName": "near_dist",
             "varType": 0
         },
         {
@@ -158,8 +158,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "20",
-            "varName": "render_distance_max",
+            "value": "120",
+            "varName": "far_dist",
             "varType": 0
         },
         {
@@ -174,6 +174,34 @@
             "resourceFilter": 1023,
             "value": "60",
             "varName": "fov",
+            "varType": 0
+        },
+        {
+            "id": "3f469cd3-fb22-4bc4-ac44-025cefe2b150",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.5",
+            "varName": "fog_far_ratio",
+            "varType": 0
+        },
+        {
+            "id": "a6cdb08b-15c5-4405-9925-74bdd1ee7e83",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "fog_range",
             "varType": 0
         }
     ],

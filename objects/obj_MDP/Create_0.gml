@@ -28,7 +28,7 @@ surface_resize(application_surface,window_width,window_height);
 view_set_wport(view_index,window_width);
 view_set_hport(view_index,window_height);
 
-fog_colour = [0, 0.75, 1, 1];
+fog_colour = [0, 0.8, 1, 1];
 fog_end = far_dist * fog_far_ratio;
 fog_start = fog_end - fog_range;
 
