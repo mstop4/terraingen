@@ -6,4 +6,5 @@ if (owner) {
 	direction = owner.direction;
 	pitch = owner.pitch;
 }
-camera_update();
+
+camera_update(camera);

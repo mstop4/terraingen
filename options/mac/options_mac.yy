@@ -28,7 +28,7 @@
     "option_mac_version": {
         "build": 0,
         "major": 0,
-        "minor": 3,
+        "minor": 5,
         "revision": 0
     },
     "option_mac_vsync": true
