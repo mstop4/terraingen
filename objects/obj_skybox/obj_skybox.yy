@@ -62,7 +62,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_top",
+            "value": "spr_sky",
             "varName": "top_tex",
             "varType": 5
         },
@@ -76,7 +76,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_bottom",
+            "value": "spr_sky",
             "varName": "bottom_tex",
             "varType": 5
         },
@@ -90,7 +90,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_left",
+            "value": "spr_sky",
             "varName": "left_tex",
             "varType": 5
         },
@@ -104,7 +104,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_right",
+            "value": "spr_sky",
             "varName": "right_tex",
             "varType": 5
         },
@@ -118,7 +118,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_front",
+            "value": "spr_sky",
             "varName": "front_tex",
             "varType": 5
         },
@@ -132,7 +132,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_back",
+            "value": "spr_sky",
             "varName": "back_tex",
             "varType": 5
         }

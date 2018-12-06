@@ -6,10 +6,8 @@ gpu_set_texrepeat(true);
 gpu_set_alphatestenable(true);
 gpu_set_texfilter(false);
 gpu_set_cullmode(cull_counterclockwise);
-//gpu_set_fog(true, c_black, 0, 128);
 
 layer_force_draw_depth(true, 0);
-//application_surface_draw_enable(false);
 
 vertex_format_begin();
 vertex_format_add_position_3d();
@@ -29,5 +27,9 @@ view_set_visible(view_index,true);
 surface_resize(application_surface,window_width,window_height);
 view_set_wport(view_index,window_width);
 view_set_hport(view_index,window_height);
+
+fog_colour = [0, 0.75, 1, 1];
+fog_end = far_dist * fog_far_ratio;
+fog_start = fog_end - fog_range;
 
 shd_cel_get_uniforms();
