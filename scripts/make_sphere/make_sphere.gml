@@ -49,8 +49,6 @@ for (var i=0; i<_rings; i++) {
 		add_vertex(_model, _bl_v[0], _bl_v[1], _bl_v[2], _n[0], _n[1], _n[2], _colour, 1, 0, 0);
 		add_vertex(_model, _tr_v[0], _tr_v[1], _tr_v[2], _n[0], _n[1], _n[2], _colour, 1, 0, 0);
 		add_vertex(_model, _br_v[0], _br_v[1], _br_v[2], _n[0], _n[1], _n[2], _colour, 1, 0, 0);
-
-		
 	}
 }
 

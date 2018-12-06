@@ -4,7 +4,7 @@ if (state == tree_state.growing) {
 		state = tree_state.stable;
 	}
 		
-	growth += 0.002;
+	growth += 0.001;
 }
 
 var _dir_from_player = point_direction(obj_player.my_cam.x, obj_player.my_cam.y, real_x, real_y);

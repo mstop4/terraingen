@@ -96,7 +96,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "1.1",
             "varName": "trunk_length",
             "varType": 0
         },
@@ -126,6 +126,20 @@
             "resourceFilter": 1023,
             "value": "0.75",
             "varName": "crown_half_width",
+            "varType": 0
+        },
+        {
+            "id": "d206371b-85d6-420b-92f9-d6e857de2405",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.25",
+            "varName": "mound_radius",
             "varType": 0
         },
         {
