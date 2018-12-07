@@ -1,4 +1,4 @@
-if (can_draw) {
+if (can_draw && view_current == obj_MDP.fg_view_index) {
 	/*if (growth < 1) {
 		var _mound_z_offset = -mound_radius * growth*2;
 		var _mat = matrix_build(real_x, real_y, real_z + _mound_z_offset, 0, 0, 0, 1, 1, 1);

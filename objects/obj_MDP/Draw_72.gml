@@ -1,16 +1,19 @@
-if (!surface_exists(sky_surf)) {
-	sky_surf = surface_create(app_width, app_height);
+with (obj_camera) {
+	camera_set_proj_mat(fore_camera,cam_project_matrix);
+	camera_set_proj_mat(back_camera,cam_project_matrix);
 }
 
-surface_set_target(sky_surf);
+if (view_current == bg_view_index) {
+	draw_clear_alpha(c_black, 0);
+	
 	with (obj_skybox) {
 		event_user(0);
 	}
-surface_reset_target();
+}
 
-surface_set_target(application_surface);
-	draw_surface(sky_surf,0,0);
-surface_reset_target();
+else if (view_current == fg_view_index) {
+	draw_clear_alpha(c_black, 0);
 
-shader_set(shd_cel);
-shd_cel_set_uniforms();
+	shader_set(shd_cel);
+	shd_cel_set_uniforms();
+}

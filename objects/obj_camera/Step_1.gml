@@ -7,4 +7,5 @@ if (owner) {
 	pitch = owner.pitch;
 }
 
-camera_update(camera);
+camera_update(fore_camera);
+camera_update(back_camera);

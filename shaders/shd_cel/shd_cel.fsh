@@ -3,7 +3,6 @@ uniform float u_normal_weight;
 
 uniform float u_fog_start;
 uniform float u_fog_end;
-uniform vec4 u_fog_colour;
 
 uniform vec4 u_diffuse_colour1;
 uniform vec3 u_diffuse_direction1;
@@ -27,5 +26,7 @@ void main()
 	float dist = length(v_vViewPos);
 	float fog_ratio = clamp((u_fog_end - dist) / (u_fog_end - u_fog_start), 0.0, 1.0);
 	
-    gl_FragColor = mix(u_fog_colour, true_colour, fog_ratio);
+	float true_alpha = mix(0.0, v_vColour.a, fog_ratio);
+	
+    gl_FragColor = vec4(true_colour.rgb, true_alpha);
 }

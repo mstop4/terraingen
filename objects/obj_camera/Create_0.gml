@@ -7,11 +7,13 @@ pitch = 0;
 
 owner = noone;
 
-camera = camera_create();
+fore_camera = camera_create();
+back_camera = camera_create();
 cam_project_matrix =
 		matrix_build_projection_perspective_fov(
 		obj_MDP.fov,
-		view_get_wport(obj_MDP.view_index)/view_get_hport(obj_MDP.view_index),
+		view_get_wport(obj_MDP.fg_view_index)/view_get_hport(obj_MDP.fg_view_index),
 		obj_MDP.near_dist,obj_MDP.far_dist);
 
-camera_set_proj_mat(camera,cam_project_matrix);
+camera_set_proj_mat(fore_camera,cam_project_matrix);
+camera_set_proj_mat(back_camera,cam_project_matrix);
