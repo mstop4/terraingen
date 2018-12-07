@@ -39,6 +39,7 @@ fg_surf = surface_create(app_width, app_height);
 view_surface_id[fg_view_index] = fg_surf;
 bg_surf = surface_create(app_width, app_height);
 view_surface_id[bg_view_index] = bg_surf;
+bg_surf_tex = surface_get_texture(bg_surf);
 
 fog_end = far_dist * fog_far_ratio;
 fog_start = fog_end - fog_range;

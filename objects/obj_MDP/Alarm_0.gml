@@ -23,6 +23,7 @@ view_set_hport(fg_view_index,app_height);
 if (!surface_exists(bg_surf)) {
 	bg_surf = surface_create(app_width, app_height);
 	view_surface_id[bg_view_index] = bg_surf;
+	bg_surf_tex = surface_get_texture(bg_surf);
 }
 
 else {
