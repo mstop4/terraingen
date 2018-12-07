@@ -24,9 +24,7 @@ global.vert_wo_light = vertex_format_end();
 
 view_enabled = true;
 view_set_visible(view_index,true);
-surface_resize(application_surface,window_width,window_height);
-view_set_wport(view_index,window_width);
-view_set_hport(view_index,window_height);
+alarm[0] = 1;
 
 fog_colour = [0, 0.8, 1, 1];
 fog_end = far_dist * fog_far_ratio;
