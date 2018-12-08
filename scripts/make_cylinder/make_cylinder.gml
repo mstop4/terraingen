@@ -59,11 +59,11 @@ for (var i=0; i<_sections; i++) {
 					   
 	add_vertex(_model, _v[0] * _radius, _v[1] * _radius, _length,
 					   _vn[0], _vn[1], _vn[2],
-					   _colour, 1, 0, 0);
+					   _colour, 1, 0, 1);
 					   
 	add_vertex(_model, _v2[0] * _radius, _v2[1] * _radius, _length,
 					   _vn[0], _vn[1], _vn[2],
-					   _colour, 1, 0, 0);
+					   _colour, 1, 0, 1);
 					   
 	add_vertex(_model, _v[0] * _radius, _v[1] * _radius, 0,
 					   _vn[0], _vn[1], _vn[2],
@@ -71,7 +71,7 @@ for (var i=0; i<_sections; i++) {
 					   
 	add_vertex(_model, _v2[0] * _radius, _v2[1] * _radius, _length,
 					   _vn[0], _vn[1], _vn[2],
-					   _colour, 1, 0, 0);
+					   _colour, 1, 0, 1);
 					   
 	add_vertex(_model, _v2[0] * _radius, _v2[1] * _radius, 0,
 					   _vn[0], _vn[1], _vn[2],

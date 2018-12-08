@@ -31,7 +31,7 @@ enum vec_op {
 	subtract
 }
 
-enum tree_state {
+enum plant_state {
 	stable,
 	growing,
 	felled

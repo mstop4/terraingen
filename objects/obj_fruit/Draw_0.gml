@@ -1,6 +1,18 @@
 if (can_draw && view_current == obj_MDP.fg_view_index) {
-	var _mat = matrix_build(real_x, real_y, real_z + height + length, 0, 180, 0, growth, growth, growth);
+	
+	var _xy_scale,  _z_scale;
+	
+	if (growth < stage_trans) {
+		_xy_scale = growth / stage_trans * xy_scale_stage[0]; 
+		_z_scale = growth / stage_trans * z_scale_stage[0];
+	}
+	else {
+		_xy_scale = min(xy_scale_stage[0], (growth - stage_trans) * (1/(1-stage_trans)) * (xy_scale_stage[1]-xy_scale_stage[0]) + xy_scale_stage[0]);
+		_z_scale = max(z_scale_stage[0], (growth - stage_trans) * (1/(1-stage_trans)) * (z_scale_stage[1]-z_scale_stage[0]) + z_scale_stage[0]);
+	}
+	
+	var _mat = matrix_build(real_x, real_y, real_z + height + length, 0, 180+sway_angle*growth, yaw, _xy_scale, _xy_scale, _z_scale);
 	matrix_set(matrix_world,_mat);
-	vertex_submit(model,pr_trianglelist,-1);
+	vertex_submit(model,pr_trianglelist,tex_id);
 	matrix_set(matrix_world,matrix_build_identity());
 }

@@ -64,7 +64,7 @@ if (window_has_focus() && !obj_MCP.paused) {
 			obj_tree_gen.tree_map[# _fx, _fy] = 1;
 			var _tree = instance_create_layer(_fx * global.xy_scale, _fy * global.xy_scale,layer,obj_tree_cube);
 			with (_tree) {
-				state = tree_state.growing;
+				state = plant_state.growing;
 				growth = 0;
 			}
 		}

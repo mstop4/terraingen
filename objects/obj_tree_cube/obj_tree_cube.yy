@@ -166,7 +166,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "9",
+            "value": "7",
             "varName": "fruit_slot_rows",
             "varType": 1
         },
@@ -183,6 +183,20 @@
             "value": "0.95",
             "varName": "stage_trans",
             "varType": 0
+        },
+        {
+            "id": "190abcf0-b414-4d3b-81b5-c80d00c99366",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "4",
+            "varName": "num_fruit",
+            "varType": 1
         }
     ],
     "solid": false,

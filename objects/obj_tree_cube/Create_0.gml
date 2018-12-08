@@ -1,7 +1,7 @@
 crown_colour = $81c226;
 trunk_colour = $0e69f9;
 
-state = tree_state.stable;
+state = plant_state.stable;
 can_draw = false;
 cull_halfangle = obj_MDP.fov+30;
 
@@ -56,7 +56,13 @@ z = 0;
 real_x = 0;
 real_y = 0;
 real_z = 0;
-growth = 1;
+growth = 0;
+
+xy_scale_stage[0] = 0.25;
+xy_scale_stage[1] = 1;
+
+z_scale_stage[0] = 1.25;
+z_scale_stage[1] = 1;
 
 event_user(0);
 
@@ -72,7 +78,7 @@ for (var i=0; i<fruit_slot_rows; i++) {
 
 ds_list_shuffle(fruit_slots);
 
-for (var i=0; i<4; i++) {
+for (var i=0; i<num_fruit; i++) {
 	var _cur_slot = fruit_slots[| 0];
 	ds_list_delete(fruit_slots, 0);
 	var _col = (_cur_slot mod fruit_slot_rows) - _slots_half_width;
@@ -81,7 +87,7 @@ for (var i=0; i<4; i++) {
 	var _xx = (_col * dsin(yaw)) + (_row * dcos(yaw));
 	var _yy = (_col * dcos(yaw)) - (_row * dsin(yaw));
 	
-	fruit[i] = instance_create_layer(x+(0.5*global.xy_scale)+_xx*15, y+(0.5*global.xy_scale)+_yy*15,layer,obj_fruit);
+	fruit[i] = instance_create_layer(x+(0.5*global.xy_scale)+_xx*20, y+(0.5*global.xy_scale)+_yy*20,layer,obj_fruit);
 	fruit[i].height = trunk_length + crown_half_width - 0.1 - crown_half_width - fruit[i].length;
 	fruit[i].real_z = real_z;
 	with (fruit[i]) event_user(0);

@@ -13,7 +13,7 @@ uniform vec3 u_diffuse_direction2;
 
 varying vec4 v_vViewPos;
 varying vec3 v_vNormal;
-//varying vec2 v_vTexcoord;
+varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
 void main()
@@ -24,6 +24,8 @@ void main()
 	vec4 fg_colour = (v_vColour * u_ambient_colour) + 
 					   (v_vColour * u_diffuse_colour1 * diffuse_ratio1) +
 					   (v_vColour * u_diffuse_colour2 * diffuse_ratio2);
+					   
+	fg_colour *= texture2D(gm_BaseTexture, v_vTexcoord);
 					   
 	vec4 bg_colour = texture2D(u_bg_tex, gl_FragCoord.xy / u_app_size.xy);
 	

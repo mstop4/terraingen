@@ -1,2 +1,2 @@
-state = tree_state.growing;
+state = plant_state.growing;
 growth = 0;

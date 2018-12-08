@@ -1,14 +1,15 @@
-if (state == tree_state.growing) {
+if (state == plant_state.growing) {
+	growth += 0.002;
+	
 	if (growth >= 1) {
 		growth = 1;
-		state = tree_state.stable;
+		state = plant_state.stable;
 		
-		for (var i=0; i<4; i++) {
+		for (var i=0; i<num_fruit; i++) {
 			fruit[i].visible = true;
+			fruit[i].state = plant_state.growing;
 		}
 	}
-		
-	growth += 0.002;
 }
 
 var _dir_from_player = point_direction(obj_player.my_cam.x, obj_player.my_cam.y, real_x, real_y);

@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "6891334a-48c4-4bb5-8799-e32cd979aedb",
+            "Value": {
+                "id": "d4ab5955-b02a-4f4a-8414-82cca715b868",
+                "resourcePath": "sprites\\tex_fruit\\tex_fruit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6a1e8683-bb5e-4644-b09d-0bb0e93236e2",
             "Value": {
                 "id": "fde8e5f7-0c35-4c25-97d7-2c2a3a95a905",

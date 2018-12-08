@@ -7,14 +7,13 @@ if (can_draw && view_current == obj_MDP.fg_view_index) {
 	var _crown_xy_scale,  _crown_z_scale;
 	
 	if (growth < stage_trans) {
-		_crown_xy_scale = growth / stage_trans * 0.25; 
-		_crown_z_scale = growth / stage_trans * 1.25;
+		_crown_xy_scale = growth / stage_trans * xy_scale_stage[0]; 
+		_crown_z_scale = growth / stage_trans * z_scale_stage[0];
 	}
 	else {
-		_crown_xy_scale = max(0.25, (growth - stage_trans) * (1/(1-stage_trans)) * 0.75 + 0.25);
-		_crown_z_scale = min(1.25, (growth - stage_trans) * (1/(1-stage_trans)) * -0.25 + 1.25);
+		_crown_xy_scale = max(xy_scale_stage[0], (growth - stage_trans) * (1/(1-stage_trans)) * (xy_scale_stage[1]-xy_scale_stage[0]) + xy_scale_stage[0]);
+		_crown_z_scale = min(z_scale_stage[0], (growth - stage_trans) * (1/(1-stage_trans)) * (z_scale_stage[1]-z_scale_stage[0]) + z_scale_stage[0]);
 	}
-	
 	_mat = matrix_build(real_x, real_y, real_z+(trunk_length+crown_half_width)*_trunk_scale-0.1, 0, 0, yaw, _crown_xy_scale, _crown_xy_scale, _crown_z_scale);
 	matrix_set(matrix_world,_mat);
 	vertex_submit(crown,pr_trianglelist,-1);

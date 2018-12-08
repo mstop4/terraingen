@@ -5,7 +5,21 @@ real_x = 0;
 real_y = 0;
 real_z = 0;
 height = 0;
-growth = 0.5;
+yaw = random(360);
+
+growth = 0;
+sway_t = random(2 * pi);
+sway_t_delta = 2 * pi / 480;
+sway_angle = 0;
+tex_id = sprite_get_texture(tex_fruit,0);
+
+state = plant_state.stable;
 can_draw = false;
 
 cull_halfangle = obj_MDP.fov+30;
+
+xy_scale_stage[0] = 1.25;
+xy_scale_stage[1] = 1;
+
+z_scale_stage[0] = 0.75;
+z_scale_stage[1] = 1;

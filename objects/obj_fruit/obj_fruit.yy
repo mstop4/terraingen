@@ -82,7 +82,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.03",
+            "value": "0.05",
             "varName": "radius",
             "varType": 0
         },
@@ -96,7 +96,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.25",
+            "value": "0.4",
             "varName": "length",
             "varType": 0
         },
@@ -127,9 +127,51 @@
             "value": "12",
             "varName": "draw_threshold_dist",
             "varType": 0
+        },
+        {
+            "id": "c71a5b95-53e1-4ee8-a9ea-420490700efc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.95",
+            "varName": "stage_trans",
+            "varType": 0
+        },
+        {
+            "id": "06a1e073-e828-47e5-a10a-8374bf34e13d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "8",
+            "varName": "sway_half_angle",
+            "varType": 0
+        },
+        {
+            "id": "f4e7f40e-11c6-42c6-9afe-30a5682fd425",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 2,
+            "value": "tex_fruit",
+            "varName": "texture",
+            "varType": 5
         }
     ],
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "visible": false
 }
