@@ -6,6 +6,7 @@ real_y = 0;
 real_z = 0;
 height = 0;
 yaw = random(360);
+word = "Hello";
 
 growth = 0;
 sway_t = random(2 * pi);
