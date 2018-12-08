@@ -1,14 +1,11 @@
 crown_colour = $81c226;
 trunk_colour = $0e69f9;
-mound_colour = $004080;
 
-trunk = make_cylinder(trunk_radius, trunk_length, trunk_step, trunk_colour);
-mound = make_sphere(mound_radius, 8, 8, mound_colour);
-
-state = false;
-
+state = tree_state.stable;
 can_draw = false;
 cull_halfangle = obj_MDP.fov+30;
+
+trunk = make_cylinder(trunk_radius, trunk_length, trunk_step, trunk_colour);
 
 crown = vertex_create_buffer();
 vertex_begin(crown, global.vert_w_light);
@@ -59,5 +56,33 @@ z = 0;
 real_x = 0;
 real_y = 0;
 real_z = 0;
+growth = 0;
 
 event_user(0);
+
+fruit_slots = ds_list_create();
+var _slots_half_width = fruit_slot_rows div 2;
+
+for (var i=0; i<fruit_slot_rows; i++) {
+	for (var j=0; j<fruit_slot_rows; j++) {
+		if (!(abs(i-(fruit_slot_rows div 2)) < 2 && abs(j-(fruit_slot_rows div 2)) < 2)) 
+			ds_list_add(fruit_slots,i*fruit_slot_rows+j);
+	}
+}
+
+ds_list_shuffle(fruit_slots);
+
+for (var i=0; i<4; i++) {
+	var _cur_slot = fruit_slots[| 0];
+	ds_list_delete(fruit_slots, 0);
+	var _col = (_cur_slot mod fruit_slot_rows) - _slots_half_width;
+	var _row = (_cur_slot div fruit_slot_rows) - _slots_half_width;
+	
+	var _xx = (_col * dsin(yaw)) + (_row * dcos(yaw));
+	var _yy = (_col * dcos(yaw)) - (_row * dsin(yaw));
+	
+	fruit[i] = instance_create_layer(x+(0.5*global.xy_scale)+_xx*15, y+(0.5*global.xy_scale)+_yy*15,layer,obj_fruit);
+	fruit[i].height = trunk_length + crown_half_width - 0.1 - crown_half_width - fruit[i].length;
+	fruit[i].real_z = real_z;
+	with (fruit[i]) event_user(0);
+}
