@@ -56,7 +56,7 @@ z = 0;
 real_x = 0;
 real_y = 0;
 real_z = 0;
-growth = 0;
+growth = 1;
 
 event_user(0);
 
