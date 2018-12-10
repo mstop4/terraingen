@@ -82,8 +82,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.05",
-            "varName": "radius",
+            "value": "0.15",
+            "varName": "width",
             "varType": 0
         },
         {
@@ -96,22 +96,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.4",
+            "value": "0.6",
             "varName": "length",
-            "varType": 0
-        },
-        {
-            "id": "5ab41837-07c1-4c9c-9556-70c40ba0c6cf",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "8",
-            "varName": "step",
             "varType": 0
         },
         {
@@ -155,20 +141,6 @@
             "value": "8",
             "varName": "sway_half_angle",
             "varType": 0
-        },
-        {
-            "id": "f4e7f40e-11c6-42c6-9afe-30a5682fd425",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 2,
-            "value": "tex_fruit",
-            "varName": "texture",
-            "varType": 5
         }
     ],
     "solid": false,

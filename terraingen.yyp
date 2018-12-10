@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "2aa43482-6990-4e47-a2d3-8f70052d083f",
+            "Value": {
+                "id": "8fd1598d-2652-4744-a504-45049b7910e3",
+                "resourcePath": "scripts\\make_fruit\\make_fruit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2ae31e26-081a-476f-b996-f50b652bf7b5",
             "Value": {
                 "id": "a41eb02a-e3d9-4ce1-bbb0-ba4ef2770166",
@@ -371,14 +379,6 @@
             "Value": {
                 "id": "bd825fb0-5a4a-44df-b3cf-c4bee9f9812d",
                 "resourcePath": "sprites\/spr_city_back\/spr_city_back.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "6891334a-48c4-4bb5-8799-e32cd979aedb",
-            "Value": {
-                "id": "d4ab5955-b02a-4f4a-8414-82cca715b868",
-                "resourcePath": "sprites\\tex_fruit\\tex_fruit.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "a2e7fea6-6317-4eba-a0e5-49ad962118d4",
+            "Value": {
+                "id": "ca75d9f6-f82d-475a-a6ae-0b3561fa74f0",
+                "resourcePath": "scripts\\make_plane\\make_plane.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a3527de6-b6a1-459f-a0a6-3f75def949e9",
             "Value": {
                 "id": "c6e9e076-b7f0-4db7-ad19-32b50373d88e",
@@ -724,6 +732,14 @@
                 "id": "d94e020f-5d0f-4e80-9be3-53e894d2ddc4",
                 "resourcePath": "scripts\/camera_update\/camera_update.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bccea879-9697-44fc-8be9-1d4a8d45777a",
+            "Value": {
+                "id": "f9d1cadc-bff0-4859-8b40-f482cec43972",
+                "resourcePath": "fonts\\fnt_default\\fnt_default.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -1009,6 +1025,8 @@
         "3d9a94f3-c197-4a5f-8934-16d2cd5f5544",
         "55d4103d-0ed4-4232-87fa-24f5e8d6d5dd",
         "b13de55f-a752-4e9a-8f2d-117f74ba800e",
+        "a2e7fea6-6317-4eba-a0e5-49ad962118d4",
+        "2aa43482-6990-4e47-a2d3-8f70052d083f",
         "93e227ed-bc36-402a-904f-b72248ff097f",
         "3c32e29f-9309-4329-984c-c799f4c3d100",
         "be8302fc-b6cf-4a06-8bd9-4a525c67a23c",
