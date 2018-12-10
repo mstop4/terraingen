@@ -1,3 +1,4 @@
+init_input_enums()
 control_slot = -1;
 mouse_device_id = 0;
 

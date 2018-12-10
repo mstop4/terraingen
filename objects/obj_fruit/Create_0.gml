@@ -1,5 +1,5 @@
 colour = $FFFFFF;
-word = "Hello";
+word = choose("Hello", "World", "foo", "bar");
 model = make_fruit(length, width, colour);
 
 var _tex_surf = surface_create(128,32);

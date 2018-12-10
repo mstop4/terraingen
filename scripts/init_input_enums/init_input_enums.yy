@@ -1,8 +1,8 @@
 {
-    "id": "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
+    "id": "a5cbf558-f15d-487b-ba96-e13cd1f29653",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "set_paused",
+    "name": "init_input_enums",
     "IsCompatibility": false,
     "IsDnD": false
 }

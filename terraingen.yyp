@@ -226,7 +226,7 @@
             "Key": "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
             "Value": {
                 "id": "65efec57-f12c-48d9-a998-981f006331e1",
-                "resourcePath": "scripts\/set_paused\/set_paused.yy",
+                "resourcePath": "scripts\\set_cursor_lock\\set_cursor_lock.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -291,6 +291,14 @@
             "Value": {
                 "id": "ec7b70fd-18d8-4f8f-829d-19e10cac4d33",
                 "resourcePath": "objects\/obj_diamondsquare\/obj_diamondsquare.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "503242ee-a0be-4229-a9dd-1f088347f8f3",
+            "Value": {
+                "id": "efdcc6d9-ed70-4505-a49c-e210ab9eed48",
+                "resourcePath": "objects\\obj_title\\obj_title.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -655,6 +663,14 @@
             }
         },
         {
+            "Key": "a5cbf558-f15d-487b-ba96-e13cd1f29653",
+            "Value": {
+                "id": "a6f96fbd-68a4-45f1-b08a-fe8f3750c4ed",
+                "resourcePath": "scripts\\init_input_enums\\init_input_enums.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "e876836b-f61a-4829-b5d8-b0db005c2471",
@@ -882,7 +898,7 @@
             "Key": "dde622c4-d77c-4564-b6a9-ceaa1c86e647",
             "Value": {
                 "id": "a6084066-d11f-4289-9ac9-25bd855345c9",
-                "resourcePath": "scripts\/init_enums\/init_enums.yy",
+                "resourcePath": "scripts\\init_general_enums\\init_general_enums.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -906,7 +922,7 @@
             "Key": "e9494fa7-f628-4758-9cf0-d1e5cbfb14e0",
             "Value": {
                 "id": "41c0fa71-e795-4fb2-9918-4d0ad8eaf4ae",
-                "resourcePath": "rooms\/room1\/room1.yy",
+                "resourcePath": "rooms\\room_terrain_gen\\room_terrain_gen.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -956,6 +972,14 @@
                 "id": "1ed7f691-d020-4178-9a14-a3ae5e10a11b",
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f6253253-4d9c-4936-bcfb-3b3d194e130d",
+            "Value": {
+                "id": "32b69096-fd4f-4a95-83c7-4b36abe083ca",
+                "resourcePath": "rooms\\room_title\\room_title.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1013,6 +1037,7 @@
         "bc62e24f-cfad-4300-95f7-380d027dea05",
         "c6a329dd-4e5b-4842-a19e-b59717ccce14",
         "dde622c4-d77c-4564-b6a9-ceaa1c86e647",
+        "a5cbf558-f15d-487b-ba96-e13cd1f29653",
         "cb760d19-7556-40f4-8278-6fbbbc5c85e2",
         "54466758-41cf-4d02-9c5e-1791a54eb403",
         "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
