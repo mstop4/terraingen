@@ -8,11 +8,12 @@ if (view_current == d_view_index) {
 	draw_clear_alpha(c_black, 0);
 }
 
-else if (view_current == fg_view_index) {
+else if (view_current == bg_view_index) {
 	draw_clear_alpha(c_black, 0);
 
-	shader_set(shd_cel);
-	shd_cel_set_uniforms();
+	with (obj_skybox) {
+		event_user(0);
+	}
 }
 
 else if (view_current == fg_view_index) {
