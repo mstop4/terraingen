@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "7d47006c-676f-46df-b58b-a51190ac1d55",
+            "Value": {
+                "id": "4ddd45f6-e1be-4405-9f64-48b3a313f209",
+                "resourcePath": "scripts\\depth_camera_update\\depth_camera_update.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7d5ee961-4d73-4155-a4a2-7f95985a3d20",
             "Value": {
                 "id": "e89c6ac3-109f-4ed3-9494-518b03eaddeb",
@@ -1059,6 +1067,7 @@
         "2b247b51-b5d0-4ce5-99d2-8a2c95055049",
         "a253cf06-fb20-4f51-8ec7-5171d7004474",
         "bc62e24f-cfad-4300-95f7-380d027dea05",
+        "7d47006c-676f-46df-b58b-a51190ac1d55",
         "c6a329dd-4e5b-4842-a19e-b59717ccce14",
         "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
         "dde622c4-d77c-4564-b6a9-ceaa1c86e647",

@@ -9,6 +9,8 @@ enum action {
 	down,
 	left,
 	right,
+	front,
+	back,
 	
 	pause,
 	fullscreen,
@@ -21,7 +23,7 @@ enum action {
 	light_incr_theta,
 	light_decr_theta,
 	light_incr_phi,
-	light_decr_phi,	
+	light_decr_phi,
 	
 	max_actions
 }

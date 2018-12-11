@@ -1,0 +1,1 @@
+light_dist -= 1;

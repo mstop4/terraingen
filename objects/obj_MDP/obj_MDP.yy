@@ -131,7 +131,7 @@
             "varType": 1
         },
         {
-            "id": "4c85af32-20da-4c5e-ac96-06f60ffb7a2d",
+            "id": "267fdbd4-8684-4585-843a-02384a4d6386",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -141,6 +141,20 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
+            "varName": "d_view_index",
+            "varType": 0
+        },
+        {
+            "id": "4c85af32-20da-4c5e-ac96-06f60ffb7a2d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
             "varName": "bg_view_index",
             "varType": 1
         },
@@ -154,7 +168,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "2",
             "varName": "fg_view_index",
             "varType": 1
         },

@@ -2,10 +2,12 @@ init_input_enums()
 control_slot = -1;
 mouse_device_id = 0;
 
-kbm_key[action.up] = ord("W");
-kbm_key[action.down] = ord("S");
+kbm_key[action.front] = ord("W");
+kbm_key[action.back] = ord("S");
 kbm_key[action.left] = ord("A");
 kbm_key[action.right] = ord("D");
+kbm_key[action.up] = ord("Q");
+kbm_key[action.down] = ord("E");
 
 kbm_key[action.pause] = ord("P");
 kbm_key[action.fullscreen] = ord("F");
@@ -20,10 +22,12 @@ kbm_key[action.light_decr_theta] = vk_left;
 kbm_key[action.light_incr_phi] = vk_down;
 kbm_key[action.light_decr_phi] = vk_up;
 
-kbm_device[action.up] = device.keyboard;
-kbm_device[action.down] = device.keyboard;
+kbm_device[action.front] = device.keyboard;
+kbm_device[action.back] = device.keyboard;
 kbm_device[action.left] = device.keyboard;
 kbm_device[action.right] = device.keyboard;
+kbm_device[action.up] = device.keyboard;
+kbm_device[action.down] = device.keyboard;
 
 kbm_device[action.pause] = device.keyboard;
 kbm_device[action.fullscreen] = device.keyboard;

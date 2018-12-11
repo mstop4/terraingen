@@ -27,6 +27,9 @@ app_width = window_width;
 app_height = window_height;
 
 view_enabled = true;
+view_set_wport(d_view_index,app_width);
+view_set_hport(d_view_index,app_height);
+
 view_set_visible(bg_view_index,true);
 view_set_wport(bg_view_index,app_width);
 view_set_hport(bg_view_index,app_height);

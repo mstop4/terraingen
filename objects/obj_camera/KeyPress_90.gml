@@ -1,0 +1,1 @@
+bind_z_to_owner = !bind_z_to_owner;

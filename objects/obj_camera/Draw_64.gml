@@ -4,4 +4,6 @@ draw_set_valign(fa_top);
 draw_set_color(c_white);
 draw_set_valign(fa_top);
 
-draw_text(0,0,"Camera\nX: " + string(x) + "\nY: " + string(y) + "\nZ: " + string(z));
+draw_text(0,0,"Camera\nX: " + string(x)
+				  + "\nY: " + string(y)
+				  + "\nZ: " + string(z));
