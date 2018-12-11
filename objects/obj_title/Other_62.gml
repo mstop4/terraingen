@@ -1,2 +1,12 @@
-/// @description Insert description here
-// You can write your code in this editor
+if (async_load[? "id"] == handshake) {
+	if (async_load[? "status"] == 0) {
+		if (async_load[? "result"] == "Welcome to the Garden Path server!") {
+			obj_MCP.conn_state = connection_state.connected;
+			alarm[0] = 60;
+		}
+		
+		else {
+			obj_MCP.conn_state = connection_state.disconnected;
+		}
+	}
+}

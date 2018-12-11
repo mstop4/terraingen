@@ -5,5 +5,7 @@ global.xy_scale = 100;
 server_address = "http://localhost:" + PORT;
 mouse_sens_hor = 0.1;
 mouse_sens_ver = 0.1;
+cursor_lock = false;
+conn_state = connection_state.disconnected;
 
-set_cursor_lock(false);
+//set_cursor_lock(false);
