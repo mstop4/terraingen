@@ -490,7 +490,7 @@
             "Key": "7930b61d-6b63-48a6-bef1-80497ee6ffbd",
             "Value": {
                 "id": "b03aa94d-0ed6-4649-8871-d27905c8fa7b",
-                "resourcePath": "shaders\/shd_cel\/shd_cel.yy",
+                "resourcePath": "shaders\\shd_cel_old\\shd_cel_old.yy",
                 "resourceType": "GMShader"
             }
         },
@@ -507,6 +507,14 @@
             "Value": {
                 "id": "6d63399a-2929-4161-aef4-bc27d1ebfbdc",
                 "resourcePath": "scripts\/blin_z_pos\/blin_z_pos.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7b133acc-67d7-42ed-a800-6c694a18c9e9",
+            "Value": {
+                "id": "eec4ebfa-1904-4808-912a-d0521e932ca7",
+                "resourcePath": "scripts\\shd_cel_set_uniforms_old\\shd_cel_set_uniforms_old.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -604,6 +612,14 @@
                 "id": "f5225bde-65ff-4f7b-9b04-eba7118b3ba8",
                 "resourcePath": "views\/912fae93-1bde-4c55-a102-0731046ff840.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9328c4a0-a3ec-4258-b0cd-360b41a51028",
+            "Value": {
+                "id": "5c332152-3fe8-49df-93ff-a7c69df26a7e",
+                "resourcePath": "shaders\\shd_cel\\shd_cel.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -983,6 +999,14 @@
             }
         },
         {
+            "Key": "f259a269-311f-41d5-aca8-7c8f8fa3a526",
+            "Value": {
+                "id": "1726b7af-59e8-419a-9a80-ead66fce418f",
+                "resourcePath": "scripts\\shd_cel_get_uniforms_old\\shd_cel_get_uniforms_old.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f2aa09fd-c7ec-4b88-af76-f5f199b7c1aa",
             "Value": {
                 "id": "359481b0-82a2-4293-980b-09f0bc9bbe9e",
@@ -1082,6 +1106,8 @@
         "2730a82b-160a-4ef4-94d7-6a5aa079371f",
         "be8302fc-b6cf-4a06-8bd9-4a525c67a23c",
         "6c416278-31b2-4565-b1d8-d55bfb7f7d3a",
+        "f259a269-311f-41d5-aca8-7c8f8fa3a526",
+        "7b133acc-67d7-42ed-a800-6c694a18c9e9",
         "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
         "ff3c474e-3176-4a1b-baa5-0845a5e52a83",
         "545ff4fe-ef3e-4cc9-aa51-f82dee01b81e",

@@ -3,7 +3,8 @@ real_x = _xyz[0];
 real_y = _xyz[1];
 
 var _tex_surf = surface_create(128,32);
-	
+
+gpu_set_colorwriteenable(true, true, true, false);
 surface_set_target(_tex_surf);
 	draw_clear(c_white);
 	draw_set_colour(c_black);
@@ -12,6 +13,7 @@ surface_set_target(_tex_surf);
 	draw_set_valign(fa_center);
 	draw_text(64,16,word);
 surface_reset_target();
+gpu_set_colorwriteenable(true, true, true, true);
 
 tex = sprite_create_from_surface(_tex_surf,0,0,128,32,false,false,0,0);
 tex_id = sprite_get_texture(tex,0);
