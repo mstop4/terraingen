@@ -5,8 +5,6 @@ y = 0
 z = 0;
 pitch = 0;
 
-light_dist = 1;
-
 owner = noone;
 bind_z_to_owner = true;
 
@@ -20,11 +18,3 @@ fb_cam_proj_mat =
 
 camera_set_proj_mat(fore_camera,fb_cam_proj_mat);
 camera_set_proj_mat(back_camera,fb_cam_proj_mat);
-
-depth_camera = camera_create();
-d_cam_proj_mat =
-		matrix_build_projection_ortho(view_get_wport(obj_MDP.fg_view_index),
-		view_get_hport(obj_MDP.fg_view_index),
-		0,32000);
-		
-camera_set_proj_mat(depth_camera,d_cam_proj_mat);

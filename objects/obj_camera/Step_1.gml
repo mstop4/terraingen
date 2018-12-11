@@ -14,4 +14,3 @@ if (!bind_z_to_owner) {
 
 camera_update(fore_camera);
 camera_update(back_camera);
-depth_camera_update(depth_camera);
