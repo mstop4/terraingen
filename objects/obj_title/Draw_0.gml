@@ -1,3 +1,4 @@
+draw_set_font(fnt_gui);
 switch (obj_MCP.conn_state) {
 	case connection_state.disconnected:
 		draw_text(8,8,"Offline");

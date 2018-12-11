@@ -1,4 +1,4 @@
-draw_set_font(fnt_default);
+draw_set_font(fnt_gui);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 var _d1 = diffuse_direction[| 0];

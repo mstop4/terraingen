@@ -7,7 +7,7 @@ var _tex_surf = surface_create(128,32);
 surface_set_target(_tex_surf);
 	draw_clear(c_white);
 	draw_set_colour(c_black);
-	draw_set_font(fnt_default);
+	draw_set_font(fnt_fruit);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	draw_text(64,16,word);
