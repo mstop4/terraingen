@@ -10,3 +10,5 @@ view_bob_z = view_bob_amount;
 is_stepping = false;
 
 event_user(0);
+
+set_cursor_lock(true);

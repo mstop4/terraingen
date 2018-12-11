@@ -1,9 +1,9 @@
 /// @arg cursor_lock
 
-cursor_lock = argument[0];
+obj_MCP.cursor_lock = argument[0];
 
-if (cursor_lock) {
-	window_set_cursor(cr_arrow);
-} else {
+if (obj_MCP.cursor_lock) {
 	window_set_cursor(cr_none);
+} else {
+	window_set_cursor(cr_arrow);
 }

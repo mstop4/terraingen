@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "1300c23b-60ee-45af-8392-b69544b9e72c",
+            "Value": {
+                "id": "06040bd0-36d1-4877-a1e5-9991f4ca27fe",
+                "resourcePath": "scripts\\make_tree_cube\\make_tree_cube.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1419d418-6a37-4162-9348-862d604f12ea",
             "Value": {
                 "id": "e3271e65-87d6-45f4-844f-9d4188be5748",
@@ -140,6 +148,14 @@
                 "id": "cad2b926-98f7-49a8-b072-b41d0e3d105c",
                 "resourcePath": "sprites\/mask_player\/mask_player.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2730a82b-160a-4ef4-94d7-6a5aa079371f",
+            "Value": {
+                "id": "5d95373b-156b-4fc9-942d-c704a0cd632b",
+                "resourcePath": "scripts\\tree_init_fruits\\tree_init_fruits.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1036,11 +1052,11 @@
         "a253cf06-fb20-4f51-8ec7-5171d7004474",
         "bc62e24f-cfad-4300-95f7-380d027dea05",
         "c6a329dd-4e5b-4842-a19e-b59717ccce14",
+        "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
         "dde622c4-d77c-4564-b6a9-ceaa1c86e647",
         "a5cbf558-f15d-487b-ba96-e13cd1f29653",
         "cb760d19-7556-40f4-8278-6fbbbc5c85e2",
         "54466758-41cf-4d02-9c5e-1791a54eb403",
-        "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
         "f67add76-7044-49cc-a14c-b712d2b260db",
         "90969306-5472-41fb-b84a-046e59575d21",
         "749c4049-88aa-427e-bc3b-a608c6444814",
@@ -1054,6 +1070,8 @@
         "2aa43482-6990-4e47-a2d3-8f70052d083f",
         "93e227ed-bc36-402a-904f-b72248ff097f",
         "3c32e29f-9309-4329-984c-c799f4c3d100",
+        "1300c23b-60ee-45af-8392-b69544b9e72c",
+        "2730a82b-160a-4ef4-94d7-6a5aa079371f",
         "be8302fc-b6cf-4a06-8bd9-4a525c67a23c",
         "6c416278-31b2-4565-b1d8-d55bfb7f7d3a",
         "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
