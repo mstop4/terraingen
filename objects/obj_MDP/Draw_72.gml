@@ -6,9 +6,14 @@ with (obj_camera) {
 
 if (view_current == d_view_index) {
 	draw_clear_alpha(c_black, 0);
+	
+	shader_set(shd_cel);
+	shd_cel_set_uniforms();
 }
 
 else if (view_current == bg_view_index) {
+	shader_reset();
+	
 	draw_clear_alpha(c_black, 0);
 
 	with (obj_skybox) {

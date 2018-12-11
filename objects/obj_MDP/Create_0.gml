@@ -27,6 +27,7 @@ app_width = window_width;
 app_height = window_height;
 
 view_enabled = true;
+view_set_visible(d_view_index,true);
 view_set_wport(d_view_index,app_width);
 view_set_hport(d_view_index,app_height);
 
@@ -38,6 +39,8 @@ view_set_visible(fg_view_index,true);
 view_set_wport(fg_view_index,app_width);
 view_set_hport(fg_view_index,app_height);
 
+d_surf = surface_create(app_width, app_height);
+view_surface_id[d_view_index] = d_surf;
 fg_surf = surface_create(app_width, app_height);
 view_surface_id[fg_view_index] = fg_surf;
 bg_surf = surface_create(app_width, app_height);
@@ -48,3 +51,4 @@ fog_end = far_dist * fog_far_ratio;
 fog_start = fog_end - fog_range;
 
 shd_cel_get_uniforms();
+shd_depth_get_uniforms();

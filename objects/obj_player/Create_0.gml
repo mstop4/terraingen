@@ -1,7 +1,7 @@
 my_cam = instance_create_layer(0,0,layer,obj_camera);
 my_cam.owner = id;
 use_camera(obj_MDP.bg_view_index, my_cam.back_camera);
-use_camera(obj_MDP.fg_view_index, my_cam.depth_camera);
+use_camera(obj_MDP.fg_view_index, my_cam.fore_camera);
 use_camera(obj_MDP.d_view_index, my_cam.depth_camera);
 
 pitch = 0;

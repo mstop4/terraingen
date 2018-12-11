@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1f1525b3-226b-407e-a159-13816fb9a96b",
+            "Value": {
+                "id": "e9b278bd-012d-4adb-9f75-5108c35754c1",
+                "resourcePath": "shaders\\shd_depth\\shd_depth.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "23259415-20e8-4f76-a141-d29e69592777",
             "Value": {
                 "id": "875bdf5b-d9e6-4fd9-81dc-5cc9a3471d8f",
@@ -591,6 +599,14 @@
             }
         },
         {
+            "Key": "8eab6fb5-7e7c-4f67-abe7-eafd76082b2b",
+            "Value": {
+                "id": "7871136a-9d9a-4130-a30a-59ca3ad6eef3",
+                "resourcePath": "scripts\\shd_depth_get_uniforms\\shd_depth_get_uniforms.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8ffb44bf-0975-4455-a483-a887b296b5c8",
             "Value": {
                 "id": "f22c8fd6-4d39-435a-9264-b5704c69a2fc",
@@ -887,6 +903,14 @@
             }
         },
         {
+            "Key": "ce495268-b3c4-4ff4-b451-5db37a0e8d90",
+            "Value": {
+                "id": "d93b3827-72c4-459f-b99b-99b5b6b5ac7b",
+                "resourcePath": "scripts\\shd_depth_set_uniforms\\shd_depth_set_uniforms.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d179e753-ef02-48f2-9074-cd66fd3591c1",
             "Value": {
                 "id": "dce90e1d-69ac-4c87-a7f3-4b927d12cadd",
@@ -1091,6 +1115,8 @@
         "2730a82b-160a-4ef4-94d7-6a5aa079371f",
         "be8302fc-b6cf-4a06-8bd9-4a525c67a23c",
         "6c416278-31b2-4565-b1d8-d55bfb7f7d3a",
+        "8eab6fb5-7e7c-4f67-abe7-eafd76082b2b",
+        "ce495268-b3c4-4ff4-b451-5db37a0e8d90",
         "d19c9cc6-a764-438a-b4fa-0d1b89c79f54",
         "ff3c474e-3176-4a1b-baa5-0845a5e52a83",
         "545ff4fe-ef3e-4cc9-aa51-f82dee01b81e",
