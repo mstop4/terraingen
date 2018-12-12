@@ -62,7 +62,18 @@ if (window_has_focus() && obj_MCP.cursor_lock) {
 	
 		if (_area == 0 && !collision_circle((_fx+0.5) * global.xy_scale, (_fy+0.5) * global.xy_scale, 15, id, false, false)) {
 			obj_tree_gen.tree_map[# _fx, _fy] = 1;
+			var _word = word_list[| word_selection];
+			
 			var _tree = instance_create_layer(_fx * global.xy_scale, _fy * global.xy_scale,layer,obj_tree_cube);
+			_tree.seed_word = _word;
+			
+			word_map[? _word]--;
+			
+			if (word_map[? _word] <= 0) {
+				ds_map_delete(word_map, _word);
+				ds_list_delete(word_list, word_selection);
+				num_words = ds_list_size(word_list);
+			}
 		}
 	}
 }

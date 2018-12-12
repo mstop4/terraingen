@@ -53,6 +53,56 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "6abe711e-02b5-4283-8c6a-0d981a8d293a"
+        },
+        {
+            "id": "bd5460ba-be77-41fb-a677-9d6c2e76def4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 12,
+            "m_owner": "6abe711e-02b5-4283-8c6a-0d981a8d293a"
+        },
+        {
+            "id": "ee4c93b3-8049-4f12-81ca-a8d30459d065",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "5c19ba93-e084-47a1-a33e-3a6aa79f61cd",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "6abe711e-02b5-4283-8c6a-0d981a8d293a"
+        },
+        {
+            "id": "f006ecdd-9096-4b55-ba74-b2f38f4f2163",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 60,
+            "eventtype": 6,
+            "m_owner": "6abe711e-02b5-4283-8c6a-0d981a8d293a"
+        },
+        {
+            "id": "991844d6-95f3-4a68-a8d3-42a6dabf3c50",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 61,
+            "eventtype": 6,
+            "m_owner": "6abe711e-02b5-4283-8c6a-0d981a8d293a"
+        },
+        {
+            "id": "3a38d185-6241-43b3-81e8-33d10e4b2914",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 62,
+            "eventtype": 7,
+            "m_owner": "6abe711e-02b5-4283-8c6a-0d981a8d293a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -72,6 +122,20 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
+        {
+            "id": "0c42959d-62cc-4f9d-80b6-96a4a481c4b3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "starting_word_count",
+            "varType": 1
+        },
         {
             "id": "7a9f5099-a2a3-4b25-8c0d-abba2ad882be",
             "modelName": "GMObjectProperty",

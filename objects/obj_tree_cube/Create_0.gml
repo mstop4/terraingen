@@ -4,6 +4,7 @@ trunk_colour = $0e69f9;
 state = plant_state.stable;
 can_draw = false;
 cull_halfangle = obj_MDP.fov+30;
+seed_word = "blank";
 
 make_tree_cube();
 
@@ -22,4 +23,4 @@ z_scale_stage[1] = 1;
 
 event_user(0);
 
-get_fruit_words = http_get(obj_MCP.server_address + "/seed?quantity=" + string(num_fruit));
+alarm[0] = 1;

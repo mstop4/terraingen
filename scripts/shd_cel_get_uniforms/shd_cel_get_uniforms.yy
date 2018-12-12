@@ -1,5 +1,5 @@
 {
-    "id": "be8302fc-b6cf-4a06-8bd9-4a525c67a23c",
+    "id": "f259a269-311f-41d5-aca8-7c8f8fa3a526",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "shd_cel_get_uniforms",

@@ -11,6 +11,7 @@ height = 0;
 yaw = random(360);
 
 growth = 0;
+can_collect = false;
 sway_t = random(2 * pi);
 sway_t_delta = 2 * pi / 480;
 sway_angle = 0;
@@ -23,5 +24,5 @@ cull_halfangle = obj_MDP.fov+30;
 xy_scale_stage[0] = 1.1;
 xy_scale_stage[1] = 1;
 
-z_scale_stage[0] = 0.75;
+z_scale_stage[0] = 0.85;
 z_scale_stage[1] = 1;

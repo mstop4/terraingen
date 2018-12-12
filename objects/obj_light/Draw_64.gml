@@ -1,6 +1,8 @@
 draw_set_font(fnt_gui);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
+draw_set_colour(c_white);
+
 var _d1 = diffuse_direction[| 0];
 var _d2 = diffuse_direction[| 1];
 
