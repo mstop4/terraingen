@@ -1,5 +1,5 @@
 colour = $FFFFFF;
-model = make_fruit(length, width, colour);
+model = -1;
 tex_id = -1;
 word = "(blank)";
 owner = noone;
