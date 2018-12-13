@@ -1,5 +1,6 @@
 colour = $FFFFFF;
 model = -1;
+tex_index = -1;
 tex_id = -1;
 word = "(blank)";
 owner = noone;
