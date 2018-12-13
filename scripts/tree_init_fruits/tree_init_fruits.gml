@@ -26,8 +26,14 @@ for (var i=0; i<num_fruit; i++) {
 	fruit[i] = instance_create_layer(x+(0.5*global.xy_scale)+_xx*20, y+(0.5*global.xy_scale)+_yy*20,layer,obj_fruit);
 	fruit[i].height = trunk_length + crown_half_width - 0.1 - crown_half_width - fruit[i].length;
 	fruit[i].real_z = real_z;
+	fruit[i].owner = id;
 	
 	var _word_map = _word_list[| i];
-	fruit[i].word = _word_map[? "word"];
+	
+	if (is_string(_word_map))
+		fruit[i].word = _word_map;
+	else
+		fruit[i].word = _word_map[? "word"];
+		
 	with (fruit[i]) event_user(0);
 }

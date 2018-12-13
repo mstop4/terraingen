@@ -217,6 +217,20 @@
             "value": "4",
             "varName": "num_fruit",
             "varType": 1
+        },
+        {
+            "id": "0d230e66-1963-44d4-acb0-a97896f8971a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "get_own_words",
+            "varType": 3
         }
     ],
     "solid": false,

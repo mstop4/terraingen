@@ -2,6 +2,7 @@ colour = $FFFFFF;
 model = make_fruit(length, width, colour);
 tex_id = -1;
 word = "(blank)";
+owner = noone;
 
 z = 0;
 real_x = 0;
