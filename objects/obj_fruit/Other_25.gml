@@ -1,4 +1,4 @@
-if (owner.can_draw) {
+if (can_draw) {
 	
 	var _xy_scale,  _z_scale;
 	

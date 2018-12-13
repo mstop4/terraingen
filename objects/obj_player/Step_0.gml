@@ -26,7 +26,6 @@ if (window_has_focus() && obj_MCP.cursor_lock) {
 			
 			var _tree = instance_create_layer(cursor_x * global.xy_scale, cursor_y * global.xy_scale,layer,obj_tree_cube);
 			_tree.seed_word = _word;
-			_tree.get_own_words = true;
 			
 			word_map[? _word]--;
 			
