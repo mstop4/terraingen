@@ -7,7 +7,7 @@ if (view_current == bg_view_index) {
 	draw_clear_alpha(c_black, 0);
 
 	with (obj_skybox) {
-		event_user(0);
+		event_user(15);
 	}
 }
 
@@ -16,4 +16,14 @@ else if (view_current == fg_view_index) {
 
 	shader_set(shd_cel);
 	shd_cel_set_uniforms();
+	
+		with (cls_fgObj) {
+			event_user(15);
+		}
+	
+	shader_reset();
+	
+	with (obj_player) {
+		event_user(15);
+	}
 }

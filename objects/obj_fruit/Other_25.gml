@@ -1,4 +1,4 @@
-if (can_draw && view_current == obj_MDP.fg_view_index) {
+if (can_draw) {
 	
 	var _xy_scale,  _z_scale;
 	

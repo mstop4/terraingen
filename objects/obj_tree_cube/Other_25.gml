@@ -1,4 +1,4 @@
-if (can_draw && view_current == obj_MDP.fg_view_index) {
+if (can_draw) {
 	var _trunk_scale = min(1, growth / stage_trans);
 	var _mat = matrix_build(real_x, real_y, real_z-0.1, 0, 0, 0, _trunk_scale, _trunk_scale, _trunk_scale);
 	matrix_set(matrix_world,_mat);

@@ -1,4 +1,4 @@
- /// @arg x
+/// @arg x
 /// @arg y
 /// @arg xy_scale
 /// @arg grid

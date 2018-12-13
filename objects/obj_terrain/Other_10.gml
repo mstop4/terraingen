@@ -24,7 +24,7 @@ terrain_model = terrain_to_smooth_model(terrain_map, normal_map, colour_map, uv_
 
 var _center = other.map_side_length / 2;
 
-with (cls_gravObj) {
+with (cls_fgObj) {
 	event_user(0);
 }
 

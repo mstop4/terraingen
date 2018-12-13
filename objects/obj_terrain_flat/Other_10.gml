@@ -22,7 +22,12 @@ terrain_model = terrain_to_flat_model(terrain_map, colour_map, alpha_map, uv_map
 
 var _center = other.map_side_length / 2;
 
-with (cls_gravObj) {
+with (cls_fgObj) {
+	if (id  != other.id)
+		event_user(0);
+}
+
+with (obj_player) {
 	event_user(0);
 }
 
