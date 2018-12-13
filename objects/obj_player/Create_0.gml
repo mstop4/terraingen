@@ -12,7 +12,8 @@ cur_cursor_colour = cursor_ok_colour;
 
 can_plant = false;
 
-pitch = 0;
+direction = 120;
+pitch = -2;
 word_list = ds_list_create();
 word_map = ds_map_create();
 word_selection = 0;
@@ -22,7 +23,7 @@ view_bob_t = 0;
 view_bob_z = view_bob_amount;
 is_stepping = false;
 
-set_cursor_lock(true);
+set_cursor_lock(false);
 shd_cursor_get_uniforms();
 
 get_first_words = http_get(obj_MCP.server_address + "/api/v1/seed?count=" + string(starting_word_count));

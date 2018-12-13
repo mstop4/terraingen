@@ -1,6 +1,7 @@
 #macro PORT "3000"
 
-randomize();
+show_debug_overlay(true);
+//randomize();
 global.xy_scale = 100;
 server_address = "https://garden-path-server.herokuapp.com";
 mouse_sens_hor = 0.1;
