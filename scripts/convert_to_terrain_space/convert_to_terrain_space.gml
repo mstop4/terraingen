@@ -1,9 +1,4 @@
 /// @func convert_to_terrain_space(x, y, z, xy_scale, terrain_id);
-/// @arg x
-/// @arg y
-/// @arg z
-/// @arg xy_scale
-/// @arg terrain_id
 
 var _xy_scale = argument[3];
 var _x = argument[0] / _xy_scale;

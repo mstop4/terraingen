@@ -1,1 +1,0 @@
-obj_MCP.conn_state = connection_state.disconnected;

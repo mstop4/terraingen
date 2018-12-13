@@ -6,9 +6,7 @@ use_camera(obj_MDP.fg_view_index, my_cam.fore_camera);
 cursor_model = make_square(1,1,c_white);
 cursor_x = 0;
 cursor_y = 0;
-cursor_ok_colour = [1.0, 1.0, 1.0, 1.0];
-cursor_error_colour = [1.0, 0.0, 0.0, 1.0];
-cur_cursor_colour = cursor_ok_colour;
+cursor_real_xyz = [0, 0, 0];
 
 can_plant = false;
 
@@ -23,7 +21,11 @@ view_bob_t = 0;
 view_bob_z = view_bob_amount;
 is_stepping = false;
 
+<<<<<<< HEAD
 set_cursor_lock(false);
 shd_cursor_get_uniforms();
+=======
+set_cursor_lock(true);
+>>>>>>> parent of e05a3d7... added better cursor
 
 get_first_words = http_get(obj_MCP.server_address + "/api/v1/seed?count=" + string(starting_word_count));
