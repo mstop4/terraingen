@@ -6,8 +6,8 @@ var _h_input = obj_input.button_held[action.right] - obj_input.button_held[actio
 
 if (_v_input != 0 || _h_input != 0) {
 	var _move_dir = point_direction(_v_input,_h_input,0,0) + direction;
-	var _spd_x = lengthdir_x(my_speed,_move_dir);
-	var _spd_y = lengthdir_y(my_speed,_move_dir);
+	var _spd_x = lengthdir_x(my_speed,_move_dir) * delta_time / global.dt_scale;
+	var _spd_y = lengthdir_y(my_speed,_move_dir) * delta_time / global.dt_scale;
 
 	if (!place_meeting(x + _spd_x, y, obj_tree_cube)) {
 		x = clamp(x + _spd_x, obj_terrain.map_border * global.xy_scale, (obj_terrain.map_side_length-1-obj_terrain.map_border) * global.xy_scale);

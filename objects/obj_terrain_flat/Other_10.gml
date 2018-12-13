@@ -27,7 +27,9 @@ with (cls_fgObj) {
 		event_user(0);
 }
 
-with (obj_player) {
+var _player = instance_create_layer(0,0,layer,obj_player);
+
+with (_player) {
 	event_user(0);
 }
 

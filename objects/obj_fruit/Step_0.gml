@@ -1,6 +1,6 @@
 if (state == plant_state.growing) {
 	
-	growth += 0.002;
+	growth += growth_rate * delta_time / global.dt_scale;
 	
 	if (growth >= 1) {
 		growth = 1;

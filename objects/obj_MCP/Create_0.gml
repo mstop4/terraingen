@@ -3,6 +3,7 @@
 show_debug_overlay(true);
 //randomize();
 global.xy_scale = 100;
+global.dt_scale = 1/room_speed * 1000000;
 server_address = "https://garden-path-server.herokuapp.com";
 mouse_sens_hor = 0.1;
 mouse_sens_ver = 0.1;
