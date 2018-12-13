@@ -4,6 +4,7 @@ if (cursor_model != -1) {
 	shader_set(shd_cursor);
 	shd_cursor_set_uniforms();
 
+	matrix_set(matrix_world,matrix_build_identity());
 	vertex_submit(cursor_model,pr_linestrip,-1);
 	
 	shader_reset();
