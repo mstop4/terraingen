@@ -1,16 +1,16 @@
 if (window_has_focus() && obj_MCP.cursor_lock) {
 	player_handle_movement();
 	
-	// Check if tile is ok to plant on
-	cursor_x = floor(x / global.xy_scale + lengthdir_x(1, direction));
-	cursor_y = floor(y / global.xy_scale + lengthdir_y(1, direction));
-	cursor_z = max(obj_terrain.terrain_map[# cursor_x, cursor_y],
-				   obj_terrain.terrain_map[# cursor_x+1, cursor_y],
-				   obj_terrain.terrain_map[# cursor_x, cursor_y+1],
-				   obj_terrain.terrain_map[# cursor_x+1, cursor_y+1]);
-	
-	cursor_real_xyz = convert_to_terrain_space(cursor_x+0.5, cursor_y+0.5, cursor_z, 1, obj_terrain);
-	
+	var _new_cursor_x = floor(x / global.xy_scale + lengthdir_x(1, direction));
+	var _new_cursor_y = floor(y / global.xy_scale + lengthdir_y(1, direction));
+
+	if (_new_cursor_x != cursor_x || _new_cursor_y != cursor_y) {
+		cursor_x = _new_cursor_x;
+		cursor_y = _new_cursor_y;
+		player_update_cursor();
+	}
+
+	// Check if tile is ok to plant on	
 	var _at_border = cursor_x < obj_terrain.map_border || cursor_x > obj_terrain.map_side_length-1-obj_terrain.map_border ||
 					 cursor_y < obj_terrain.map_border || cursor_y > obj_terrain.map_side_length-1-obj_terrain.map_border
 	

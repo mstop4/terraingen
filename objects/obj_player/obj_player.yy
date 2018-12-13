@@ -215,6 +215,20 @@
             "value": "90",
             "varName": "max_pitch",
             "varType": 0
+        },
+        {
+            "id": "15d56b71-5108-412d-ab9c-594a8ae9d13a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.001",
+            "varName": "cursor_height",
+            "varType": 0
         }
     ],
     "solid": false,
