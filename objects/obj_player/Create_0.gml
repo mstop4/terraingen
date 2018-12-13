@@ -21,11 +21,8 @@ view_bob_t = 0;
 view_bob_z = view_bob_amount;
 is_stepping = false;
 
-<<<<<<< HEAD
+
 set_cursor_lock(false);
 shd_cursor_get_uniforms();
-=======
-set_cursor_lock(true);
->>>>>>> parent of e05a3d7... added better cursor
 
 get_first_words = http_get(obj_MCP.server_address + "/api/v1/seed?count=" + string(starting_word_count));
