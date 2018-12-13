@@ -23,6 +23,4 @@ if (abs(angle_difference(obj_player.direction, _from_player)) <= obj_MDP.fov+30)
 	_mat = matrix_build(real_x, real_y, real_z+(trunk_length+crown_half_width)*_trunk_scale, 0, 0, yaw, _crown_xy_scale, _crown_xy_scale, _crown_z_scale);
 	matrix_set(matrix_world,_mat);
 	vertex_submit(crown,pr_trianglelist,-1);
-
-	matrix_set(matrix_world,matrix_build_identity());
 }

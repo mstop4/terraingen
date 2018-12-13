@@ -14,5 +14,4 @@ if (owner.can_draw) {
 	var _mat = matrix_build(real_x, real_y, real_z + height + length, sway_angle, 0, yaw, _xy_scale,_xy_scale, _z_scale);
 	matrix_set(matrix_world,_mat);
 	vertex_submit(model,pr_trianglelist,tex_id);
-	matrix_set(matrix_world,matrix_build_identity());
 }

@@ -30,5 +30,3 @@ for (var i=0; i<growth; i++) {
 		vertex_submit(joint_model,pr_trianglelist,-1);
 	}
 }
-
-matrix_set(matrix_world,matrix_build_identity());
