@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "89e35e93-5690-416d-87fd-ed73f96b8238",
+            "Value": {
+                "id": "cd45d8d7-5e75-4e52-bdf1-225d60ee5648",
+                "resourcePath": "scripts\\add_cylinder\\add_cylinder.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8ad0d8a7-3c4b-4e50-82a8-b4a694cd8d11",
             "Value": {
                 "id": "139bc8ce-7fc4-4aa7-8104-ba07a7a51589",
@@ -780,14 +788,6 @@
                 "id": "1f746e46-5a50-4327-b450-95be1db743d3",
                 "resourcePath": "scripts\/make_cylinder_smooth\/make_cylinder_smooth.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "ac929365-e3eb-4015-9695-5855f246cefd",
-            "Value": {
-                "id": "12a9a5be-6310-460d-9439-0daca26934b1",
-                "resourcePath": "objects\/obj_test\/obj_test.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1182,6 +1182,7 @@
         "a2e7fea6-6317-4eba-a0e5-49ad962118d4",
         "bdf0dcdc-1ede-4ea4-976e-7b35e3122cd4",
         "93e227ed-bc36-402a-904f-b72248ff097f",
+        "89e35e93-5690-416d-87fd-ed73f96b8238",
         "3c32e29f-9309-4329-984c-c799f4c3d100",
         "1300c23b-60ee-45af-8392-b69544b9e72c",
         "7b133acc-67d7-42ed-a800-6c694a18c9e9",
