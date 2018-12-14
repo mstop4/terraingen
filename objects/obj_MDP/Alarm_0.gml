@@ -6,6 +6,15 @@ if (window_get_fullscreen()) {
 	app_height = window_height;
 }
 
+fov = 60 / (16 / 9) * app_width / app_height;
+with (obj_camera) {
+	fb_cam_proj_mat =
+			matrix_build_projection_perspective_fov(
+			obj_MDP.fov,
+			view_get_wport(obj_MDP.fg_view_index)/view_get_hport(obj_MDP.fg_view_index),
+			obj_MDP.near_dist,obj_MDP.far_dist);
+}
+
 surface_resize(application_surface,app_width,app_height);
 
 if (!surface_exists(fg_surf)) {
