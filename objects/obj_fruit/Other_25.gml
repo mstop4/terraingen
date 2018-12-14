@@ -1,4 +1,4 @@
-if (owner.can_draw && model != -1 && view_current == obj_MDP.fg_view_index) {
+if (owner.can_draw && model != -1) {
 	
 	var _xy_scale,  _z_scale;
 	
