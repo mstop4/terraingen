@@ -13,9 +13,5 @@ if (view_current == fg_view_index) {
 			event_user(15);
 		}
 	
-	shader_reset();
-	
-	with (obj_player) {
-		event_user(15);
-	}
+
 }
