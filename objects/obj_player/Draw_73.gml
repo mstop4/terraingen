@@ -1,4 +1,4 @@
-if (view_current == obj_MDP.fg_view_index && cursor_model != -1) {
+if (cursor_model != -1 && view_current == obj_MDP.fg_view_index) {
 	cur_cursor_colour = can_plant ? cursor_ok_colour : cursor_error_colour;
 	
 	shader_set(shd_cursor);

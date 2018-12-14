@@ -40,8 +40,8 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 25,
-            "eventtype": 7,
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "092e6872-1ad2-47a5-b76e-b299f37730d0"
         },
         {
@@ -213,5 +213,5 @@
     ],
     "solid": false,
     "spriteId": "237c5290-f5bd-4e67-984f-8dd34f5929f0",
-    "visible": false
+    "visible": true
 }

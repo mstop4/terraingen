@@ -8,10 +8,4 @@ if (view_current == fg_view_index) {
 	
 	shader_set(shd_cel);
 	shd_cel_set_uniforms();
-	
-		with (cls_fgObj) {
-			event_user(15);
-		}
-	
-
 }
