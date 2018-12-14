@@ -10,12 +10,12 @@
             {
                 "Key": 1,
                 "Value": {
-                    "id": "d98c332c-43c9-4693-a4af-c1a28c64834e",
+                    "id": "cdea555a-df1b-4887-a2c8-e5c656f64722",
                     "modelName": "GMTextureGroup",
                     "mvc": "1.0",
-                    "groupName": "foot",
+                    "groupName": "Skybox",
                     "targets": 461609314234257646,
-                    "autocrop": false,
+                    "autocrop": true,
                     "border": 2,
                     "groupParent": "00000000-0000-0000-0000-000000000000",
                     "mipsToGenerate": 0,
