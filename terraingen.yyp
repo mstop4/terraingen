@@ -1039,6 +1039,14 @@
             }
         },
         {
+            "Key": "ec55e8c5-fd2f-44fb-bc37-3e22bf9e4584",
+            "Value": {
+                "id": "032cae58-de24-4f95-a957-af686575199f",
+                "resourcePath": "objects\\obj_stele\\obj_stele.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ecffedd8-ead0-4ad9-952c-9b727934325e",
             "Value": {
                 "id": "5cc7cdfd-31bf-45e5-83e9-fca188cce492",

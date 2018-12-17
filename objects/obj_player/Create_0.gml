@@ -26,4 +26,4 @@ is_stepping = false;
 set_cursor_lock(false);
 shd_cursor_get_uniforms();
 
-get_first_words = http_get(obj_MCP.server_address + "/api/v1/seed?count=" + string(starting_word_count));
+api_get_first_words = http_get(obj_MCP.server_address + "/api/v1/seed?count=" + string(starting_word_count));

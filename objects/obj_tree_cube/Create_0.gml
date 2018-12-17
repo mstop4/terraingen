@@ -24,5 +24,5 @@ z_scale_stage[1] = 1;
 
 event_user(0);
 
-get_fruit_words = -1;
+api_get_fruit_words = -1;
 alarm[0] = 1;
