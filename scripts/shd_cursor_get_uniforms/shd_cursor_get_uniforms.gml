@@ -1,0 +1,1 @@
+shd_cursor_u_blend = shader_get_uniform(shd_cursor,"u_blend");

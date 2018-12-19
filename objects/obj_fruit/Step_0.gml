@@ -1,19 +1,29 @@
 if (state == plant_state.growing) {
 	
-	growth += 0.002;
+	growth += growth_rate * delta_time / global.dt_scale;
 	
 	if (growth >= 1) {
+		scale_vec[0] = 1;
+		scale_vec[1] = 1;
+		scale_vec[2] = 1;
 		growth = 1;
 		state = plant_state.stable;
 		alarm[0] = 30;
 	}
+	
+	else {
+		if (growth < stage_trans) {
+			scale_vec[0] = growth / stage_trans * xy_scale_stage[0];
+			scale_vec[1] = scale_vec[0];
+			scale_vec[2] = growth / stage_trans * z_scale_stage[0];
+		}
+		else {
+			scale_vec[0] = min(xy_scale_stage[0], (growth - stage_trans) * (1/(1-stage_trans)) * (xy_scale_stage[1]-xy_scale_stage[0]) + xy_scale_stage[0]);
+			scale_vec[1] = scale_vec[0];			
+			scale_vec[2] = max(z_scale_stage[0], (growth - stage_trans) * (1/(1-stage_trans)) * (z_scale_stage[1]-z_scale_stage[0]) + z_scale_stage[0]);
+		}
+	}
 }
 
 sway_t = sway_t + sway_t_delta mod (2 * pi);
-sway_angle = sin(sway_t) * sway_half_angle;
-
-var _dir_from_player = point_direction(obj_player.my_cam.x, obj_player.my_cam.y, real_x, real_y);
-var _dist_from_player = point_distance_3d(obj_player.my_cam.x, obj_player.my_cam.y, obj_player.my_cam.z, real_x, real_y, real_z);
-
-can_draw = _dist_from_player <= obj_MDP.far_dist + draw_threshold_dist && 
-		   abs(angle_difference(obj_player.direction, _dir_from_player)) <= cull_halfangle;
+rotate_vec[0] = sin(sway_t) * sway_half_angle_rad;

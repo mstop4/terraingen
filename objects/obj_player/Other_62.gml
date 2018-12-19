@@ -1,4 +1,4 @@
-if (async_load[? "id"] == get_first_words) {
+if (async_load[? "id"] == api_get_first_words) {
 	if (async_load[? "status"] == 0) {
 		var _json = json_decode(async_load[? "result"]);
 		var _words = _json[? "seeds"];
@@ -9,5 +9,7 @@ if (async_load[? "id"] == get_first_words) {
 		for (var i=0; i<num_words; i++) {
 			ds_map_add(word_map, word_list[| i], 1);
 		}
+		
+		ds_list_destroy(_words);
 	}
 }

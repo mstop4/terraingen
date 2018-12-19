@@ -93,6 +93,20 @@
     "physicsStartAwake": true,
     "properties": [
         {
+            "id": "3ec15515-379d-434e-bd69-132392f1ab22",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.002",
+            "varName": "growth_rate",
+            "varType": 0
+        },
+        {
             "id": "f6b8d801-a623-4426-bc39-d078f79c2009",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -217,6 +231,20 @@
             "value": "4",
             "varName": "num_fruit",
             "varType": 1
+        },
+        {
+            "id": "0d230e66-1963-44d4-acb0-a97896f8971a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "get_own_words",
+            "varType": 3
         }
     ],
     "solid": false,

@@ -83,6 +83,20 @@
     "physicsStartAwake": true,
     "properties": [
         {
+            "id": "b46f7950-ebf1-415c-b2ad-7a3dcfd66b67",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.002",
+            "varName": "growth_rate",
+            "varType": 0
+        },
+        {
             "id": "d8062fc0-c219-4f0a-a80e-b5ecc6cda2e9",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

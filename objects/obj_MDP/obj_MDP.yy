@@ -187,20 +187,6 @@
             "varType": 0
         },
         {
-            "id": "3cb1e2eb-a351-4286-8411-e2ef427f43fc",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "60",
-            "varName": "fov",
-            "varType": 0
-        },
-        {
             "id": "3f469cd3-fb22-4bc4-ac44-025cefe2b150",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
