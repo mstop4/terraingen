@@ -6,9 +6,7 @@ use_camera(obj_MDP.fg_view_index, my_cam.fore_camera);
 cursor_model = -1;
 cursor_x = 0;
 cursor_y = 0;
-cursor_ok_colour = [1.0, 1.0, 1.0, 1.0];
-cursor_error_colour = [1.0, 0.0, 0.0, 1.0];
-cur_cursor_colour = cursor_ok_colour;
+cursor_real_xyz = [0, 0, 0];
 
 can_plant = false;
 

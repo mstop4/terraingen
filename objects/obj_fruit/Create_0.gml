@@ -4,7 +4,6 @@ tex_index = -1;
 tex_slot = [0, 0];
 tex_id = -1;
 word = "(blank)";
-owner = noone;
 
 real_z = 0;
 translate_vec = [0, 0, 0];

@@ -5,7 +5,6 @@ state = plant_state.stable;
 can_draw = false;
 cull_halfangle = obj_MDP.fov+30;
 seed_word = "blank";
-words = ds_list_create();
 
 make_tree_cube();
 

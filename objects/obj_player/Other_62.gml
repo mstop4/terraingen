@@ -9,7 +9,5 @@ if (async_load[? "id"] == api_get_first_words) {
 		for (var i=0; i<num_words; i++) {
 			ds_map_add(word_map, word_list[| i], 1);
 		}
-		
-		ds_list_destroy(_words);
 	}
 }

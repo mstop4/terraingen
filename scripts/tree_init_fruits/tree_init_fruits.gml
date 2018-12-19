@@ -29,11 +29,6 @@ for (var i=0; i<num_fruit; i++) {
 	fruit[i].owner = id;
 	
 	var _word_map = _word_list[| i];
-	
-	if (is_string(_word_map))
-		fruit[i].word = _word_map;
-	else
-		fruit[i].word = _word_map[? "word"];
-		
+	fruit[i].word = _word_map[? "word"];
 	with (fruit[i]) event_user(0);
 }
