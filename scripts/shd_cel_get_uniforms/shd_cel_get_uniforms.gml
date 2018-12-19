@@ -1,3 +1,7 @@
+shd_cel_u_translate = shader_get_uniform(shd_cel,"u_translate");
+shd_cel_u_scale = shader_get_uniform(shd_cel,"u_scale");
+shd_cel_u_rotate = shader_get_uniform(shd_cel,"u_rotate");
+
 shd_cel_u_ambient_colour = shader_get_uniform(shd_cel,"u_ambient_colour");
 shd_cel_u_normal_weight = shader_get_uniform(shd_cel,"u_normal_weight");
 

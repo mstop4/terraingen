@@ -9,11 +9,13 @@ words = ds_list_create();
 
 make_tree_cube();
 
-yaw = random(360);
 z = 0;
-real_x = 0;
-real_y = 0;
 real_z = 0;
+crown_translate_vec = [0, 0, 0];
+trunk_translate_vec = [0, 0, 0];
+crown_scale_vec = [0, 0, 0];
+trunk_scale_vec = [0, 0, 0];
+rotate_vec = [0, 0, random(2*pi)];
 growth = 0;
 
 xy_scale_stage[0] = 0.25;

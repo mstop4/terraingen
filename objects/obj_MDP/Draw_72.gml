@@ -11,6 +11,7 @@ if (view_current == bg_view_index) {
 
 if (view_current == fg_view_index) {
 	draw_clear_alpha(c_black, 0);
+	matrix_set(matrix_world,matrix_build_identity());
 	
 	shader_set(shd_cel);
 	shd_cel_set_uniforms();
