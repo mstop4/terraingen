@@ -15,6 +15,6 @@ if (can_draw) {
 		shader_set_uniform_f_array(obj_MDP.shd_cel_u_translate, trunk_translate_vec);
 		shader_set_uniform_f_array(obj_MDP.shd_cel_u_scale, trunk_scale_vec);
 		shader_set_uniform_f_array(obj_MDP.shd_cel_u_rotate, rotate_vec);
-		vertex_submit(full_tree,pr_trianglelist,-1);	
+		vertex_submit(full_tree,pr_trianglelist,-1);
 	}
 }

@@ -14,6 +14,7 @@ with (obj_fruit_manager) {
 			
 			_x = ds_grid_value_x(_cur_occ_grid, 0, 0, texs_per_row-1, texs_per_col-1, 0);
 			_y = ds_grid_value_y(_cur_occ_grid, 0, 0, texs_per_row-1, texs_per_col-1, 0);
+			_cur_occ_grid[# _x, _y] = 1;
 			break;
 		}
 	}
@@ -33,6 +34,7 @@ with (obj_fruit_manager) {
 		
 		_x = 0;
 		_y = 0;
+		_cur_occ_grid[# _x, _y] = 1;
 	}
 	
 	// Update texture page 
@@ -62,6 +64,6 @@ with (obj_fruit_manager) {
 	alarm[0] = 1;
 	print("Surface update time: ", string(current_time - _start), " ms");
 	
-	return [_i, _x * tex_width / max_tex_size, _y * tex_height / max_tex_size,
+	return [_i, _x, _y, _x * tex_width / max_tex_size, _y * tex_height / max_tex_size,
 			(_x+1) * tex_width / max_tex_size, (_y+1) * tex_height / max_tex_size];
 }

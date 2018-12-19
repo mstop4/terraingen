@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "3381f1de-2b80-42f1-a54c-29187fd7b1f8",
+            "Value": {
+                "id": "5533cad6-9af9-400a-aae9-d9d4e720a36f",
+                "resourcePath": "shaders\\shd_basic\\shd_basic.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "363fd2c4-b00e-446f-86fd-b7f428f68613",
             "Value": {
                 "id": "2bfea01d-392d-47de-b156-f82a5602e776",
@@ -647,19 +655,19 @@
             }
         },
         {
-            "Key": "8bda62be-59b6-42b1-9ddb-c4e49839e615",
-            "Value": {
-                "id": "f0b5e8dd-111a-47b3-93cc-9e43687a635c",
-                "resourcePath": "shaders\/shd_basic\/shd_basic.yy",
-                "resourceType": "GMShader"
-            }
-        },
-        {
             "Key": "8bf35679-93e7-4fab-9dbd-fdfa6567299c",
             "Value": {
                 "id": "18b5b40a-8358-420f-8dc2-1decca5cee23",
                 "resourcePath": "views\/8bf35679-93e7-4fab-9dbd-fdfa6567299c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8dcf13ec-370e-4e04-b6a7-b9fa350298c2",
+            "Value": {
+                "id": "4eee203e-3aa1-4200-a3c8-a72189d3b5f8",
+                "resourcePath": "scripts\\fruit_free_texture\\fruit_free_texture.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1208,7 +1216,8 @@
         "da47cd54-5349-4350-89cf-83f4640e24b5",
         "15668aca-f45a-4b83-9cc0-d5b0d23b364f",
         "2730a82b-160a-4ef4-94d7-6a5aa079371f",
-        "ecffedd8-ead0-4ad9-952c-9b727934325e"
+        "ecffedd8-ead0-4ad9-952c-9b727934325e",
+        "8dcf13ec-370e-4e04-b6a7-b9fa350298c2"
     ],
     "tutorial": ""
 }
