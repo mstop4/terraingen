@@ -11,7 +11,9 @@ if (owner.can_draw && model != -1) {
 		_z_scale = max(z_scale_stage[0], (growth - stage_trans) * (1/(1-stage_trans)) * (z_scale_stage[1]-z_scale_stage[0]) + z_scale_stage[0]);
 	}
 	
-	var _mat = matrix_build(real_x, real_y, real_z + height + length, sway_angle, 0, yaw, _xy_scale,_xy_scale, _z_scale);
-	matrix_set(matrix_world,_mat);
+	//matrix_set(matrix_world,matrix_build_identity());
+	shader_set_uniform_f_array(obj_MDP.shd_cel_u_offsetTranslate,[real_x, real_y, real_z + height + length]);
+	shader_set_uniform_f_array(obj_MDP.shd_cel_u_offsetScale,[_xy_scale, _xy_scale, _z_scale]);
+	shader_set_uniform_f_array(obj_MDP.shd_cel_u_offsetRotate,[sway_angle, 0, yaw]);
 	vertex_submit(model,pr_trianglelist,tex_id);
 }

@@ -10,13 +10,14 @@ real_x = 0;
 real_y = 0;
 real_z = 0;
 height = 0;
-yaw = random(360);
+yaw = random(2*pi);
 
 growth = 0;
 can_collect = false;
 sway_t = random(2 * pi);
 sway_t_delta = 2 * pi / 480;
 sway_angle = 0;
+sway_half_angle_rad = sway_half_angle * (2*pi/360);
 
 state = plant_state.stable;
 can_draw = false;

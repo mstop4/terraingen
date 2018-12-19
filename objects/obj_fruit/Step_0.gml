@@ -10,4 +10,4 @@ if (state == plant_state.growing) {
 }
 
 sway_t = sway_t + sway_t_delta mod (2 * pi);
-sway_angle = sin(sway_t) * sway_half_angle;
+sway_angle = sin(sway_t) * sway_half_angle_rad;

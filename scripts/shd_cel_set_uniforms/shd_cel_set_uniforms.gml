@@ -1,3 +1,7 @@
+shader_set_uniform_f_array(shd_cel_u_offsetTranslate,[0, 0, 0]);
+shader_set_uniform_f_array(shd_cel_u_offsetScale,[1, 1, 1]);
+shader_set_uniform_f_array(shd_cel_u_offsetRotate,[0, 0, 0]);
+
 shader_set_uniform_f_array(shd_cel_u_ambient_colour,obj_light.ambient_colour);
 shader_set_uniform_f(shd_cel_u_normal_weight,obj_light.normal_weight);
 
