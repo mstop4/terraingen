@@ -21,6 +21,7 @@ num_words = 0;
 
 view_bob_t = 0;
 view_bob_z = view_bob_amount;
+view_bob_delta_dt = 6;
 is_stepping = false;
 
 set_cursor_lock(false);
