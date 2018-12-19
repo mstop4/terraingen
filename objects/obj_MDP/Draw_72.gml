@@ -4,9 +4,14 @@ with (obj_camera) {
 }
 
 if (view_current == bg_view_index) {
+	
+	shader_set(shd_basic);
+	
 	with (obj_skybox) {
 		event_user(15);
 	}
+	
+	shader_reset();
 }
 
 if (view_current == fg_view_index) {

@@ -4,6 +4,8 @@ translate_vec[1] = _xyz[1];
 
 var _data = fruit_add_texture(word);
 tex_index = _data[0];
-var _uvs = [_data[1], _data[2], _data[3], _data[4]];
+tex_slot[0] = _data[1];
+tex_slot[1] = _data[2];
+var _uvs = [_data[3], _data[4], _data[5], _data[6]];
 
 model = make_fruit(length, width, c_white, _uvs);

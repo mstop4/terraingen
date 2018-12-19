@@ -1,4 +1,4 @@
-/// @arg word_list
+ /// @arg word_list
 
 var _word_list = argument[0];
 
