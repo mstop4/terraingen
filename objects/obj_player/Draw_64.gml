@@ -5,7 +5,7 @@ draw_set_color(c_white);
 
 draw_set_valign(fa_top);
 
-draw_text(0,128,"Direction: " + string(direction) + "\nPitch: " + string(pitch) + "\nView Bob t: " + string(view_bob_t));
+draw_text(0,128,"Direction: " + string(direction) + "\nPitch: " + string(pitch) + "\nView Bob t: " + string(view_bob_t) + "\nView Bob Delta:" + string(view_bob_delta_dt));
 
 draw_set_font(fnt_word_list);
 draw_set_halign(fa_right);

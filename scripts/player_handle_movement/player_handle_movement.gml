@@ -20,15 +20,16 @@ if (_v_input != 0 || _h_input != 0) {
 	z = blin_z_pos(x, y, global.xy_scale, obj_terrain.terrain_map);
 		
 	// View bobbing
-	view_bob_t = view_bob_t + view_bob_delta * delta_time / global.dt_scale;
+	view_bob_delta_dt = view_bob_delta * delta_time / global.dt_scale;
+	view_bob_t = view_bob_t + view_bob_delta_dt;
 	if (view_bob_t > 360) {
 		view_bob_t -= 360;
 	}
 		
-	if (!is_stepping && (view_bob_t+90) mod 180 <= 1) {
+	if (!is_stepping && (view_bob_t+90) mod 180 <= view_bob_delta_dt) {
 		is_stepping = true;
 		audio_play_sound(snd_step,0,false);
-	} else if (is_stepping && view_bob_t mod 180 > 1) {
+	} else if (is_stepping && view_bob_t mod 180 > view_bob_delta_dt) {
 		is_stepping = false;
 	}
 		
