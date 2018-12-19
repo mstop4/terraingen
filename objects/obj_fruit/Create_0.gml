@@ -5,18 +5,16 @@ tex_id = -1;
 word = "(blank)";
 owner = noone;
 
-z = 0;
-real_x = 0;
-real_y = 0;
 real_z = 0;
+translate_vec = [0, 0, 0];
+scale_vec = [0, 0, 0];
+rotate_vec = [0, 0, random(2*pi)];
 height = 0;
-yaw = random(2*pi);
 
 growth = 0;
 can_collect = false;
 sway_t = random(2 * pi);
 sway_t_delta = 2 * pi / 480;
-sway_angle = 0;
 sway_half_angle_rad = sway_half_angle * (2*pi/360);
 
 state = plant_state.stable;

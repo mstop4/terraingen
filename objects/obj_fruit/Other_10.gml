@@ -1,6 +1,6 @@
 var _xyz = convert_to_terrain_space(x, y, 0, global.xy_scale, obj_terrain);
-real_x = _xyz[0];
-real_y = _xyz[1];
+translate_vec[0] = _xyz[0];
+translate_vec[1] = _xyz[1];
 
 var _data = fruit_add_texture(word);
 tex_index = _data[0];
