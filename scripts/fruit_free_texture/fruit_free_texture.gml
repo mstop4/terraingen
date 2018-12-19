@@ -7,6 +7,10 @@ var _tex_slot_x = argument[1];
 var _tex_slot_y = argument[1];
 
 with (obj_fruit_manager) {
+	
+	if (!ds_exists(occupancy_list, ds_type_list))
+		return false;
+	
 	if (_tex_index < num_textures &&
 		_tex_slot_x < texs_per_row &&
 		_tex_slot_y < texs_per_col) {
