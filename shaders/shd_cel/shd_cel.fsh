@@ -18,6 +18,8 @@ varying vec4 v_vColour;
 
 void main()
 {
+	//if (!gl_FrontFacing) discard;
+	
 	float diffuse_ratio1 = max(dot(v_vNormal * u_normal_weight, u_diffuse_direction1), 0.0);
 	float diffuse_ratio2 = max(dot(v_vNormal * u_normal_weight, u_diffuse_direction2), 0.0);
 	

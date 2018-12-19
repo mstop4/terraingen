@@ -15,4 +15,8 @@ render_mode = pr_trianglestrip;
 x = (-map_side_length / 2) * xscale;
 y = x;
 
+translate_vec = [x, y, z];
+scale_vec = [xscale, yscale, zscale];
+rotate_vec = [0, 0, 0];
+
 event_user(0);

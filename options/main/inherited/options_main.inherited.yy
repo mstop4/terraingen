@@ -1,6 +1,6 @@
 1.0.0←ed6a955d-5826-4f98-a450-10b414266c27←ed6a955d-5826-4f98-a450-10b414266c27|{
     "option_gameguid": "9354ae95-08ed-4b33-aae3-9b68d9f0255c",
-    "option_lastchanged": "06 December 2018 14:06:51",
+    "option_lastchanged": "13 December 2018 17:49:32",
     "option_game_speed": 60,
     "option_allow_game_statistics": false,
     "option_sci_usesci": false
@@ -10,12 +10,12 @@
             {
                 "Key": 1,
                 "Value": {
-                    "id": "d98c332c-43c9-4693-a4af-c1a28c64834e",
+                    "id": "cdea555a-df1b-4887-a2c8-e5c656f64722",
                     "modelName": "GMTextureGroup",
                     "mvc": "1.0",
-                    "groupName": "foot",
+                    "groupName": "Skybox",
                     "targets": 461609314234257646,
-                    "autocrop": false,
+                    "autocrop": true,
                     "border": 2,
                     "groupParent": "00000000-0000-0000-0000-000000000000",
                     "mipsToGenerate": 0,
