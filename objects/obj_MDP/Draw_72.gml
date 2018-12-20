@@ -19,15 +19,11 @@ if (view_current == fg_view_index) {
 	matrix_set(matrix_world,matrix_build_identity());
 	
 	shader_set(shd_cel);
-	shd_cel_set_uniforms();
+		shd_cel_set_uniforms();
 	
-	with (cls_fgObj) {
-		event_user(15);
-	}
+		with (cls_fgObj) {
+			event_user(15);
+		}
 	
 	shader_reset();
-	
-	with (obj_player) {
-		event_user(15);
-	}
 }

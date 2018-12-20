@@ -65,5 +65,12 @@ with (_player) {
 	event_user(0);
 }
 
+var _stele = instance_create_layer(0,0,layer,obj_stele);
+
+with (_stele) {
+	event_user(0);
+}
+
+
 print("Done! ", current_time - _start, " ms");
 terrain_done = 1;
