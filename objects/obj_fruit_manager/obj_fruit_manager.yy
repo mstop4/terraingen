@@ -62,7 +62,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1024",
+            "value": "2048",
             "varName": "max_tex_size",
             "varType": 1
         },
