@@ -28,16 +28,11 @@ void main()
 	vec3 cosL = vec3(cos(u_rotate.x), cos(u_rotate.y), cos(u_rotate.z));
 							
 
-	mat4 rotate_mat = mat4(cosL.y*cosL.z, cosL.y*sinL.z, -sinL.y, 0.0,
-						   sinL.x*sinL.y*cosL.z - cosL.x*sinL.z, sinL.x*sinL.y*sinL.z + cosL.x*cosL.z, sinL.x*cosL.y, 0.0,
-						   cosL.x*sinL.y*cosL.z + sinL.x*sinL.z, cosL.x*sinL.y*sinL.z - sinL.x*cosL.z, cosL.x*cosL.y, 0.0,
-						   0.0, 0.0, 0.0, 1.0);
-
-						   
-	/*mat4 rotate_mat = mat4(cosL.b*cosL.g, cosL.b*sinL.g, -sinL.b, 0.0,
-						   sinL.a*sinL.b*cosL.g - cosL.a*sinL.g, sinL.a*sinL.b*sinL.g + cosL.a*cosL.g, sinL.a*cosL.b, 0.0,
-						   cosL.a*sinL.b*cosL.g + sinL.a*sinL.g, cosL.a*sinL.b*sinL.g - sinL.a*cosL.g, cosL.a*cosL.b, 0.0,
-						   0.0, 0.0, 0.0, 1.0);*/			
+					   
+	mat4 rotate_mat = mat4(cosL.y*cosL.z, -cosL.y*sinL.z*cosL.x + sinL.y*sinL.x, cosL.y*sinL.z*sinL.x + sinL.y*cosL.x, 0.0,
+						   sinL.z, cosL.z*cosL.x, -cosL.z*sinL.x, 0.0,
+						   -sinL.y*cosL.z, sinL.y*sinL.z*cosL.x + cosL.y*sinL.x, -sinL.y*sinL.z*sinL.x + cosL.y*cosL.x, 0.0,
+						   0.0, 0.0, 0.0, 1.0);		
 	
     vec4 object_space_pos = vec4( in_Position, 1.0) * scale_mat * rotate_mat * translate_mat;
 	vec4 view_space_pos = gm_Matrices[MATRIX_WORLD_VIEW] * object_space_pos;
