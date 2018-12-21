@@ -156,8 +156,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.5",
-            "varName": "half_width",
+            "value": "1",
+            "varName": "s_width",
             "varType": 0
         },
         {
@@ -170,8 +170,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.125",
-            "varName": "half_depth",
+            "value": "0.25",
+            "varName": "s_depth",
             "varType": 0
         },
         {
@@ -184,8 +184,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.75",
-            "varName": "half_length",
+            "value": "1.5",
+            "varName": "s_length",
             "varType": 0
         },
         {
@@ -240,7 +240,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.75",
+            "value": "0.85",
             "varName": "text_area_percent",
             "varType": 0
         }
