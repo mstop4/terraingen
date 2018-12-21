@@ -1,7 +1,12 @@
-shader_set_uniform_f_array(shd_stele_u_translate, translate_vec);
-shader_set_uniform_f_array(shd_stele_u_scale, scale_vec);
-shader_set_uniform_f_array(shd_stele_u_rotate, rotate_vec);
-shader_set_uniform_f(shd_stele_u_vTranslate, v_offset);
+/// @arg translate
+/// @arg scale
+/// @arg rotate
+/// @arg uv_offset
+
+shader_set_uniform_f_array(shd_stele_u_translate, argument[0]);
+shader_set_uniform_f_array(shd_stele_u_scale, argument[1]);
+shader_set_uniform_f_array(shd_stele_u_rotate, argument[2]);
+shader_set_uniform_f_array(shd_stele_u_uvTranslate, argument[3]);
 
 shader_set_uniform_f_array(shd_stele_u_ambient_colour,obj_light.ambient_colour);
 shader_set_uniform_f(shd_stele_u_normal_weight,obj_light.normal_weight);

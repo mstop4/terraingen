@@ -6,7 +6,7 @@ attribute vec2 in_TextureCoord;              // (u,v)
 uniform vec3 u_translate;
 uniform vec3 u_rotate;
 uniform vec3 u_scale;
-uniform float u_vTranslate;
+uniform vec2 u_uvTranslate;
 
 varying vec4 v_vViewPos;
 varying vec3 v_vNormal;
@@ -42,5 +42,5 @@ void main()
 	vec4 n = gm_Matrices[MATRIX_WORLD] * vec4(in_Normal, 0.0) * scale_mat * rotate_mat * translate_mat;
 	v_vNormal = normalize(n.xyz);
     v_vColour = in_Colour;
-    v_vTexcoord = vec2(in_TextureCoord.x, in_TextureCoord.y + u_vTranslate);
+    v_vTexcoord = in_TextureCoord + u_uvTranslate;
 }

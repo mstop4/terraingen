@@ -170,7 +170,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.25",
+            "value": "0.125",
             "varName": "half_depth",
             "varType": 0
         },
@@ -184,7 +184,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "0.75",
             "varName": "half_length",
             "varType": 0
         },
@@ -215,6 +215,34 @@
             "value": "512",
             "varName": "tex_height",
             "varType": 1
+        },
+        {
+            "id": "191bfd21-464d-4f28-a6af-f386b0a67283",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.9375",
+            "varName": "display_scale",
+            "varType": 0
+        },
+        {
+            "id": "0bb6b594-259b-4227-b8e4-6d02973e2a97",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.75",
+            "varName": "text_area_percent",
+            "varType": 0
         }
     ],
     "solid": false,

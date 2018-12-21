@@ -1,7 +1,7 @@
 shd_stele_u_translate = shader_get_uniform(shd_stele,"u_translate");
 shd_stele_u_scale = shader_get_uniform(shd_stele,"u_scale");
 shd_stele_u_rotate = shader_get_uniform(shd_stele,"u_rotate");
-shd_stele_u_vTranslate = shader_get_uniform(shd_stele,"u_vTranslate");
+shd_stele_u_uvTranslate = shader_get_uniform(shd_stele,"u_uvTranslate");
 
 shd_stele_u_ambient_colour = shader_get_uniform(shd_stele,"u_ambient_colour");
 shd_stele_u_normal_weight = shader_get_uniform(shd_stele,"u_normal_weight");
