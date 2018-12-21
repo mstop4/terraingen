@@ -135,14 +135,6 @@
             }
         },
         {
-            "Key": "1e43b91a-68d3-469c-b4e4-ac01cfe7ea1d",
-            "Value": {
-                "id": "433af54f-5218-4a0a-8583-046a87332f0a",
-                "resourcePath": "datafiles_yy\/CHAHIN_NOTEBOOK.obj.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "23259415-20e8-4f76-a141-d29e69592777",
             "Value": {
                 "id": "875bdf5b-d9e6-4fd9-81dc-5cc9a3471d8f",
@@ -604,6 +596,14 @@
                 "id": "6d63399a-2929-4161-aef4-bc27d1ebfbdc",
                 "resourcePath": "scripts\/blin_z_pos\/blin_z_pos.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7aca9d7b-1f18-442c-b617-78f95a776b1a",
+            "Value": {
+                "id": "90bfe832-6ed3-47f3-9c0f-266e48ec51b2",
+                "resourcePath": "datafiles_yy\\stele.obj.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {

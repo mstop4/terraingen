@@ -7,7 +7,8 @@ scale_vec = [1, 1, 1];
 rotate_vec = [0, 0, 0];
 v_offset = 0;
 
-tex_id = sprite_get_texture(spr_stele, 0);
-model = make_stele(half_width, half_length, half_depth, c_white);
+//tex_surf = surface_create(tex_width, tex_height);
+tex_id = sprite_get_texture(spr_stele,0);
+model = obj_to_model("stele.obj");
 
 shd_stele_get_uniforms();
