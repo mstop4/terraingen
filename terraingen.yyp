@@ -1135,6 +1135,14 @@
             }
         },
         {
+            "Key": "f8f1bb8d-441f-45ec-80c5-51f9e51256b9",
+            "Value": {
+                "id": "06e6c573-f2fc-4188-80a1-83b11aadab79",
+                "resourcePath": "scripts\\draw_stele_tex\\draw_stele_tex.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fba9533b-2cab-4586-b00b-791a329a7e66",
             "Value": {
                 "id": "048f988d-e67a-48ff-bb6c-558fc87a8be2",
@@ -1213,7 +1221,8 @@
         "aaeb18a9-80b5-461e-871e-c16e5d839407",
         "a5c355f1-b2da-482e-96b6-e2492ceb57fa",
         "54f69f8e-8d90-441b-85c4-69f2c5c99656",
-        "53e959a6-dade-4ee6-b3d3-b86412cf9739"
+        "53e959a6-dade-4ee6-b3d3-b86412cf9739",
+        "f8f1bb8d-441f-45ec-80c5-51f9e51256b9"
     ],
     "tutorial": ""
 }

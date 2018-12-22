@@ -2,6 +2,7 @@ for (var i=0; i<num_textures; i++) {
 	if (!surface_exists(tex_list[i])) {
 		tex_list[i] = surface_create(max_tex_size, max_tex_size);
 		buffer_set_surface(buff_list[i], tex_list[i], 0, 0, 0);
+		print("surface ", string(i), " restored");
 	}
 }
 

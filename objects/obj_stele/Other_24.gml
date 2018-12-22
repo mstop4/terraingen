@@ -1,3 +1,5 @@
+/// @description draw displays
+
 shd_display_set_uniforms(text_translate_vec, base_scale_vec, text_rotate_vec, text_uv_offset, text_uv_max);
 vertex_submit(text_model,pr_trianglelist,tex_id);
 	

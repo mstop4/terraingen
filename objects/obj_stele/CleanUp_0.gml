@@ -1,4 +1,5 @@
 vertex_delete_buffer(base_model);
 vertex_delete_buffer(text_model);
 vertex_delete_buffer(score_model);
-//surface_free(tex_surf);
+surface_free(tex_surf);
+buffer_delete(tex_buff);
