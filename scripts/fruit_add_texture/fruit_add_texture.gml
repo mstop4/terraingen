@@ -1,6 +1,6 @@
 /// @arg word
 
-var _start = current_time;
+//var _start = current_time;
 var _word = argument[0];
 
 var _cur_occ_grid;
@@ -60,7 +60,7 @@ with (obj_fruit_manager) {
 	
 	dirty_list[_i] = true;
 	alarm[0] = 1;
-	print("Surface update time: ", string(current_time - _start), " ms");
+	//print("Surface update time: ", string(current_time - _start), " ms");
 	
 	return [_i, _x, _y, _x * tex_width / max_tex_size, _y * tex_height / max_tex_size,
 			(_x+1) * tex_width / max_tex_size, (_y+1) * tex_height / max_tex_size];

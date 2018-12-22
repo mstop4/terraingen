@@ -1,8 +1,8 @@
 {
-    "id": "f79a0e14-ba19-4167-8c3b-8106434ea411",
+    "id": "d10eb5ad-3be6-4f80-9a4b-8e6a3c07535d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "shd_stele_get_uniforms",
+    "name": "make_stele_display",
     "IsCompatibility": false,
     "IsDnD": false
 }

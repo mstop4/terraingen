@@ -24,6 +24,15 @@ if (view_current == fg_view_index) {
 		with (cls_fgObj) {
 			event_user(15);
 		}
+		
+		with (obj_stele) {
+			event_user(15);
+		}
+	shader_reset();
 	
+	shader_set(shd_display);
+		with (obj_stele) {
+			event_user(14);
+		}
 	shader_reset();
 }

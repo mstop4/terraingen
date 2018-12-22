@@ -70,8 +70,8 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 73,
-            "eventtype": 8,
+            "enumb": 24,
+            "eventtype": 7,
             "m_owner": "ec55e8c5-fd2f-44fb-bc37-3e22bf9e4584"
         },
         {
@@ -112,6 +112,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 12,
+            "m_owner": "ec55e8c5-fd2f-44fb-bc37-3e22bf9e4584"
+        },
+        {
+            "id": "c7f7716a-6318-4469-8658-a12376bc930a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 25,
+            "eventtype": 7,
             "m_owner": "ec55e8c5-fd2f-44fb-bc37-3e22bf9e4584"
         }
     ],
@@ -198,7 +208,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "256",
+            "value": "128",
             "varName": "tex_width",
             "varType": 1
         },
@@ -212,9 +222,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "512",
+            "value": "256",
             "varName": "tex_height",
             "varType": 1
+        },
+        {
+            "id": "c9864704-290c-4e90-899f-9eea2472b488",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "192",
+            "varName": "eff_tex_height",
+            "varType": 0
         },
         {
             "id": "191bfd21-464d-4f28-a6af-f386b0a67283",
@@ -240,7 +264,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.85",
+            "value": "0.875",
             "varName": "text_area_percent",
             "varType": 0
         }
