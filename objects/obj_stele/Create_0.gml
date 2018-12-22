@@ -24,4 +24,7 @@ var _uv_bottom = eff_tex_height / tex_height;
 text_model = make_stele_display(s_length * display_scale * text_area_percent, s_width * display_scale, s_depth/2 + 0.001, [0, 0, 1, _uv_split], c_white);
 score_model = make_stele_display(s_length * display_scale * (1-text_area_percent), s_width * display_scale, s_depth/2 + 0.001, [0, _uv_split, 1, _uv_bottom], c_white);
 
+text_uv_max = [1, _uv_split];
+score_uv_max = [1, 1];
+
 shd_display_get_uniforms();
