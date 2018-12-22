@@ -53,6 +53,20 @@
     "physicsStartAwake": true,
     "properties": [
         {
+            "id": "dd3d8cdd-2ce0-45e7-9771-9dc7b6f01e96",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "spr_sky_side",
+            "varName": "texture",
+            "varType": 5
+        },
+        {
             "id": "fd26d720-8630-4630-a71e-85753590e8e2",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -62,9 +76,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_top",
-            "varName": "top_tex",
-            "varType": 5
+            "value": "1",
+            "varName": "top_index",
+            "varType": 1
         },
         {
             "id": "54100e5e-3be7-4577-8ed4-d3a5923f8d60",
@@ -76,9 +90,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_bottom",
-            "varName": "bottom_tex",
-            "varType": 5
+            "value": "2",
+            "varName": "bottom_index",
+            "varType": 1
         },
         {
             "id": "5d6533bf-0be2-4257-8b2c-0e513bdd642e",
@@ -90,9 +104,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_left",
-            "varName": "left_tex",
-            "varType": 5
+            "value": "0",
+            "varName": "left_index",
+            "varType": 1
         },
         {
             "id": "e9bf1db9-ec32-4516-b338-08cc39cde3c2",
@@ -104,9 +118,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_right",
-            "varName": "right_tex",
-            "varType": 5
+            "value": "0",
+            "varName": "right_index",
+            "varType": 1
         },
         {
             "id": "ec9272cb-1ee1-4e0a-8929-e9ebaae1a92e",
@@ -118,9 +132,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_front",
-            "varName": "front_tex",
-            "varType": 5
+            "value": "0",
+            "varName": "front_index",
+            "varType": 1
         },
         {
             "id": "92984da7-8793-4a0b-9383-4621f02a2601",
@@ -132,9 +146,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 2,
-            "value": "spr_city_back",
-            "varName": "back_tex",
-            "varType": 5
+            "value": "0",
+            "varName": "back_index",
+            "varType": 1
         }
     ],
     "solid": false,
