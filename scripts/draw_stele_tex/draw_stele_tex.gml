@@ -5,13 +5,17 @@ with (obj_stele) {
 			draw_set_colour(c_black);
 			draw_set_font(fnt_fruit);
 		
+			var _formatted_phrase = dialogue_line_breaker(phrase, tex_width*display_scale, fnt_fruit);
+		
 			draw_set_halign(fa_left);
 			draw_set_valign(fa_top);
-			draw_text(0, 0, phrase);
+			draw_text(0, 0, _formatted_phrase);
 		
 			draw_set_halign(fa_center);
 			draw_set_valign(fa_center);
 			draw_text(tex_width/2, tex_height + display_scale * -eff_tex_height * text_area_percent/2, string(score));
+			
+			buffer_set_surface(tex_buff, tex_surf, 0, 0, 0);
 		surface_reset_target();
 	}
 }

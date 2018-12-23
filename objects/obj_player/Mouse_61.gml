@@ -1,1 +1,1 @@
-word_selection = wrap(word_selection+1, 0, num_words-1);
+word_selection = num_words > 0 ? wrap(word_selection+1, 0, num_words-1) : 0;

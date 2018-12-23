@@ -863,6 +863,14 @@
             }
         },
         {
+            "Key": "bdcfc985-52ae-4318-ae5b-17b3f09a6e01",
+            "Value": {
+                "id": "719ad27a-00fb-4c2c-ba97-567577bfe0f8",
+                "resourcePath": "scripts\\dialogue_line_breaker\\dialogue_line_breaker.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bdf0dcdc-1ede-4ea4-976e-7b35e3122cd4",
             "Value": {
                 "id": "6efeb6fc-e9d0-427d-b9eb-02b254d427b8",
@@ -1187,6 +1195,7 @@
         "54466758-41cf-4d02-9c5e-1791a54eb403",
         "f67add76-7044-49cc-a14c-b712d2b260db",
         "90969306-5472-41fb-b84a-046e59575d21",
+        "bdcfc985-52ae-4318-ae5b-17b3f09a6e01",
         "749c4049-88aa-427e-bc3b-a608c6444814",
         "23259415-20e8-4f76-a141-d29e69592777",
         "4d4d370b-c602-4d78-a210-a9c73905635c",
