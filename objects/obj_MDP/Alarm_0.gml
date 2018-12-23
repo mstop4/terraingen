@@ -41,3 +41,11 @@ else {
 
 view_set_wport(bg_view_index,app_width);
 view_set_hport(bg_view_index,app_height);
+
+with (obj_fruit_manager) {
+	event_user(0);
+}
+
+with (obj_stele) {
+	event_user(2);
+}

@@ -1,6 +1,6 @@
 /// @arg word
 
-var _start = current_time;
+//var _start = current_time;
 var _word = argument[0];
 
 var _cur_occ_grid;
@@ -22,11 +22,12 @@ with (obj_fruit_manager) {
 	// No more space, create a new page
 	if (_i == num_textures) {
 		tex_list[_i] = surface_create(max_tex_size, max_tex_size);
+		buff_list[_i] = buffer_create(max_tex_size * max_tex_size * 16, buffer_fixed, 1);
 		surface_set_target(tex_list[_i]);
 			draw_clear_alpha(c_white,1);
 		surface_reset_target();
 		
-		spr_list[_i] = sprite_create_from_surface(tex_list[_i],0,0,max_tex_size,max_tex_size,false,false,0,0);
+		buffer_get_surface(buff_list[_i], tex_list[_i],0,0,0);
 
 		_cur_occ_grid = ds_grid_create(texs_per_row, texs_per_col);
 		ds_list_add(occupancy_list, _cur_occ_grid);
@@ -40,10 +41,7 @@ with (obj_fruit_manager) {
 	// Update texture page 
 	if (!surface_exists(tex_list[_i])) {
 		tex_list[_i] = surface_create(max_tex_size, max_tex_size);
-		surface_set_target(tex_list[_i]);
-			draw_clear_alpha(c_white,1);
-			draw_sprite(spr_list[_i],0,0,0);
-		surface_reset_target();
+		buffer_set_surface(buff_list[_i], tex_list[_i], 0, 0, 0);
 	}
 	
 	_cur_occ_grid[# _x, _y] = 1;
@@ -62,7 +60,7 @@ with (obj_fruit_manager) {
 	
 	dirty_list[_i] = true;
 	alarm[0] = 1;
-	print("Surface update time: ", string(current_time - _start), " ms");
+	//print("Surface update time: ", string(current_time - _start), " ms");
 	
 	return [_i, _x, _y, _x * tex_width / max_tex_size, _y * tex_height / max_tex_size,
 			(_x+1) * tex_width / max_tex_size, (_y+1) * tex_height / max_tex_size];

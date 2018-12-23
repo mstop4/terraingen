@@ -17,6 +17,10 @@ while (!file_text_eof(_f)) {
 		var _line = tokenize_string(file_text_read_string(_f), " ");
 		
 		switch (_line[0]) {
+			case "#":
+			case "o":
+				break;
+			
 			case "v":
 				ds_list_add(_v,[real(_line[1]), real(_line[2]), real(_line[3])]);
 				if (array_length_1d(_line) > 4) {
@@ -61,5 +65,10 @@ file_text_close(_f);
 
 vertex_end(_model);
 vertex_freeze(_model);
+
+ds_list_destroy(_v);
+ds_list_destroy(_vt);
+ds_list_destroy(_vn);
+ds_list_destroy(_vc);
 
 return _model;

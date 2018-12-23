@@ -27,4 +27,12 @@ is_stepping = false;
 set_cursor_lock(false);
 shd_cursor_get_uniforms();
 
-api_get_first_words = http_get(obj_MCP.server_address + "/api/v1/seed?count=" + string(starting_word_count));
+api_get_first_words = -1; //http_get(obj_MCP.server_address + "/api/v1/seed?count=" + string(starting_word_count));
+ds_list_add(word_list, "me", "fail", "english", "that's", "unpossible");
+word_map[? "me"] = 1;
+word_map[? "fail"] = 1;
+word_map[? "english"] = 1;
+word_map[? "that's"] = 1;
+word_map[? "unpossible"] = 1;
+num_words = ds_list_size(word_list);
+ds_list_sort(word_list, true);
