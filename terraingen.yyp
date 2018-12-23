@@ -679,6 +679,14 @@
             }
         },
         {
+            "Key": "914226da-826b-4e63-a8ad-8787d5989ac1",
+            "Value": {
+                "id": "2f4e96f7-aa95-4b82-bcc1-ac8f44de7f08",
+                "resourcePath": "objects\\obj_voronoi\\obj_voronoi.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "93e227ed-bc36-402a-904f-b72248ff097f",
             "Value": {
                 "id": "d35abb5b-6cc0-4273-bce9-0b4b08ec726b",
