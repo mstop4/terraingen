@@ -5,6 +5,6 @@ if (async_load[? "id"] == api_evaluate_phrase) {
 		print("Score is: ", score);
 		ds_map_destroy(_json);
 		
-		draw_stele_tex();
+		draw_stele_tex(false);
 	}
 }

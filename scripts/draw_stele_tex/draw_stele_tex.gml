@@ -1,3 +1,7 @@
+/// @arg is_evaluating
+
+var _is_evaluating = argument[0];
+
 with (obj_stele) {
 	if (surface_exists(tex_surf)) {
 		surface_set_target(tex_surf);
@@ -13,9 +17,12 @@ with (obj_stele) {
 		
 			draw_set_halign(fa_center);
 			draw_set_valign(fa_center);
-			draw_text(tex_width/2, tex_height + display_scale * -eff_tex_height * text_area_percent/2, string(score));
+			if (_is_evaluating)
+				draw_text(tex_width/2, tex_height + display_scale * -eff_tex_height * text_area_percent/2, "Evaluating...");	
+			else
+				draw_text(tex_width/2, tex_height + display_scale * -eff_tex_height * text_area_percent/2, string(score));
 			
-			buffer_set_surface(tex_buff, tex_surf, 0, 0, 0);
+			buffer_get_surface(tex_buff, tex_surf, 0, 0, 0);
 		surface_reset_target();
 	}
 }

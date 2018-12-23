@@ -21,9 +21,7 @@ score_uv_offset = [0, 0];
 tex_surf = surface_create(tex_width, tex_height);
 tex_id = surface_get_texture(tex_surf);
 tex_buff = buffer_create(tex_width * tex_height * 4, buffer_fast, 1);
-draw_stele_tex();
-buffer_get_surface(tex_buff, tex_surf, 0, 0, 0);
-print("stele tex size: ", buffer_get_size(tex_buff));
+draw_stele_tex(false);
 
 // Models
 base_model = make_stele_base(s_width/2, s_length/2, s_depth/2, c_silver);
