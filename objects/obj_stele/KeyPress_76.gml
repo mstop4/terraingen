@@ -9,7 +9,7 @@ with (obj_player) {
 			ds_map_delete(word_map, _word);
 			ds_list_delete(word_list, word_selection);
 			num_words = ds_list_size(word_list);
-			word_selection = min(word_selection,num_words);
+			word_selection = clamp(word_selection, 0, num_words-1);
 		} 
 		
 		else {

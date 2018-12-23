@@ -28,3 +28,12 @@ set_cursor_lock(false);
 shd_cursor_get_uniforms();
 
 api_get_first_words = http_get(obj_MCP.server_address + "/api/v1/seed?count=" + string(starting_word_count));
+/*ds_list_add(word_list, "the", "horse", "raced", "past", "barn", "fell");
+word_map[? "the"] = 2;
+word_map[? "horse"] = 1;
+word_map[? "raced"] = 1;
+word_map[? "past"] = 1;
+word_map[? "barn"] = 1;
+word_map[? "fell"] = 1;
+num_words = ds_list_size(word_list);
+ds_list_sort(word_list, true);*/

@@ -1,5 +1,6 @@
 phrase = "";
 score = 0;
+score_scroll = false;
 api_evaluate_phrase = -1;
 
 // Transforms
