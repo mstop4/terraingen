@@ -14,8 +14,6 @@ else {
 			
 			print("Generating height map...");
 			load_stage = load_state.terrain_height;
-			obj_load_screen.progress = 0;
-			obj_load_screen.progress_max = map_side_length * map_side_length;
 			break;
 			
 		case load_state.terrain_height:
@@ -27,10 +25,6 @@ else {
 					break;
 				}
 			
-				else {
-					obj_load_screen.progress++;
-				}
-				
 				_time_spent += delta_time;
 			}
 			break;
@@ -44,9 +38,9 @@ else {
 			
 		case load_state.terrain_alpha:
 			var _amount_step = 1 / map_border;
+			var _w = ds_grid_width(alpha_map);
 			
 			while (_time_spent < obj_load_screen.update_time) {
-				var _w = ds_grid_width(alpha_map);
 				
 				if (_w > map_border*2) {
 					ds_grid_set_region(alpha_map, i, i, _w-i-1, _w-i-1, 1 - _amount_step * (map_border-i));
@@ -57,9 +51,34 @@ else {
 				if (i > map_border) {
 					print("Generating UV map...");
 					load_stage = load_state.terrain_uv;
+					i = 0;
+					j = 0;
 					break;
 				}
 				
+				_time_spent += delta_time;
+			}
+			break;
+			
+		case load_state.terrain_uv:
+			var _w = ds_grid_width(_uv_grid);
+			var _h = ds_grid_height(_uv_grid);
+			
+			while (_time_spent < obj_load_screen.update_time) {		
+				uv_map[# i, j] = [i / uv_scale, j / uv_scale];
+				
+				j++;
+				if (j >= _h) {
+					i++;
+					
+					if (i >= _w) {
+						print("Creating Model...");
+						vertex_delete_buffer(terrain_model);
+						load_stage = load_state.terrain_model;
+					}
+					
+					j = 0;
+				}
 				_time_spent += delta_time;
 			}
 			break;
