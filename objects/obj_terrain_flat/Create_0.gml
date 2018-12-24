@@ -11,7 +11,10 @@ tex_id = -1;
 terrain_model = vertex_create_buffer();
 
 terrain_done = false;
+load_stage = load_state.terrain_start;
 render_mode = pr_trianglestrip;
+i = 0;
+j = 0;
 
 x = (-map_side_length / 2) * xscale;
 y = x;

@@ -1,4 +1,7 @@
 terrain_done = 0;
+i = 0;
+j = 0;
+
 var _start = current_time;
 print("Starting terrain generation...");
 diamondsquare_init(terrain_map, exec_stack, seed_start, seed_range, min_value, max_value);
