@@ -9,9 +9,13 @@ while (_result < 1) {
 	_result = diamondsquare_step(terrain_map, exec_stack, min_value, max_value, variance, decay);
 }
 
-print("Generating colour map...");
-ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length, $7cd387);
+print("Generating region map...");
+//ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length, $7cd387);
+create_region_map(region_map, colour_map, 32);
+
+print("Generating alpha map...");
 create_alpha_map(alpha_map, map_border);
+
 print("Generating UV map...");
 generate_uvs(uv_map, uv_scale);
 

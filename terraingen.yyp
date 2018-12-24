@@ -599,6 +599,14 @@
             }
         },
         {
+            "Key": "7d66d2d3-95ca-4648-820e-8851f1d37016",
+            "Value": {
+                "id": "93e48952-c9d3-446c-8be3-73d364ad3cd4",
+                "resourcePath": "views\\7d66d2d3-95ca-4648-820e-8851f1d37016.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7e59a853-8a6d-48f1-b393-581bc2d710ac",
             "Value": {
                 "id": "3b65533e-8ed4-4db7-9108-0309968c5da0",
@@ -959,6 +967,14 @@
             }
         },
         {
+            "Key": "ca16ea47-a98e-448c-aceb-b5ca1a30e95e",
+            "Value": {
+                "id": "ae994177-447d-4a5b-b28b-9f673b2ce997",
+                "resourcePath": "scripts\\create_region_map\\create_region_map.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cb760d19-7556-40f4-8278-6fbbbc5c85e2",
             "Value": {
                 "id": "1d48067e-e1cc-414c-95ab-062b7ab452eb",
@@ -1188,6 +1204,7 @@
         "0832a80c-8d27-4592-808f-e76c007cfcdf",
         "3b3f4df3-383b-4fc9-8b0b-5f7dc6c15af9",
         "79519d9f-d8ad-445d-bba6-2153e1452628",
+        "ca16ea47-a98e-448c-aceb-b5ca1a30e95e",
         "10b513fd-a6a5-4487-b2af-9a9f505f1013",
         "fba9533b-2cab-4586-b00b-791a329a7e66",
         "2b931836-9c3c-4798-8d52-f1c02b305715",
