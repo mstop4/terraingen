@@ -43,15 +43,25 @@ else {
 			break;
 			
 		case load_state.terrain_alpha:
+			var _amount_step = 1 / map_border;
+			
 			while (_time_spent < obj_load_screen.update_time) {
 				var _w = ds_grid_width(alpha_map);
 				
 				if (_w > map_border*2) {
-					var _amount_step = 1 / map_border;
-					ds_grid_set_region(_alpha_grid, i, i, _w-i-1, _w-i-1, 1 - _amount_step * (_border_width-i));
+					ds_grid_set_region(alpha_map, i, i, _w-i-1, _w-i-1, 1 - _amount_step * (map_border-i));
 				}
-				//create_alpha_map(alpha_map, map_border);
+				
+				i++;
+				
+				if (i > map_border) {
+					print("Generating UV map...");
+					load_stage = load_state.terrain_uv;
+					break;
+				}
+				
+				_time_spent += delta_time;
 			}
-			
+			break;
 	}
 }
