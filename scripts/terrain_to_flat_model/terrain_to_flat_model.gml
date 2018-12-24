@@ -1,16 +1,13 @@
 /// @func  terrain_to_flat_model(height_grid, colour_grid, alpha_grid, uv_grid, normal_strength)
 /// @arg   height_grid   
-/// @arg   normal_grid
-/// @arg   colour_grid    
 /// @arg   alpha_grid    
 /// @arg   uv_grid
 /// @arg   normal_strength
 
 var _height_grid = argument[0];
-var _colour_grid = argument[1];
-var _alpha_grid = argument[2];
-var _uv_grid = argument[3];
-var _strength = argument[4];
+var _alpha_grid = argument[1];
+var _uv_grid = argument[2];
+var _strength = argument[3];
 
 var _w = ds_grid_width(_height_grid);
 
@@ -38,21 +35,21 @@ for (var j=-0; j<_w-1; j++) {
 			
 		add_vertex(_vert_buf, i, j, _cur_v, 
 				   _cur_n[0], _cur_n[1], _cur_n[2],
-			       _colour_grid[# i, j], _alpha_grid[# i, j],
+			       c_white, _alpha_grid[# i, j],
 			       _cur_uv[0],_cur_uv[1]);
 				   
 		_cur_uv = _uv_grid[# i, j+1];
 				   
 		add_vertex(_vert_buf, i, j+1, _neigh_v2, 
 					_cur_n[0], _cur_n[1], _cur_n[2],
-					_colour_grid[# i, j+1], _alpha_grid[# i, j+1],
+					c_white, _alpha_grid[# i, j+1],
 					_cur_uv[0],_cur_uv[1]);
 					
 		_cur_uv = _uv_grid[# i+1, j];
 				   
 		add_vertex(_vert_buf, i+1, j, _neigh_v1, 
 					_cur_n[0], _cur_n[1], _cur_n[2],
-					_colour_grid[# i+1, j], _alpha_grid[# i+1, j],
+					c_white, _alpha_grid[# i+1, j],
 					_cur_uv[0],_cur_uv[1]);
 								 	 
 					
@@ -68,21 +65,21 @@ for (var j=-0; j<_w-1; j++) {
 			
 		add_vertex(_vert_buf, i+1, j+1, _cur_v, 
 				   _cur_n[0], _cur_n[1], _cur_n[2],
-			       _colour_grid[# i+1, j+1], _alpha_grid[# i+1, j+1],
+			       c_white, _alpha_grid[# i+1, j+1],
 			       _cur_uv[0],_cur_uv[1]);
 				   
 		_cur_uv = _uv_grid[# i+1, j];
 								 	 
 		add_vertex(_vert_buf, i+1, j, _neigh_v1, 
 					_cur_n[0], _cur_n[1], _cur_n[2],
-					_colour_grid[# i+1, j], _alpha_grid[# i+1, j],
+					c_white, _alpha_grid[# i+1, j],
 					_cur_uv[0],_cur_uv[1]);
 					
 		_cur_uv = _uv_grid[# i, j+1];
 						
 		add_vertex(_vert_buf, i, j+1, _neigh_v2, 
 					_cur_n[0], _cur_n[1], _cur_n[2],
-					_colour_grid[# i, j+1], _alpha_grid[# i, j+1],
+					c_white, _alpha_grid[# i, j+1],
 					_cur_uv[0],_cur_uv[1]);
 	}
 }

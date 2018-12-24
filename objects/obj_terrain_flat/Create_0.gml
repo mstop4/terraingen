@@ -3,7 +3,7 @@ exec_stack = ds_stack_create();
 
 terrain_map = ds_grid_create(map_side_length, map_side_length);
 region_map = ds_grid_create(map_side_length, map_side_length);
-colour_map = ds_grid_create(map_side_length, map_side_length);
+colour_map = -1;
 alpha_map = ds_grid_create(map_side_length, map_side_length);
 uv_map = ds_grid_create(map_side_length, map_side_length);
 tex_id = -1;
