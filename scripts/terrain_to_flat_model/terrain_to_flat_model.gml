@@ -1,4 +1,4 @@
-/// @func  terrain_to_flat_model(height_grid, colour_grid, alpha_grid, uv_grid, normal_strength)
+/// @func  terrain_to_flat_model(height_grid, alpha_grid, uv_grid, normal_strength)
 /// @arg   height_grid   
 /// @arg   alpha_grid    
 /// @arg   uv_grid

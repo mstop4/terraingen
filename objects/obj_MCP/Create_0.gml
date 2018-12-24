@@ -1,6 +1,6 @@
 #macro PORT "3000"
 
-//show_debug_overlay(true);
+show_debug_overlay(true);
 //randomize();
 global.xy_scale = 100;
 global.dt_scale = 1/60 * 1000000;

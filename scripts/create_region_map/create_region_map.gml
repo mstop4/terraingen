@@ -33,7 +33,6 @@ for (var i=0; i<_num_regions; i++) {
 surface_set_target(_colour_surf);
 draw_clear_alpha(c_black,1);
 
-
 for (var j=0; j<map_side_length; j++) {
 	for (var i=0; i<map_side_length; i++) {
 		var _min_dist = 1000000;
@@ -57,12 +56,30 @@ for (var j=0; j<map_side_length; j++) {
 	}
 }
 
+// Set Alpha
+/*if (map_side_length-1 > map_border*2) {
+	gpu_set_colorwriteenable(0,0,0,1);
+	
+	draw_set_colour(c_black);
+	var	_amount_step = 255 / map_border;
+
+	for (var i=0; i<=map_border; i++) {
+		draw_set_alpha(255 - _amount_step * (map_border-i));
+		draw_rectangle(i, i, map_side_length-i-2, map_side_length-i-2,false);
+	}
+	
+	gpu_set_colorwriteenable(1,1,1,1);
+	draw_set_alpha(1);
+}*/
+
 surface_reset_target();
+
 colour_map = sprite_create_from_surface(_colour_surf,0,0,map_side_length-1,map_side_length-1,false,false,0,0);
 
 ds_grid_destroy(_region_seeds);
 ds_list_destroy(_region_colour);
 ds_list_destroy(_region_bag);
+surface_free(_colour_surf);
 
 tex_id = sprite_get_texture(colour_map, 0);
 
