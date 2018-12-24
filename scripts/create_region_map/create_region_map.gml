@@ -11,7 +11,7 @@ var _colour_surf = surface_create(map_side_length-1, map_side_length-1);
 
 var _region_seeds = ds_grid_create(3,_num_regions);
 var _region_colour = ds_list_create();
-ds_list_add(_region_colour, c_red, c_yellow, c_lime, c_blue)//, c_fuchsia, c_aqua, c_silver, $0080FF);
+ds_list_add(_region_colour, $FFD8C0)//, c_fuchsia, c_aqua, c_silver, $0080FF);
 
 var _region_bag = ds_list_create();
 

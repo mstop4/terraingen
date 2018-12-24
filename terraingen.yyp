@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "8f212473-481d-4bc7-b979-293b666b81a8",
+            "Value": {
+                "id": "f63e2a41-c7e5-4439-a0d1-720f870ca691",
+                "resourcePath": "fonts\\fnt_stele\\fnt_stele.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "8ffb44bf-0975-4455-a483-a887b296b5c8",
             "Value": {
                 "id": "f22c8fd6-4d39-435a-9264-b5704c69a2fc",

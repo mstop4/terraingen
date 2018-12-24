@@ -1,4 +1,4 @@
-crown_colour = $81c226;
+crown_colour = $FFFFFF; //$81c226;
 trunk_colour = $0e69f9;
 
 state = plant_state.stable;
