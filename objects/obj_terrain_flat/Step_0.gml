@@ -44,7 +44,13 @@ else {
 			
 		case load_state.terrain_alpha:
 			while (_time_spent < obj_load_screen.update_time) {
-				create_alpha_map(alpha_map, map_border);
+				var _w = ds_grid_width(alpha_map);
+				
+				if (_w > map_border*2) {
+					var _amount_step = 1 / map_border;
+					ds_grid_set_region(_alpha_grid, i, i, _w-i-1, _w-i-1, 1 - _amount_step * (_border_width-i));
+				}
+				//create_alpha_map(alpha_map, map_border);
 			}
 			
 	}
