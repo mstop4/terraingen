@@ -26,7 +26,7 @@ global.vert_wo_light = vertex_format_end();
 app_width = window_width;
 app_height = window_height;
 fov = 60 / (16 / 9) * app_width / app_height;
-global.show_debug_gui = false;
+global.show_debug_gui = true;
 
 view_enabled = true;
 view_set_visible(bg_view_index,true);

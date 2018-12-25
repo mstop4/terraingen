@@ -71,3 +71,5 @@ add_cube(full_tree, _half_width[4], crown_colour, [_off_x[4], _off_y[4], _off_z[
 
 vertex_end(full_tree);
 vertex_freeze(full_tree);
+
+models_ready = true;

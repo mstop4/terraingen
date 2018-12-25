@@ -1,4 +1,4 @@
-if (can_draw) {
+if (can_draw && models_ready) {
 	if (growth < 1) {
 		shader_set_uniform_f_array(obj_MDP.shd_cel_u_translate, trunk_translate_vec);
 		shader_set_uniform_f_array(obj_MDP.shd_cel_u_scale, trunk_scale_vec);
