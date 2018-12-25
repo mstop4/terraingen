@@ -28,6 +28,7 @@ if (window_has_focus() && obj_MCP.cursor_lock) {
 			_tree.seed_word = _word;
 			_tree.get_own_words = true;
 			_tree.crown_colour = obj_terrain_flat.colour_map[# cursor_x, cursor_y];
+			_tree.region_id = obj_terrain_flat.region_map[# cursor_x, cursor_y];
 			
 			if (word_map[? _word] == 1) {
 				ds_map_delete(word_map, _word);

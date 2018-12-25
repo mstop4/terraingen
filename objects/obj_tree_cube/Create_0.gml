@@ -26,4 +26,5 @@ z_scale_stage[1] = 1;
 event_user(0);
 
 api_get_fruit_words = -1;
+region_id = -1;
 alarm[0] = 1;
