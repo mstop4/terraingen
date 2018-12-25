@@ -6,7 +6,8 @@
     "children": [
         "bccea879-9697-44fc-8be9-1d4a8d45777a",
         "47e6567e-f7f9-4539-b63e-078461a78d2d",
-        "86a5e02d-e613-4484-b0e7-61a628c684a3"
+        "86a5e02d-e613-4484-b0e7-61a628c684a3",
+        "8f212473-481d-4bc7-b979-293b666b81a8"
     ],
     "filterType": "GMFont",
     "folderName": "fonts",

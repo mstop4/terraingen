@@ -9,48 +9,19 @@ while (_result < 1) {
 	_result = diamondsquare_step(terrain_map, exec_stack, min_value, max_value, variance, decay);
 }
 
-print("Generating colour map...");
-ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length, $7cd387);
-/*ds_stack_clear(exec_stack);
-diamondsquare_init(colour_map, exec_stack, seed_start, 128, min_value, max_value);
+print("Generating region map...");
+//ds_grid_set_region(colour_map,0,0,map_side_length,map_side_length, $7cd387);
+create_region_map(region_map, colour_map, 64);
 
-_result = 0;
-
-while (_result < 1) {
-	_result = diamondsquare_step(colour_map, exec_stack, min_value, max_value, 128, decay);
-}
-
-var _c;
-
-for (var i=0; i<map_side_length; i++) {
-	for (var j=0; j<map_side_length; j++) {
-		_c = colour_map[# i, j];
-		
-		if (_c < 64) {
-			colour_map[# i, j] = c_red;
-		}
-		
-		else if (_c < 127) {
-			colour_map[# i, j] = c_yellow;			
-		}
-		
-		else if (_c < 191) {
-			colour_map[# i, j] = c_lime;			
-		}
-		
-		else {
-			colour_map[# i, j] = c_blue;			
-		}
-	}
-}*/
-
+print("Generating alpha map...");
 create_alpha_map(alpha_map, map_border);
+
 print("Generating UV map...");
-generate_uvs(uv_map, uv_scale);
+generate_uvs(uv_map);
 
 print("Creating Model...");
 vertex_delete_buffer(terrain_model);
-terrain_model = terrain_to_flat_model(terrain_map, colour_map, alpha_map, uv_map, normal_strength);
+terrain_model = terrain_to_flat_model(terrain_map, alpha_map, uv_map, normal_strength);
 
 var _center = other.map_side_length / 2;
 

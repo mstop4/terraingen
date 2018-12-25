@@ -1,0 +1,1 @@
+draw_surface_ext(colour_tex,0,0,2,2,0,c_white,1);

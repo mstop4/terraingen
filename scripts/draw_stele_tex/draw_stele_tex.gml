@@ -7,9 +7,9 @@ with (obj_stele) {
 		surface_set_target(tex_surf);
 			draw_clear(c_black);
 			draw_set_colour(c_white);
-			draw_set_font(fnt_fruit);
+			draw_set_font(fnt_stele);
 		
-			var _formatted_phrase = dialogue_line_breaker(phrase, tex_width*display_scale, fnt_fruit);
+			var _formatted_phrase = dialogue_line_breaker(phrase, tex_width*display_scale, fnt_stele);
 		
 			draw_set_halign(fa_left);
 			draw_set_valign(fa_top);

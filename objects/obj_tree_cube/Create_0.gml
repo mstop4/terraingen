@@ -3,11 +3,10 @@ trunk_colour = $0e69f9;
 
 state = plant_state.stable;
 can_draw = false;
+models_ready = false;
 cull_halfangle = obj_MDP.fov+30;
 seed_word = "blank";
 words = ds_list_create();
-
-make_tree_cube();
 
 z = 0;
 real_z = 0;

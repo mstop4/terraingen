@@ -5,7 +5,7 @@ if (async_load[? "id"] == api_get_fruit_words) {
 		
 		tree_init_fruits(words);
 		state = plant_state.growing;
-		if (ds_exists(_json, ds_type_list))
-			ds_list_destroy(_json);
+		if (ds_exists(_json, ds_type_map))
+			ds_map_destroy(_json);
 	}
 }

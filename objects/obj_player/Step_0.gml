@@ -20,13 +20,14 @@ if (window_has_focus() && obj_MCP.cursor_lock) {
 	can_plant = !_at_border && _num_neighbours == 0 && !_inside_player;
 	
 	if (obj_input.button_pressed[action.plant_tree]) {
-		if (can_plant) {
+		if (can_plant && num_words > 1) {
 			obj_tree_manager.tree_map[# cursor_x, cursor_y] = 1;
 			var _word = word_list[| word_selection];
 			
 			var _tree = instance_create_layer(cursor_x * global.xy_scale, cursor_y * global.xy_scale,layer,obj_tree_cube);
 			_tree.seed_word = _word;
 			_tree.get_own_words = true;
+			_tree.crown_colour = obj_terrain_flat.colour_map[# cursor_x, cursor_y];
 			
 			if (word_map[? _word] == 1) {
 				ds_map_delete(word_map, _word);
