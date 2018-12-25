@@ -46,7 +46,11 @@ with (obj_fruit_manager) {
 	
 	_cur_occ_grid[# _x, _y] = 1;
 			
-	surface_set_target(tex_list[_i]);		
+	gpu_push_state();
+	gpu_set_ztestenable(false);
+	gpu_set_zwriteenable(false);
+			
+	surface_set_target(tex_list[_i]);
 		draw_set_colour(c_white);
 		draw_rectangle(_x * tex_width, _y * tex_height, (_x+1) * tex_width, (_y+1) * tex_height, false);
 		gpu_set_colorwriteenable(true, true, true, false);
@@ -57,6 +61,8 @@ with (obj_fruit_manager) {
 		draw_text((_x+0.5) * tex_width, (_y+0.5) * tex_height, _word);
 		gpu_set_colorwriteenable(true, true, true, true);
 	surface_reset_target();
+	
+	gpu_pop_state();
 	
 	dirty_list[_i] = true;
 	alarm[0] = 1;
