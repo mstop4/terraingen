@@ -4,6 +4,7 @@ x = 0
 y = 0
 z = 0;
 pitch = 0;
+lookat = [0, 0, 0];
 
 owner = noone;
 bind_z_to_owner = true;

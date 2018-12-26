@@ -12,5 +12,13 @@ if (!bind_z_to_owner) {
 	z -= 0.1 * _z_input;
 }
 
-camera_update(fore_camera);
-camera_update(back_camera);
+lookat[0] = x+lengthdir_x(1,direction);
+lookat[1] = y+lengthdir_y(1,direction);
+lookat[2] = lengthdir_y(1,pitch)+z;
+var _view_matrix = matrix_build_lookat(x,y,z,lookat[0],lookat[1],lookat[2],0,0,-1);
+
+camera_set_view_mat(fore_camera,_view_matrix);
+camera_set_view_mat(back_camera,_view_matrix);
+
+audio_listener_position(x,y,z);
+audio_listener_orientation(lookat[0],lookat[1],lookat[2],0,0,1);

@@ -1,5 +1,5 @@
 crown_colour = $81c226;
-trunk_colour = $0e69f9;
+trunk_colour = $004475;
 
 state = plant_state.stable;
 can_draw = false;

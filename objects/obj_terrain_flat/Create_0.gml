@@ -24,3 +24,4 @@ rotate_vec = [0, 0, 0];
 region_colours = [$0e69f9, $18caf7, $71cc2e, $ccb500];
 
 event_user(0);
+audio_play_sound(mus_test,100,true);

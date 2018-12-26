@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0aad5e60-d1d8-4a1b-918a-817c64ae4bea",
+            "Value": {
+                "id": "a5500eee-d4d5-4afb-b142-f1121d8215da",
+                "resourcePath": "sounds\\mus_test\\mus_test.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "10b513fd-a6a5-4487-b2af-9a9f505f1013",
             "Value": {
                 "id": "f26b6e20-d0e1-4428-b2df-3fee50cf2f86",
@@ -300,6 +308,14 @@
                 "id": "29bfd908-17d0-4e67-b697-2ea757efd6fe",
                 "resourcePath": "views\\3eb8fa1a-2b8c-4b99-bce4-8bb26f47683d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3f96a683-d011-47ee-9217-d296cffa31ed",
+            "Value": {
+                "id": "4ef72118-46cd-4e40-9091-202346f6113b",
+                "resourcePath": "sounds\\snd_get_fruit\\snd_get_fruit.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -863,14 +879,6 @@
             }
         },
         {
-            "Key": "bc62e24f-cfad-4300-95f7-380d027dea05",
-            "Value": {
-                "id": "d94e020f-5d0f-4e80-9be3-53e894d2ddc4",
-                "resourcePath": "scripts\/camera_update\/camera_update.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "bccea879-9697-44fc-8be9-1d4a8d45777a",
             "Value": {
                 "id": "f9d1cadc-bff0-4859-8b40-f482cec43972",
@@ -1227,7 +1235,6 @@
         "709856c1-b798-446e-86fd-8f1f38614338",
         "2b247b51-b5d0-4ce5-99d2-8a2c95055049",
         "a253cf06-fb20-4f51-8ec7-5171d7004474",
-        "bc62e24f-cfad-4300-95f7-380d027dea05",
         "c6a329dd-4e5b-4842-a19e-b59717ccce14",
         "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
         "dde622c4-d77c-4564-b6a9-ceaa1c86e647",

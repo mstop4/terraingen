@@ -20,7 +20,7 @@ if (window_has_focus() && obj_MCP.cursor_lock) {
 	can_plant = !_at_border && _num_neighbours == 0 && !_inside_player;
 	
 	if (obj_input.button_pressed[action.plant_tree]) {
-		if (can_plant && num_words > 1) {
+		if (can_plant && num_words > 0) {
 			obj_tree_manager.tree_map[# cursor_x, cursor_y] = 1;
 			var _word = word_list[| word_selection];
 			

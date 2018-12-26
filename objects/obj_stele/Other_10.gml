@@ -15,3 +15,5 @@ text_translate_vec[2] = base_translate_vec[2] + display_scale * -s_length * (tex
 score_translate_vec[0] = base_translate_vec[0];
 score_translate_vec[1] = base_translate_vec[1];
 score_translate_vec[2] = base_translate_vec[2] + display_scale * -s_length * text_area_percent / 2;
+
+//audio_play_sound_at(mus_3d,base_translate_vec[0], base_translate_vec[1], base_translate_vec[2],1,4,0.5,true,100);
