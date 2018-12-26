@@ -1,4 +1,4 @@
-phrase = "'twas the night before christmas and all through the house not a creature was stirring not even a mouse";
+phrase = "";
 score = 0;
 score_scroll = false;
 api_evaluate_phrase = -1;
