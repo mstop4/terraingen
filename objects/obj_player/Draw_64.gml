@@ -27,5 +27,5 @@ for (var i=0; i<num_words; i++) {
 		draw_set_color(c_white);
 	}
 	
-	draw_text(1280, 32+i*24, word_list[| i] + ": " + string(word_map[? word_list[| i]]));
+	draw_text(app_width, 32+i*24, word_list[| i] + ": " + string(word_map[? word_list[| i]]));
 }
