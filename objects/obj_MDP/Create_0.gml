@@ -1,5 +1,4 @@
 /// @desc Init 3d
-
 gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
 gpu_set_texrepeat(true);
@@ -47,3 +46,4 @@ fog_end = far_dist * fog_far_ratio;
 fog_start = fog_end - fog_range;
 
 shd_cel_get_uniforms();
+shd_display_get_uniforms();

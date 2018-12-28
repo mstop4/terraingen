@@ -9,10 +9,15 @@ varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
 void main()
-{				   
+{	
 	vec2 realTexcoord = vec2( mod(v_vTexcoord.x, u_uvBounds.x),
-							  mod(v_vTexcoord.y, u_uvBounds.y));
-	vec4 fg_colour = v_vColour * texture2D( gm_BaseTexture, realTexcoord );	   
+							  mod(v_vTexcoord.y, u_uvBounds.y));	
+	vec4 tex_colour = texture2D(gm_BaseTexture, realTexcoord);
+	
+	if (tex_colour.a < 0.01)
+		discard;
+		
+	vec4 fg_colour = v_vColour * tex_colour;	   
 	vec4 bg_colour = texture2D(u_bg_tex, gl_FragCoord.xy / u_app_size.xy);
 	
 	float dist = length(v_vViewPos);

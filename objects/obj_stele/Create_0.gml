@@ -33,5 +33,3 @@ score_model = make_stele_display(s_length * display_scale * (1-text_area_percent
 
 text_uv_max = [1, _uv_split];
 score_uv_max = [1, 1];
-
-shd_display_get_uniforms();
