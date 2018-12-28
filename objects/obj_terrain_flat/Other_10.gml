@@ -25,7 +25,7 @@ terrain_model = terrain_to_flat_model(terrain_map, alpha_map, uv_map, normal_str
 
 var _center = map_side_length / 2;
 
-var _bill = instance_create_layer(0,0,layer,obj_stele);
+var _bill = instance_create_layer(0,0,layer,obj_billboard);
 _bill.x = (_center - 1) * global.xy_scale;
 _bill.y = _center * global.xy_scale;
 
