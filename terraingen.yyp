@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "ae6fb550-e235-4200-a8f1-08b5f480f381",
+            "Value": {
+                "id": "ad688fa4-4f3b-40f9-ad35-5999cc59db6e",
+                "resourcePath": "scripts\\populate_terrain\\populate_terrain.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b0c5c433-57bb-44dd-a77c-673e9b9ca9dd",
             "Value": {
                 "id": "8e6c2731-36c5-4784-9449-ef4e27f9c021",
@@ -1321,7 +1329,8 @@
         "a5c355f1-b2da-482e-96b6-e2492ceb57fa",
         "54f69f8e-8d90-441b-85c4-69f2c5c99656",
         "53e959a6-dade-4ee6-b3d3-b86412cf9739",
-        "f8f1bb8d-441f-45ec-80c5-51f9e51256b9"
+        "f8f1bb8d-441f-45ec-80c5-51f9e51256b9",
+        "ae6fb550-e235-4200-a8f1-08b5f480f381"
     ],
     "tutorial": ""
 }

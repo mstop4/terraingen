@@ -3,25 +3,25 @@ if (async_load[? "id"] == api_get_words) {
 		var _json = json_decode(async_load[? "result"]);
 		var _words = _json[? "seeds"];
 		
-		tree_list = ds_list_create();
+		var _tree_list = ds_list_create();
 
 		for (var i=obj_terrain.map_border-1; i<map_side_length-2-obj_terrain.map_border; i++) {
 			for (var j=obj_terrain.map_border-1; j<map_side_length-2-obj_terrain.map_border; j++) {
-				ds_list_add(tree_list, i*j);
+				ds_list_add(_tree_list, i*j);
 			}
 		}
 
-		ds_list_shuffle(tree_list);
+		ds_list_shuffle(_tree_list);
 
 		ds_grid_set_region(tree_map,0,0,map_side_length,map_side_length,0);
 
 		for (var i=0; i<num_trees;) {
-			if (ds_list_empty(tree_list)) {
+			if (ds_list_empty(_tree_list)) {
 				print("Not enough room for more trees.");
 				break;
 			}	
 	
-			var _cur_cell = tree_list[| 0];
+			var _cur_cell = _tree_list[| 0];
 			var _x = _cur_cell mod map_side_length;
 			var _y = _cur_cell div map_side_length;
 			if (ds_grid_get_disk_sum(tree_map, _x, _y, tree_buffer) == 0) {
@@ -36,14 +36,14 @@ if (async_load[? "id"] == api_get_words) {
 				i++;
 			}
 	
-			ds_list_delete(tree_list, 0);
+			ds_list_delete(_tree_list, 0);
 		}
 
 		with (obj_tree_cube) {
 			event_user(0);
 		}
 
-		ds_list_destroy(tree_list);
+		ds_list_destroy(_tree_list);
 		ds_list_destroy(_words);
 	}
 }
