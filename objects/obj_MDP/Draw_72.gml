@@ -25,9 +25,6 @@ if (view_current == fg_view_index) {
 			event_user(15);
 		}
 		
-		with (obj_stele) {
-			event_user(15);
-		}
 	shader_reset();
 	
 	shader_set(shd_display);

@@ -9,11 +9,11 @@ if (_v_input != 0 || _h_input != 0) {
 	var _spd_x = lengthdir_x(my_speed,_move_dir) * delta_time / global.dt_scale;
 	var _spd_y = lengthdir_y(my_speed,_move_dir) * delta_time / global.dt_scale;
 
-	if (!place_meeting(x + _spd_x, y, obj_tree_cube)) {
+	if (!place_meeting(x + _spd_x, y, cls_solidObj)) {
 		x = clamp(x + _spd_x, obj_terrain.map_border * global.xy_scale, (obj_terrain.map_side_length-1-obj_terrain.map_border) * global.xy_scale);
 	}
 	
-	if (!place_meeting(x, y + _spd_y, obj_tree_cube)) {	
+	if (!place_meeting(x, y + _spd_y, cls_solidObj)) {	
 		y = clamp(y + _spd_y, obj_terrain.map_border * global.xy_scale, (obj_terrain.map_side_length-1-obj_terrain.map_border) * global.xy_scale);
 	}
 	
