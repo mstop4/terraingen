@@ -2148,6 +2148,25 @@
             }
         },
         {
+            "Key": "b85149ad-4268-42cc-bc97-6c34d9bd4f85",
+            "Value": {
+                "id": "65418f77-b8bd-48c2-8da0-f4b747c5eafe",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/cross_product_2d\/cross_product_2d.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b98fb45d-9bc2-4053-9781-12d6bb2d912e",
             "Value": {
                 "id": "ef68042a-ad5e-4372-b4e0-dcacd1d63255",
@@ -2680,6 +2699,25 @@
             }
         },
         {
+            "Key": "e2c021d8-95d4-410a-ab91-f43a7404b488",
+            "Value": {
+                "id": "85d192ab-7ce5-40a4-88b6-e432e95b8643",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/ray_line_intersect\/ray_line_intersect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "9f8a0a20-6a94-4ce8-9119-5377a3ba8d14",
@@ -3016,6 +3054,7 @@
         "5809dd90-09fe-4739-99a4-ddda9a2074e8",
         "160a2d49-c6c0-4046-b75f-e5583e9ff6ab",
         "83f34afe-6dde-40fb-bc31-fe9c7786f980",
+        "b85149ad-4268-42cc-bc97-6c34d9bd4f85",
         "1419d418-6a37-4162-9348-862d604f12ea",
         "98816416-09cc-4ca0-84b2-be70d2d49b8a",
         "7ab533c3-64d8-487a-8519-8259a8278173",
@@ -3023,6 +3062,7 @@
         "709856c1-b798-446e-86fd-8f1f38614338",
         "2b247b51-b5d0-4ce5-99d2-8a2c95055049",
         "a253cf06-fb20-4f51-8ec7-5171d7004474",
+        "e2c021d8-95d4-410a-ab91-f43a7404b488",
         "c6a329dd-4e5b-4842-a19e-b59717ccce14",
         "3aeca724-3814-4ad4-88f8-fc8577e4b17a",
         "dde622c4-d77c-4564-b6a9-ceaa1c86e647",

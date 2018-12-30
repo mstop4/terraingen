@@ -9,3 +9,10 @@ if (score_scroll) {
 	if (score_t > 1.5) 
 		score_t = -0.5;
 }
+
+with (obj_player) {
+	other.can_interact = (
+		//ray_line_intersect(x, y, x+my_cam.lookat[0]*25, y+my_cam.lookat[1]*25, other.x-50, other.y+12.5, other.x+50, other.y+12.5) != -1 ||
+		ray_line_intersect(x, y, x+my_cam.lookat[0]*25, y+my_cam.lookat[1]*25, other.x+50, other.y-12.5, other.x-50, other.y-12.5) != -1
+	);
+}
