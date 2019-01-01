@@ -11,8 +11,11 @@ if (score_scroll) {
 }
 
 with (obj_player) {
+	var _dx = lengthdir_x(200, direction);
+	var _dy = lengthdir_y(200, direction);
+	
 	other.can_interact = (
-		//ray_line_intersect(x, y, x+my_cam.lookat[0]*25, y+my_cam.lookat[1]*25, other.x-50, other.y+12.5, other.x+50, other.y+12.5) != -1 ||
-		ray_line_intersect(x, y, x+my_cam.lookat[0]*25, y+my_cam.lookat[1]*25, other.x+50, other.y-12.5, other.x-50, other.y-12.5) != -1
+		ray_line_intersect(x, y, x+_dx, y+_dy, other.x+50, other.y, other.x-50, other.y) != -1 &&
+		point_in_rectangle(x, y, other.x-50, other.y-150, other.x+50, other.y+150)
 	);
 }
