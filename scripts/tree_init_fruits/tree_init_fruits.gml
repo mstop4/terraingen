@@ -30,10 +30,21 @@ for (var i=0; i<num_fruit; i++) {
 	
 	var _word_map = _word_list[| i];
 	
-	if (is_string(_word_map))
-		fruit[i].word = _word_map;
-	else
-		fruit[i].word = _word_map[? "word"];
+	if (!is_undefined(_word_map)) {
+		if (is_string(_word_map)) {
+			fruit[i].word = _word_map;
+		}
+		else if (ds_map_exists(_word_map, "word")) {
+			fruit[i].word = _word_map[? "word"];
+		}
+		else {
+			fruit[i].word = seed_word;
+		}
+	}
+	
+	else {
+		fruit[i].word = seed_word;
+	}
 		
 	with (fruit[i]) event_user(0);
 }

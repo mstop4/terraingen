@@ -1,4 +1,4 @@
-/// @func  cross_product(vec1, vec2)
+/// @func  cross_product_normalized(vec1, vec2)
 /// @arg   vec1 
 /// @arg   vec2
 

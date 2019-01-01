@@ -1,7 +1,8 @@
-phrase = "'twas the night before christmas and all through the house not a creature was stirring not even a mouse";
+phrase = "";
 score = 0;
 score_scroll = false;
 api_evaluate_phrase = -1;
+can_interact = false;
 
 // Transforms
 z = 0;
@@ -33,5 +34,3 @@ score_model = make_stele_display(s_length * display_scale * (1-text_area_percent
 
 text_uv_max = [1, _uv_split];
 score_uv_max = [1, 1];
-
-shd_display_get_uniforms();

@@ -4,6 +4,10 @@ var _is_evaluating = argument[0];
 
 with (obj_stele) {
 	if (surface_exists(tex_surf)) {
+		gpu_push_state();
+		gpu_set_ztestenable(false);
+		gpu_set_zwriteenable(false);
+		
 		surface_set_target(tex_surf);
 			draw_clear(c_black);
 			draw_set_colour(c_white);
@@ -24,5 +28,7 @@ with (obj_stele) {
 			
 			buffer_get_surface(tex_buff, tex_surf, 0, 0, 0);
 		surface_reset_target();
+		
+		gpu_pop_state();
 	}
 }

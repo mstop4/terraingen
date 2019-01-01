@@ -18,7 +18,10 @@ varying vec4 v_vColour;
 
 void main()
 {
-	//if (!gl_FrontFacing) discard;
+	vec4 tex_colour = texture2D(gm_BaseTexture, v_vTexcoord);
+	
+	if (tex_colour.a < 0.01)
+		discard;
 	
 	float diffuse_ratio1 = max(dot(v_vNormal * u_normal_weight, u_diffuse_direction1), 0.0);
 	float diffuse_ratio2 = max(dot(v_vNormal * u_normal_weight, u_diffuse_direction2), 0.0);
@@ -27,7 +30,7 @@ void main()
 					   (v_vColour * u_diffuse_colour1 * diffuse_ratio1) +
 					   (v_vColour * u_diffuse_colour2 * diffuse_ratio2);
 					   
-	fg_colour *= texture2D(gm_BaseTexture, v_vTexcoord);
+	fg_colour *= tex_colour;
 					   
 	vec4 bg_colour = texture2D(u_bg_tex, gl_FragCoord.xy / u_app_size.xy);
 	

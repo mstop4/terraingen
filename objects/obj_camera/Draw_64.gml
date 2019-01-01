@@ -7,5 +7,6 @@ if (global.show_debug_gui) {
 
 	draw_text(0,0,"Camera\nX: " + string(x)
 					  + "\nY: " + string(y)
-					  + "\nZ: " + string(z));
+					  + "\nZ: " + string(z)
+					  );
 }

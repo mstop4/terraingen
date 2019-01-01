@@ -9,3 +9,5 @@ mouse_sens_hor = 0.1;
 mouse_sens_ver = 0.1;
 cursor_lock = false;
 conn_state = connection_state.disconnected;
+
+region_routes = ["rhyme", "preceed", "follow", "trigger"];

@@ -14,3 +14,11 @@ enum connection_state {
 	connecting,
 	connected
 }
+
+enum region_ids {
+	duplicate = -1,
+	rhyme,
+	preceed,
+	follow,
+	trigger
+}

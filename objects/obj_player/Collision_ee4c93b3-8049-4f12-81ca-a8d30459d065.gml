@@ -12,4 +12,5 @@ if (other.growth >= 1 && other.can_collect) {
 	
 	instance_destroy(other);
 	num_words = ds_list_size(word_list);
+	audio_play_sound_at(snd_get_fruit, other.translate_vec[0], other.translate_vec[1], other.translate_vec[2], 1, 4, 0.5, false, 50);
 }

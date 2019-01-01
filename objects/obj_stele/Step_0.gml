@@ -9,3 +9,13 @@ if (score_scroll) {
 	if (score_t > 1.5) 
 		score_t = -0.5;
 }
+
+with (obj_player) {
+	var _dx = lengthdir_x(200, direction);
+	var _dy = lengthdir_y(200, direction);
+	
+	other.can_interact = (
+		ray_line_intersect(x, y, x+_dx, y+_dy, other.x+50, other.y, other.x-50, other.y) != -1 &&
+		point_in_rectangle(x, y, other.x-50, other.y-150, other.x+50, other.y+150)
+	);
+}

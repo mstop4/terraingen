@@ -1,1 +1,3 @@
-event_user(1);
+if (can_interact) {
+	event_user(1);
+}

@@ -4,7 +4,7 @@
 
 var _tex_index = argument[0];
 var _tex_slot_x = argument[1];
-var _tex_slot_y = argument[1];
+var _tex_slot_y = argument[2];
 
 with (obj_fruit_manager) {
 	
