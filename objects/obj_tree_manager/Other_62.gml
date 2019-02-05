@@ -28,6 +28,9 @@ if (async_load[? "id"] == api_get_words) {
 				tree_map[# _x, _y] = 1;
 				
 				var _tree = instance_create_layer(_x * global.xy_scale, _y * global.xy_scale,layer,obj_tree_cube);
+				_tree.crown_colour = obj_terrain_flat.colour_map[# _x, _y];
+				_tree.region_id = obj_terrain_flat.region_map[# _x, _y];
+				
 				repeat (4) {
 					ds_list_add(_tree.words, _words[| 0]);
 					ds_list_delete(_words, 0);

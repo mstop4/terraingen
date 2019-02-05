@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0047402d-e65a-42a7-b814-abe2959fc6eb",
+            "Value": {
+                "id": "0c1ca9fa-4703-40ad-af92-e2eeb101bd6b",
+                "resourcePath": "scripts\\draw_outlined_text\\draw_outlined_text.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0077e1ca-fb31-4dd7-989e-f971660a5de2",
             "Value": {
                 "id": "bf2a7fcc-3007-44b0-8343-83d9d9e8b9ea",
@@ -1364,7 +1372,8 @@
         "54f69f8e-8d90-441b-85c4-69f2c5c99656",
         "53e959a6-dade-4ee6-b3d3-b86412cf9739",
         "f8f1bb8d-441f-45ec-80c5-51f9e51256b9",
-        "ae6fb550-e235-4200-a8f1-08b5f480f381"
+        "ae6fb550-e235-4200-a8f1-08b5f480f381",
+        "0047402d-e65a-42a7-b814-abe2959fc6eb"
     ],
     "tutorial": ""
 }

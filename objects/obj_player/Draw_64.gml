@@ -21,11 +21,6 @@ draw_set_halign(fa_right);
 draw_set_valign(fa_top);
 
 for (var i=0; i<num_words; i++) {
-	if (word_selection == i) {
-		draw_set_color($8080FF);
-	} else {
-		draw_set_color(c_white);
-	}
-	
-	draw_text(obj_MDP.app_width, 32+i*24, word_list[| i] + ": " + string(word_map[? word_list[| i]]));
+	var _in_col = word_selection == i ? $8080FF : c_white;
+	draw_outlined_text(obj_MDP.app_width, 32+i*24, word_list[| i] + ": " + string(word_map[? word_list[| i]]), 1, 1, 0, _in_col, c_black, 2, 1, 8);
 }

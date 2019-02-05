@@ -12,7 +12,7 @@ ds_list_shuffle(_bill_list);
 
 var _cur_bill;
 
-for (var i=0; i<50; i++) {
+for (var i=0; i<10; i++) {
 	if (ds_list_empty(_bill_list))
 		break;
 		
